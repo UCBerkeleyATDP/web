@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-US">
+<!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Explorations Catalog | UC Berkeley ATDP</title>
+
+        <!-- Mobile Viewport Fix ( j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag ) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        
+        
+
+        
+        <link rel="pingback" href="/xmlrpc.php">
+
+        <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Comments Feed" href="/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.19 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-ZTG1BWXY14" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.19';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-ZTG1BWXY14',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-ZTG1BWXY14', {"forceSSL":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="simple-banner-style-css" href="/wp-content/plugins/simple-banner/simple-banner.css?ver=2.15.4" type="text/css" media="all">
+<link rel="stylesheet" id="if-menu-site-css-css" href="/wp-content/plugins/if-menu/assets/if-menu-site.css?ver=6.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-google-font-css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-animation-css" href="/wp-content/themes/rtpanel/assets/fontello/css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-css" href="/wp-content/themes/rtpanel/assets/fontello/css/rtpanel-fontello.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtpanel-style-css" href="/wp-content/themes/rtpanel-child-theme-master/style.css?ver=4.1.5" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-icon-fonts-css" href="/wp-content/plugins/rtwidgets/assets/icon-font/css/rtw-fontello.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-plugin-css-css" href="/wp-content/plugins/rtwidgets/assets/rtwidgets-style.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.19" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"","hash_tracking":"false","v4_id":"G-ZTG1BWXY14"};/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="simple-banner-script-js-before" type="text/javascript">const simpleBannerScriptParams = {"version":"2.15.4","hide_simple_banner":"no","simple_banner_position":"footer","header_margin":"","header_padding":"","simple_banner_z_index":"","simple_banner_text":"This is a static copy of atdp.berkeley.edu. User accounts are not available.","pro_version_enabled":"","disabled_on_current_page":false,"debug_mode":"","id":17485,"disabled_pages_array":[],"is_current_page_a_post":false,"disabled_on_posts":"","simple_banner_font_size":"16px","simple_banner_color":"#ff943d","simple_banner_text_color":"#323348","simple_banner_link_color":"","simple_banner_close_color":"#323348","simple_banner_custom_css":"padding: 0.5em;","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","simple_banner_button_css":"font-weight: bold;\r\nbox-shadow: none;","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":true,"close_button_enabled":"on","close_button_expiration":"","close_button_cookie_set":false,"current_date":{"date":"2023-10-24 22:42:24.913089","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2023-10-24 22:42:24.913094","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2023-10-24 22:42:24.913097","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":"","simple_banner_remove_after_date":"","simple_banner_insert_inside_element":""}</script>
+<script type="text/javascript" src="/wp-content/plugins/simple-banner/simple-banner.js?ver=2.15.4" id="simple-banner-script-js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=6.3.1" id="jquery-easing-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/17485">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="/programs/ex/catalog/">
+<link rel="shortlink" href="/?p=17485">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fprograms%2Fex%2Fcatalog%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fprograms%2Fex%2Fcatalog%2F#038;format=xml">
+<style type="text/css">.simple-banner{position:fixed;bottom:0;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{font-size:16px;}</style>
+<style type="text/css">.simple-banner{background:#ff943d;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{color:#323348;}</style>
+<style type="text/css">.simple-banner .simple-banner-text a{color:#f16521;}</style>
+<style type="text/css">.simple-banner{z-index: 99999;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{color:#323348;}</style>
+<style type="text/css">.simple-banner{padding: 0.5em;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{font-weight: bold;
+box-shadow: none;}</style>
+<style id="simple-banner-site-custom-css-dummy" type="text/css"></style>
+<script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png?v=RyMNJXOPXe">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/manifest.json?v=RyMNJXOPXe">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=RyMNJXOPXe" color="#5bbad5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico?v=RyMNJXOPXe">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=RyMNJXOPXe">
+<meta name="theme-color" content="#ffffff">
+        <!-- <link href='//fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'> -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/wp-content/themes/rtpanel-child-theme-master/js/skrollr.min.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/ixk1zbq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">jQuery(document).ready(function($){
+
+        
+        // CONTENT FILTER BUTTONS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.'+filterkey).slideToggle(400);
+                $('.'+filterkey).toggleClass('toggled');
+                $(this).toggleClass('toggled');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // CONTENT FILTER TABS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.filterblock').removeClass('active');
+                $('.filterblock.'+filterkey).addClass('active');
+                $('.filtertab').removeClass('active');
+                $(this).addClass('active');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // COURSE INTEREST SURVEY
+        $('span.courseInterest.active').on('click', function(e) {
+
+            var button = $(this);
+            let courseNo = button.data("courseno");
+
+            $.ajax({
+                method: "POST",
+                url: "/request/course/?courseNo="+encodeURIComponent(courseNo)
+            }).done(function() {
+                button.removeClass("active");
+                button.children(".fa").show(500);
+                button.off();
+            });
+        });
+
+
+        // mobile check
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+           // not on mobile
+
+            var s = skrollr.init({
+                smoothScrolling: false
+                // smoothScrollingDuration: 100
+            });
+        } else {
+
+            // on mobile
+
+            $('div.scrollbg').each( function () {
+                $(this).children('div.ad').insertAfter($(this));
+            });
+
+            // jQuery('div.scrollbg div.ad').insertAfter(jQuery('div.scrollbg'));
+
+        }
+
+    });</script>
+    </head>
+
+    <body class="page-template page-template-template-ex-catalog-m page-template-template-ex-catalog-m-php page page-id-17485 page-child parent-pageid-17442 unknown">
+<!-- ends in footer.php -->
+
+        
+        <div class="rtp-main-wrapper">
+<!-- ends in footer.php -->
+<!-- id="main-wrapper" -->
+            
+            <div id="header-wrapper" class="rtp-header-wrapper rtp-section-wrapper">
+
+                    
+                    <header id="header" class="row rtp-section-container" role="banner">
+
+                                                
+                        <div class="rtp-header large-12 columns rtp-full-width-grid ">
+                            
+                            <!-- nav is here somewhere. -->
+                            <nav id="rtp-primary-menu" role="navigation" class="rtp-nav-wrapper rtp-mobile-nav"><ul id="rtp-nav-menu" class="menu rtp-nav-container clearfix">
+<li id="menu-item-13116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13116"><a href="/news/">News</a></li>
+<li id="menu-item-14226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14226">
+<a href="/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-17240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17240"><a href="/faq/">FAQs</a></li>
+	<li id="menu-item-11934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11934"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-17242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17242"><a href="/policies/">Program Policies</a></li>
+	<li id="menu-item-17936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17936"><a href="/staff-admin/">Staff &#038; Administration</a></li>
+	<li id="menu-item-17241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17241"><a href="/opportunities/">Jobs &#038; Internships</a></li>
+</ul>
+</li>
+<li id="menu-item-11932" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-11932">
+<a href="/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-18041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041"><a href="/programs/sd/">Secondary Division 2023</a></li>
+	<li id="menu-item-18042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18042"><a href="/programs/ed/">Elementary Division 2023</a></li>
+	<li id="menu-item-18224" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-18224"><a href="/programs/ex/">Explorations 2023</a></li>
+	<li id="menu-item-17255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17255"><a href="/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16416"><a href="/fa/">Financial Aid</a></li>
+	<li id="menu-item-18039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18039"><a href="/pathway/">Pathway Scholarship</a></li>
+	<li id="menu-item-18040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18040"><a href="/distinguished-scholars/">Distinguished Scholars</a></li>
+</ul>
+</li>
+</ul></nav>
+                            <div class="rtp-logo-container clearfix">
+
+
+                                
+
+                                                                        <h2 class="rtp-site-logo">
+                                    <a role="link" href="/" title="UC Berkeley ATDP">
+
+                                        
+                                        <img role="img" alt="UC Berkeley Academic Talent Development Program" height="143" width="383" src="/wp-content/uploads/2019/12/circlelogo-blue-title.png">
+                                        
+                                    </a>
+</h2>
+
+                                                            </div>
+
+                            <hr>                        </div>
+
+                    </header><!-- #header -->
+
+                    
+            </div>
+<!-- #header-wrapper -->
+
+            
+            
+            <div id="content-wrapper" class="rtp-content-wrapper rtp-section-wrapper">
+<!-- ends in footer.php -->
+
+                
+                <div class="row rtp-section-container">
+                    
+                    
+    <section id="content" class="rtp-content-section large-12 columns rtp-full-width-grid">
+        
+        
+
+
+
+
+
+        <a name="index"></a>
+        <h1 data-magellan-destination="index">&nbsp;</h1>
+        <!-- <h1>&nbsp;</h1> -->
+        <h1>Explorations Listings</h1>
+        <p>Click on each course title for course details, full descriptions, and schedules. Use the filter to reduce the list of titles to that type.</p>
+
+
+        <p class="alert">The course information below is for the session finishing in 2023. Check back later for updated catalog information!</p>
+<div id="courses-filter" class="hide-for-small"><table>
+<tr class="labelrow">
+<th>Meeting days</th>
+<th>Meeting times</th>
+<th>Grade level eligibility</th>
+<th></th>
+<th class="hide-for-medium-down"></th>
+</tr>
+<tr>
+<td>
+<span class="filtertag active" data-filtertag="time-all">List all</span><span class="filtertag" data-filtertag="monday">Mon</span><span class="filtertag" data-filtertag="tuesday">Tues</span><span class="filtertag" data-filtertag="wednesday">Wed</span><span class="filtertag" data-filtertag="thursday">Thurs</span><span class="filtertag" data-filtertag="friday">Fri</span>
+</td>
+<td>
+<span class="filtertag active" data-filtertag="time-all">List all</span><span class="filtertag" data-filtertag="time-am">AM</span><span class="filtertag" data-filtertag="time-pm">PM</span>
+</td>
+<td>
+<span class="filtertag active" data-filtertag="gr-all">List all</span><span class="filtertag" data-filtertag="grK">K</span><span class="filtertag" data-filtertag="gr1">1st</span><span class="filtertag" data-filtertag="gr2">2nd</span><span class="filtertag" data-filtertag="gr3">3rd</span><span class="filtertag" data-filtertag="gr4">4th</span><span class="filtertag" data-filtertag="gr5">5th</span><span class="filtertag" data-filtertag="gr6">6th</span><span class="filtertag" data-filtertag="gr7">7th</span><span class="filtertag" data-filtertag="gr8">8th</span><span class="filtertag" data-filtertag="gr9">9th</span><span class="filtertag" data-filtertag="gr10">10th</span><span class="filtertag" data-filtertag="gr11">11th</span>
+</td>
+<td></td>
+<td class="hide-for-medium-down">
+<span id="close-all"><i class="fa fa-compress"></i> Close all</span><span id="expand-all"><i class="fa fa-expand"></i> Expand all</span>
+</td>
+</tr>
+</table></div>
+<div id="courses-index">
+<table>
+<thead><tr><th colspan="6">Explorations On-site</th></tr></thead>
+<tbody>
+<tr class="headerrow Explorations for Elementary Students">
+<th class="Explorations for Elementary Students"><span>Explorations for Elementary Students</span></th>
+<th class="prereqs show-for-medium-up"><a data-reveal-id="prereqs-modal">Prerequisites</a></th>
+<th class="tuition"><a data-reveal-id="exfees-modal">Total fee</a></th>
+<th class="opensections"><a data-reveal-id="availability-modal">Availability</a></th>
+</tr>
+<tr id="ex4200-insect-discovery-lab" class="listrow grK gr1 gr2 gr3 onsite prereq-false supply-none load-other time-am wednesday course-9451">
+<td class="name">
+<span class="secno hide-for-small-only">EX4200</span><span class="title">Insect Discovery Lab</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. K&ndash;3</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections section-nearly-full">Almost full</td>
+</tr>
+<tr class="descrow course-9451"><td colspan="6"><div class="description">
+<h1>Insect Discovery Lab <small><a href="#ex4200-insect-discovery-lab"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2021/04/insect_discovery-scaled.jpg" alt="Photograph of Insect Discovery Lab during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>For students completing Kindergarten, 1, 2 or 3.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site at Washington Elementary</span><h4 class="filterkey description toggled" id="desc-9451">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9451 toggled" style="display: block;">Explore the fantastic lives of beetles, millipedes, walking sticks, whip scorpions and more! Students will be introduced to the extraordinary world of insects and other arthropods, and learn about their key role in the web of life. Scientific observation, insect identification, and the natural history of insects' lives are just some of the areas students will focus on as they interact with real live specimens and discover their incredible diversity.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9451"><tbody>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Insect Discovery Lab"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9451"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4200.1">
+</form></td>
+<td class="section-number">EX4200.1</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Insect Discovery Lab"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9451"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4200.3">
+</form></td>
+<td class="section-number">EX4200.3</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Insect Discovery Lab"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9451"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Almost Full"><input type="checkbox" name="section-no" value="EX4200.5">
+</form></td>
+<td class="section-number">EX4200.5</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-nearly-full"><div class="section-nearly-full">Almost Full</div></td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="ex4201-learn-to-play-chess" class="listrow grK gr1 gr2 gr3 gr4 gr5 gr6 onsite prereq-false supply-none load-other time-pm wednesday course-9452">
+<td class="name">
+<span class="secno hide-for-small-only">EX4201</span><span class="title">Learn to Play Chess</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. K&ndash;6</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections">Varies</td>
+</tr>
+<tr class="descrow course-9452"><td colspan="6"><div class="description">
+<h1>Learn to Play Chess <small><a href="#ex4201-learn-to-play-chess"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2022/04/chess-club-scaled.jpg" alt="Photograph of Learn to Play Chess during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>Open to students completing sixth grade or younger.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site at Washington Elementary</span><h4 class="filterkey description toggled" id="desc-9452">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9452 toggled" style="display: block;">Have you always wanted to learn to play chess? If you have never played or if you are just a beginner, this is the Exploration for you! We will introduce the different pieces and the basic rules of the game. You will learn the opening, middle, and end game strategies of one of the oldest board games in the world. Instructors are from Bay Area Chess, which was named 2018 Chess Club of the Year by the US Chess Federation.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9452"><tbody>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Learn to Play Chess"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9452"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4201.2">
+</form></td>
+<td class="section-number">EX4201.2</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Learn to Play Chess"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9452"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4201.4">
+</form></td>
+<td class="section-number">EX4201.4</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Learn to Play Chess"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9452"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Open"><input type="checkbox" name="section-no" value="EX4201.6">
+</form></td>
+<td class="section-number">EX4201.6</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-open">Available</td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="ex4202-chess-club" class="listrow grK gr1 gr2 gr3 gr4 gr5 gr6 onsite prereq-false supply-none load-other time-am time-pm wednesday course-9453">
+<td class="name">
+<span class="secno hide-for-small-only">EX4202</span><span class="title">Chess Club</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. K&ndash;6</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections section-nearly-full">Almost full</td>
+</tr>
+<tr class="descrow course-9453"><td colspan="6"><div class="description">
+<h1>Chess Club <small><a href="#ex4202-chess-club"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2022/04/chess-club-2-scaled.jpg" alt="Photograph of Chess Club during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>Open to students completing sixth grade or younger.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site at Washington Elementary</span><h4 class="filterkey description toggled" id="desc-9453">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9453 toggled" style="display: block;">Improve your skills at the “Game of Kings.” If you are an intermediate or advanced level chess player, this is the Exploration for you. Learn more about game play strategies, ways to counter your opponent, and different approaches to winning. Further hone your skills with strategic moves and an introduction to tournaments. Instructors are from Bay Area Chess, which was named 2018 Chess Club of the Year by the US Chess Federation.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9453"><tbody>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4202.1</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Chess Club"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9453"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Almost Full"><input type="checkbox" name="section-no" value="EX4202.2">
+</form></td>
+<td class="section-number">EX4202.2</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-nearly-full"><div class="section-nearly-full">Almost Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Chess Club"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9453"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4202.3">
+</form></td>
+<td class="section-number">EX4202.3</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4202.4</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Chess Club"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9453"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4202.5">
+</form></td>
+<td class="section-number">EX4202.5</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Chess Club"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9453"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Almost Full"><input type="checkbox" name="section-no" value="EX4202.6">
+</form></td>
+<td class="section-number">EX4202.6</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-nearly-full"><div class="section-nearly-full">Almost Full</div></td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="ex4220-drawing-studio" class="listrow gr2 gr3 gr4 gr5 gr6 onsite prereq-false supply-none load-other time-am time-pm wednesday course-9455">
+<td class="name">
+<span class="secno hide-for-small-only">EX4220</span><span class="title">Drawing Studio</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 2&ndash;6</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections section-nearly-full">Almost full</td>
+</tr>
+<tr class="descrow course-9455"><td colspan="6"><div class="description">
+<h1>Drawing Studio <small><a href="#ex4220-drawing-studio"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2021/04/drawing-studio.png" alt="Photograph of Drawing Studio during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>For students completing Grade 2, 3, 4, 5 or 6.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site at Washington Elementary</span><h4 class="filterkey description toggled" id="desc-9455">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9455 toggled" style="display: block;">Drawing is not just a natural talent; it is something that can be learned and practiced. This Exploration is for students who want to learn the basic skills of drawing. Students will learn how to look carefully at objects, see the shapes they are made from, and then learn to copy these shapes to create realistic-looking drawings of animals, fruit, toys, flowers, and buildings. Students of varying ages and abilities will work together and independently to create drawings through copying real life objects and other drawings. Students who attend in the morning can also attend in the afternoon, and either continue work they've begun, or start on new projects.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9455"><tbody>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Drawing Studio"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9455"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4220.1">
+</form></td>
+<td class="section-number">EX4220.1</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Drawing Studio"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9455"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Almost Full"><input type="checkbox" name="section-no" value="EX4220.2">
+</form></td>
+<td class="section-number">EX4220.2</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-nearly-full"><div class="section-nearly-full">Almost Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Drawing Studio"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9455"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4220.3">
+</form></td>
+<td class="section-number">EX4220.3</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Drawing Studio"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9455"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4220.4">
+</form></td>
+<td class="section-number">EX4220.4</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Drawing Studio"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9455"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4220.5">
+</form></td>
+<td class="section-number">EX4220.5</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Drawing Studio"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9455"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4220.6">
+</form></td>
+<td class="section-number">EX4220.6</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="ex4221-mastering-the-ancient-abacus" class="listrow gr2 gr3 gr4 gr5 onsite prereq-false supply-none load-other time-am wednesday course-9454">
+<td class="name">
+<span class="secno hide-for-small-only">EX4221</span><span class="title">Mastering the Ancient Abacus</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 2&ndash;5</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections">Varies</td>
+</tr>
+<tr class="descrow course-9454"><td colspan="6"><div class="description">
+<h1>Mastering the Ancient Abacus <small><a href="#ex4221-mastering-the-ancient-abacus"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2023/04/Abacus-4-scaled.jpg" alt="Photograph of Mastering the Ancient Abacus during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>For students completing Grade 2, 3, 4 or 5.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site at Washington Elementary</span><h4 class="filterkey description toggled" id="desc-9454">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9454 toggled" style="display: block;">Have you ever wondered about how Asian cultures did complex math a thousand years ago before even the alphabet was invented? In this Exploration, students will explore arithmetic in a cool and engaging way by using an ancient tool that can significantly boost math skills and confidence even today. Students will receive a brand new abacus to keep so they may continue honing their skills even after class is over and are welcome to attend multiple sessions to get as much practice with finger manipulation as possible. Come learn a new way to relate to numbers! </p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9454"><tbody>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Mastering the Ancient Abacus"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9454"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Open"><input type="checkbox" name="section-no" value="EX4221.1">
+</form></td>
+<td class="section-number">EX4221.1</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-open">Available</td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4221.2</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Mastering the Ancient Abacus"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9454"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4221.3">
+</form></td>
+<td class="section-number">EX4221.3</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4221.4</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Mastering the Ancient Abacus"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9454"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Open"><input type="checkbox" name="section-no" value="EX4221.5">
+</form></td>
+<td class="section-number">EX4221.5</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-open">Available</td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4221.6</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="ex4230-the-game-academy" class="listrow gr3 gr4 gr5 gr6 onsite prereq-false supply-none load-other time-am time-pm wednesday course-9456">
+<td class="name">
+<span class="secno hide-for-small-only">EX4230</span><span class="title">The Game Academy</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 3&ndash;6</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections unavailable">Full</td>
+</tr>
+<tr class="descrow course-9456"><td colspan="6"><div class="description">
+<h1>The Game Academy <small><a href="#ex4230-the-game-academy"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<h3>Enrichment Gaming through Dungeons and Dragons</h3>
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2022/10/EX4130-game-academy-P1260135-scaled.jpg" alt="Photograph of The Game Academy during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>For students completing Grade 3, 4, 5 or 6.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site at Washington Elementary</span><h4 class="filterkey description toggled" id="desc-9456">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9456 toggled" style="display: block;">Let your child's imagination run wild! Through Dungeons and Dragons adventures, students will play the role of an adventuring hero in a story that they share with their classmates. Our experienced Game Masters will carefully craft immersive experiences that are both educational and entertaining, designed to provide students with the opportunities to practice key communication skills and collaborate as a team, as they determine their character's actions within the story world. Instructors are from the Game Academy, which is dedicated to creating fun and safe spaces for all learners through collaborative storytelling in tabletop role-playing games.  </p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9456"><tbody>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="The Game Academy"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9456"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4230.1">
+</form></td>
+<td class="section-number">EX4230.1</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4230.2</td>
+<td class="section-schedule"><span class="">Wednesday, July 12, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="The Game Academy"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9456"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4230.3">
+</form></td>
+<td class="section-number">EX4230.3</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="The Game Academy"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9456"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4230.4">
+</form></td>
+<td class="section-number">EX4230.4</td>
+<td class="section-schedule"><span class="">Wednesday, July 19, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="The Game Academy"><input type="hidden" name="section-schedule" value="W"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9456"><input type="hidden" name="course-dept" value="Explorations for Elementary Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4230.5">
+</form></td>
+<td class="section-number">EX4230.5</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4230.6</td>
+<td class="section-schedule"><span class="">Wednesday, July 26, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr class="no-results"><td colspan="6">No courses in this department match your selected filter.</td></tr>
+<tr class="headerrow Explorations for Middle/High School Students">
+<th class="Explorations for Middle/High School Students"><span>Explorations for Middle/High School Students</span></th>
+<th class="prereqs show-for-medium-up"><a data-reveal-id="prereqs-modal">Prerequisites</a></th>
+<th class="tuition"><a data-reveal-id="exfees-modal">Total fee</a></th>
+<th class="opensections"><a data-reveal-id="availability-modal">Availability</a></th>
+</tr>
+<tr id="ex4262-introduction-to-paper-engineering-through-pop-ups" class="listrow gr6 gr7 gr8 gr9 gr10 gr11 onsite prereq-false supply-none load-other time-pm monday course-9459">
+<td class="name">
+<span class="secno hide-for-small-only">EX4262</span><span class="title">Introduction to Paper Engineering through Pop-Ups</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 6&ndash;11</strong>
+</td>
+<td class="tuition">60</td>
+<td class="opensections unavailable">Full</td>
+</tr>
+<tr class="descrow course-9459"><td colspan="6"><div class="description">
+<h1>Introduction to Paper Engineering through Pop-Ups <small><a href="#ex4262-introduction-to-paper-engineering-through-pop-ups"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2016/10/IMG_9179_1200px_1.jpg" alt="Photograph of Introduction to Paper Engineering through Pop-Ups during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>For students completing Grade 6 and up.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$60</span></span>
+</div>
+<span class="course-note panel">On-site on UC Berkeley campus</span><h4 class="filterkey description toggled" id="desc-9459">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9459 toggled" style="display: block;">Students will use principles of geometry and physics to inspire a sense of magic through movement, creating flowers that bloom, birds that flap their wings, or dragons that rise from the flat page. Students will master basic mechanisms, such as v-folds, floating planes, twisters, and pull tabs, understanding more and more about how pop-up cards and books are made. Each class will begin with easy-to-follow instructions for card-making. For students who are looking for a challenge, each session provide opportunities for more complex and ambitious projects.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9459"><tbody>
+<tr class="multi">
+<td class="select-section"><form>
+<input type="hidden" name="course-name" value="Introduction to Paper Engineering through Pop-Ups"><input type="hidden" name="section-schedule" value="M"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9459"><input type="hidden" name="course-dept" value="Explorations for Middle/High School Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4262.2">
+</form></td>
+<td class="section-number">EX4262.2</td>
+<td class="section-schedule"><span class="">Monday, July 10, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4262.4</td>
+<td class="section-schedule"><span class="">Monday, July 17, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+<tr class="canceled">
+<td class="select-section"></td>
+<td class="section-number">EX4262.6</td>
+<td class="section-schedule"><span class="">Monday, July 24, 2023</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Canceled</div></td>
+</tr>
+</tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="ex4265-introduction-to-mathematical-logic" class="listrow gr7 gr8 gr9 gr10 gr11 onsite prereq-false supply-none load-other time-am thursday course-9477">
+<td class="name">
+<span class="secno hide-for-small-only">EX4265</span><span class="title">Introduction to Mathematical Logic</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 7&ndash;11</strong>
+</td>
+<td class="tuition">150</td>
+<td class="opensections unavailable">Full</td>
+</tr>
+<tr class="descrow course-9477"><td colspan="6"><div class="description">
+<h1>Introduction to Mathematical Logic <small><a href="#ex4265-introduction-to-mathematical-logic"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2016/10/IMG_9179_1200px_1.jpg" alt="Photograph of Introduction to Mathematical Logic during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-university fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">On site</span><span></span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>Open to students completing grade 7 or older.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$150</span></span>
+</div>
+<h4 class="filterkey description toggled" id="desc-9477">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9477 toggled" style="display: block;">Logic is a field that studies how we reason formally, by looking at the form of a statement - how it is made out of parts. It is a subfield of mathematics and philosophy that is also useful for computer science. This Exploration will provide a basic introduction to mathematical logic, including both propositional and predicate logic, as well as the application of logical reasoning to puzzles and games. We will also explore the relationship between mathematical logic and algebra, showing how some of the laws of manipulating logical symbols are like those of algebra.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9477"><tbody><tr>
+<td class="select-section hidden"><form>
+<input type="hidden" name="course-name" value="Introduction to Mathematical Logic"><input type="hidden" name="section-schedule" value="Th"><input type="hidden" name="section-start-time" value="8:30 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9477"><input type="hidden" name="course-dept" value="Explorations for Middle/High School Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EX4265.1" checked>
+</form></td>
+<td class="section-number">EX4265.1</td>
+<td class="section-schedule"><span class="">Thursdays, July 10&ndash;July 28 (3 weeks)</span></td>
+<td class="section-time">8:30&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr></tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr class="no-results"><td colspan="6">No courses in this department match your selected filter.</td></tr>
+</tbody>
+</table>
+<table>
+<thead><tr><th colspan="6">Explorations Online</th></tr></thead>
+<tbody>
+<tr class="headerrow Explorations for Middle/High School Students">
+<th class="Explorations for Middle/High School Students"><span>Explorations for Middle/High School Students</span></th>
+<th class="prereqs show-for-medium-up"><a data-reveal-id="prereqs-modal">Prerequisites</a></th>
+<th class="tuition"><a data-reveal-id="exfees-modal">Total fee</a></th>
+<th class="opensections"><a data-reveal-id="availability-modal">Availability</a></th>
+</tr>
+<tr id="exr0480-writing-a-personal-statement-for-college" class="listrow gr8 gr9 gr10 gr11 remote prereq-false supply-none load-other time-am friday course-9473">
+<td class="name">
+<span class="secno hide-for-small-only">EXR0480</span><span class="title">Writing a Personal Statement for College</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 8&ndash;11</strong>
+</td>
+<td class="tuition">90</td>
+<td class="opensections unavailable">Full</td>
+</tr>
+<tr class="descrow course-9473"><td colspan="6"><div class="description">
+<h1>Writing a Personal Statement for College <small><a href="#exr0480-writing-a-personal-statement-for-college"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2016/10/IMG_9179_1200px_1.jpg" alt="Photograph of Writing a Personal Statement for College during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-laptop fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Online</span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>For students completing Grade 8 and up.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$90</span></span>
+</div>
+<h4 class="filterkey description toggled" id="desc-9473">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9473 toggled" style="display: block;">In this three-part workshop, students will draft and revise a personal statement for college applications. During the first meeting, students will review sample college personal statements, formulate a set of best practices for writing personal statements, and brainstorm and free write toward their own personal statement. During the second meeting, students will workshop their personal statement drafts in small groups and receive one-on-one feedback on their drafts from the instructor. Using the feedback from their peers and instructor, students will then revise their personal statement for the final meeting. No prework is required for the first meeting. In order to benefit the most out of the workshop, students are expected to complete a full draft of their personal statement before the second meeting.</p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9473"><tbody><tr>
+<td class="select-section hidden"><form>
+<input type="hidden" name="course-name" value="Writing a Personal Statement for College"><input type="hidden" name="section-schedule" value="F"><input type="hidden" name="section-start-time" value="10:00 AM"><input type="hidden" name="section-end-time" value="12:00 PM"><input type="hidden" name="course-id" value="9473"><input type="hidden" name="course-dept" value="Explorations for Middle/High School Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Closed"><input type="checkbox" name="section-no" value="EXR0480.1" checked>
+</form></td>
+<td class="section-number">EXR0480.1</td>
+<td class="section-schedule"><span class="">Fridays, July 10&ndash;July 28 (3 weeks)</span></td>
+<td class="section-time">10:00&nbsp;AM - 12:00&nbsp;PM</td>
+<td class="section-status section-closed"><div class="section-closed">Full</div></td>
+</tr></tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr id="exr0490-math-study-lab" class="listrow gr6 gr7 gr8 gr9 gr10 gr11 remote prereq-false supply-none load-other time-pm thursday course-9465">
+<td class="name">
+<span class="secno hide-for-small-only">EXR0490</span><span class="title">Math Study Lab</span>
+</td>
+<td class="prereqs show-for-medium-up">Currently in <strong>Gr. 6&ndash;11</strong>
+</td>
+<td class="tuition">250</td>
+<td class="opensections">Open</td>
+</tr>
+<tr class="descrow course-9465"><td colspan="6"><div class="description">
+<h1>Math Study Lab <small><a href="#exr0490-math-study-lab"><i class="fa fa-link"></i></a></small><span class="close-description"><i class="fa fa-times-circle"></i> close</span>
+</h1>
+<div class="coursedesc">
+<div class="rows">
+<div class="image columns small-12 medium-12 medium-push-12 large-5 large-push-7"><img src="/wp-content/uploads/2016/10/IMG_9179_1200px_1.jpg" alt="Photograph of Math Study Lab during class"></div>
+<div class="coursedetails columns small-12 medium-12 medium-pull-12 large-7 large-pull-5">
+<div class="course-delivery">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-laptop fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Online</span></span>
+</div>
+<div class="grade-spec">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i></span><span class="infotext"><span class="info-label">Grade requirement:</span>Open to all qualified students.</span>
+</div>
+<div class="tuition">
+<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x fa-inverse"></i></span><span class="left infotext"><span class="total-fee"><span class="info-label"> Total Fee: </span>$250</span></span>
+</div>
+<h4 class="filterkey description toggled" id="desc-9465">Full course description <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+</h4>
+<p class="description desc-9465 toggled" style="display: block;">These math study labs are offered in order to support students who are enrolled in ATDP math classes. As math classes are accelerated and taught at a very fast pace, the study labs will provide assistance to students during the six weeks. Both individually and in groups, students will have the opportunity to receive help with challenging concepts, class lessons, and homework assignments. </p>
+</div>
+</div>
+<div class="courseinfo rows column">
+<h4 class="course-sections">Schedules <i class="fa fa-caret-down"></i>
+</h4>
+<table class="sectionslist" id="sections-of-course-9465"><tbody><tr>
+<td class="select-section hidden"><form>
+<input type="hidden" name="course-name" value="Math Study Lab"><input type="hidden" name="section-schedule" value="Th"><input type="hidden" name="section-start-time" value="1:00 PM"><input type="hidden" name="section-end-time" value="4:30 PM"><input type="hidden" name="course-id" value="9465"><input type="hidden" name="course-dept" value="Explorations for Middle/High School Students"><input type="hidden" name="a-g" value=""><input type="hidden" name="section-status" value="Open"><input type="checkbox" name="section-no" value="EXR0490.2" checked>
+</form></td>
+<td class="section-number">EXR0490.2</td>
+<td class="section-schedule"><span class="">Thursdays, June 20&ndash;July 28 (6 weeks)</span></td>
+<td class="section-time">1:00&nbsp;PM - 4:30&nbsp;PM</td>
+<td class="section-status section-open">Available</td>
+</tr></tbody></table>
+<button class="add-course">Add selection</button><div class="selection-error error">
+<strong><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Please make a selection above</strong> This course has more than one schedule available</div>
+</div>
+</div>
+</div></td></tr>
+<tr class="no-results"><td colspan="6">No courses in this department match your selected filter.</td></tr>
+</tbody>
+</table>
+<div id="ewh-modal" class="reveal-modal" data-reveal>
+<h2>Hours per Week Estimate</h2>
+<p>The <em>Hrs. per week</em> column indicates the approximate time commitment per week, including class sessions, homework, and self-study, based on reports from previous years’ students. </p>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="prereqs-modal" class="reveal-modal" data-reveal>
+<h2>Prerequisites</h2>
+<p>It is important to note course prerequisites and grade level requirements when you are selecting your course choices, as not all courses are open to all students.</p>
+<p>The course is open to students completing the listed grade levels this year. Grades listed in <strong style="color: #00b0da;">blue</strong> are recommended.</p>
+<p>If no grade levels are listed, the course has prerequisites in addition to or instead of a grade level requirement; refer to the individual course description for details.</p>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="exfees-modal" class="reveal-modal" data-reveal>
+<h2>Explorations Fees</h2>
+<p>If the Explorations fee has an asterisk, please be aware that this is a reduced amount due to currently being in the Earlybird discount period.</p>
+<p>Please see the <a href="/programs/ex/#calendar">Explorations calendar</a> for information on when the discount may no longer be available.</p>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="times-modal" class="reveal-modal" data-reveal>
+<h2>Meeting times</h2>
+<p>Unless otherwise noted, all AM courses meet 8:30 AM to 12:00 noon and all PM courses meet 1:00 PM to 4:30 PM.</p>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="availability-modal" class="reveal-modal" data-reveal>
+<h2>Availability updates</h2>
+<p>ATDP continues to update course availability every day as information changes. Courses can close quickly (or sometimes even reopen) depending on the number of applicants, the maximum size of the class, and whether any students decline their course placement.</p>
+<p><strong><em>Before application postmark deadlines:</em></strong> we project course availability based on the <em>rate</em> of applications for each class.</p>
+<p><strong><em>After the deadlines and before placement decisions are finalized:</em></strong> we project availability based on the <em>number</em> of applications for each class.</p>
+<p><strong><em>After placement decisions are finalized and admissions letters are sent out:</em></strong> we list <em>actual</em> availability based on the current number of enrolled students.</p>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+</div>
+        <hr>
+
+
+
+        <p>&nbsp;</p>
+
+            </section><!-- #content -->
+
+    <script type="text/javascript">
+
+
+        jQuery(document).ready( function(e) {
+
+
+            if(window.location.hash) {
+                goToCourseObj(jQuery(window.location.hash));
+            }
+        
+
+            jQuery('a[href^="#"]').click(function(){
+                if(!(jQuery(this).is(['[data-reveal-id]']))) {
+                    let thisHash = jQuery(this).attr('href');
+                    window.location.hash = thisHash;
+                    goToCourseObj(jQuery(thisHash));
+                } 
+            });
+
+
+            // COURSE ACCORDIONS
+            jQuery('#courses-index tr.listrow').on('click', function(e) { 
+                // jQuery(this).toggleClass('active');
+
+                let thisHash = "#"+jQuery(this).attr('id');
+                // window.location.hash = thisHash;
+
+                jQuery(this).next('.descrow').find('div.description').slideToggle(350);
+                jQuery('html, body').animate(
+                    {
+                      scrollTop: jQuery(thisHash).offset().top-180,
+                    },
+                    350,
+                    'swing'
+                  );
+
+            });
+
+
+            jQuery('div.description span.close-description').on('click', function(e) { 
+                jQuery(this).parents('div.description').slideToggle(200);
+            });
+
+            // COURSE FILTERS
+            jQuery("#courses-filter .filtertag").on('click', function(e) {
+                var filterObj = e.currentTarget;
+                jQuery(filterObj).siblings().removeClass('active');
+                jQuery(filterObj).addClass('active');
+
+                jQuery('.descrow').find('div.description').hide(); // hide opened descriptions
+
+                jQuery("#courses-index tr.listrow > td").attr('style','display:table-cell'); // show all before applying filter
+                jQuery("#courses-filter .filtertag.active").each(function() {  // now for each active filter...
+
+                    // console.log(this.dataset.filtertag);
+                    let tag = this.dataset.filtertag;
+                    if(/.*-all/.test(tag)) {
+                        // console.log("ALL tag selected, do not reduce");
+                    } else {
+                        jQuery("#courses-index tr.listrow").not("."+tag).children("td").attr('style','display:none !important');
+                    }
+
+                });
+
+                let headerRows = jQuery('tr.headerrow');
+
+                jQuery("tr.no-results").hide();
+                for (var i = 0; i < headerRows.length; i++) {
+
+                    let visibleRows = jQuery(headerRows[i]).nextUntil("tr.no-results").filter(function() {
+                        return (jQuery(this).height() > 0);
+                    });
+
+                    if(visibleRows.length == 0) {
+                        jQuery(headerRows[i]).nextAll(".no-results").first().show();
+                    }
+                }
+                
+            });
+
+            jQuery("#courses-filter #close-all").on('click', function(e) {
+                jQuery('.descrow').find('div.description').slideUp(350);
+            });
+
+            jQuery("#courses-filter #expand-all").on('click', function(e) {
+                jQuery('.listrow').filter(function() {
+                    return jQuery(this).height() > 0;  // only expand visibly filtered rows
+                }).next(".descrow").find('div.description').slideDown(350);
+            });
+
+        });
+
+        function goToCourseObj(courseObj) {
+            jQuery('html, body').animate(
+                    {
+                      scrollTop: courseObj.offset().top-180,
+                    },
+                    350,
+                    'swing'
+                );
+            courseObj.next('.descrow').find('div.description').slideDown(350);
+            courseObj.addClass('active');
+        }
+
+    </script>
+
+
+
+
+                </div> <!-- End of content-wrapper row -->
+
+                
+            </div>
+<!-- #content-wrapper -->
+
+            
+            
+            <footer id="footer-wrapper" role="contentinfo" class="clearfix rtp-footer-wrapper rtp-section-wrapper">
+
+                
+                
+
+                <div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+<li id="menu-item-14505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14505">
+<a href="/about/">About ATDP</a>
+<ul class="sub-menu">
+	<li id="menu-item-17387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17387"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-12009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12009"><a href="/faq/">FAQs</a></li>
+	<li id="menu-item-14523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14523"><a href="/opportunities/">Jobs &#038; Internships</a></li>
+	<li id="menu-item-18327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18327"><a href="/techsupport/">Tech Support</a></li>
+</ul>
+</li>
+<li id="menu-item-17385" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-17385">
+<a href="/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-17382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17382"><a href="/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16415"><a href="/fa/">Financial Aid</a></li>
+	<li id="menu-item-17383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17383"><a href="/policies/">Policies</a></li>
+</ul>
+</li>
+<li id="menu-item-17381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17381">
+<a href="/programs/sd/">Secondary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17389"><a href="/programs/sd/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18289"><a href="/programs/sd/onsiteguide/">On-Site Student Guide</a></li>
+	<li id="menu-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288"><a href="/programs/sd/onlineguide/">Online Student Guide</a></li>
+</ul>
+</li>
+<li id="menu-item-17380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17380">
+<a href="/programs/ed/">Elementary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17388"><a href="/programs/ed/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287"><a href="/programs/ed/onsiteguide/">On-Site Family Guide</a></li>
+	<li id="menu-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286"><a href="/programs/ed/onlineguide/">Online Family Guide</a></li>
+</ul>
+</li>
+</ul></div>
+
+                <div id="sitemap">
+                    <div class="row">
+                        <div class="columns small-12 medium-6 large-3">
+                            <a href="/sitemap/"><i class="fa fa-sitemap"></i> &nbsp;Complete site map</a>
+                        </div>
+                        <div class="columns small-12 medium-6 large-9">
+                            <form role="search" method="get" class="searchform search-form" action="https://atdp.berkeley.edu/">
+                <div class="rtp-search-form-wrapper">
+                    <label class="screen-reader-text hide">Search for:</label>
+                    <input type="search" required="required" placeholder="Search Here..." value="" name="s" class="search-text search-field rtp-search-input" title="Search Here...">
+                    <input type="submit" class="searchsubmit search-submit rtp-search-button button tiny" value="Search" title="Search">
+                </div>
+             </form>                        </div>
+                    </div>
+                </div>
+
+
+                <div id="footer-contact">
+                    <ul id="footer-name" class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
+                        <li>University of California, Berkeley</li>
+                        <li>Academic Talent Development Program</li>
+                        <li>Graduate School of Education</li>
+                    </ul>
+
+                    <ul id="footer-info" class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+                        <li>
+                            <!-- <h6><i class="fa fa-at"></i></h6> -->
+                            atdpoffice@berkeley.edu<br>
+                            <span id="social-icons">
+                                <!--<a href="https://www.facebook.com/ucb.atdp" target=_BLANK><i class="fa fa-facebook-square"></i></a>-->
+                                <a href="https://twitter.com/UCBerkeleyATDP" target="_BLANK"><i class="fa fa-twitter-square"></i></a>
+                                <a href="http://i.instagram.com/ucberkeley_atdp" target="_BLANK"><i class="fa fa-instagram"></i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-phone"></i></h6>
+                            ph 510-642-8308<br>
+                            fax 510-642-0510
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-envelope"></i></h6>
+                            70 University Hall #1160<br>
+                            Berkeley, CA  94720-1160
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-map-marker"></i></h6>
+                            2018 Oxford Street<br>
+                            Berkeley, CA  94720
+                        </li>
+                        
+                    </ul>
+
+                    <p id="copyright-tag">Copyright &copy; 2023 UC Regents; all rights reserved</p>
+                </div>
+
+                
+
+                
+                
+
+                <img src="/wp-content/uploads/2014/10/ucb-logo-gold-on-white-300x92.png" alt="UC Berkeley" width="300" height="92" class="alignright size-medium wp-image-11097">
+
+
+            </footer><!-- #footer-wrapper-->
+
+            
+            
+        </div>
+<!-- #main-wrapper -->
+
+        <div class="simple-banner simple-banner-text" style="display:none !important"></div>
+<script type="text/javascript" id="qppr_frontend_scripts-js-extra">
+/* <![CDATA[ */
+var qpprFrontData = {"linkData":{"\/sd\/catalog\/":[0,1,""],"\/ed\/catalog\/":[0,1,""],"\/ed\/":[0,0,"\/programs\/ed"],"\/pathway-scholarship":[0,1,""],"\/an-end-to-star-testing-the-daily-californian\/":[1,1,"http:\/\/www.dailycal.org\/2013\/09\/09\/state-assembly-considers-bill-to-replace-standardized-testing\/"],"\/looking-back-and-ahead-mark-your-2015-calendars\/":[1,0,""],"\/?p=17127":[1,0,""],"\/applications-are-now-open-for-summer-2022\/":[1,1,"http:\/\/createsend.com\/t\/r-92B8B3ACC2FACE0C2540EF23F30FEDED"],"\/applications-open-for-summer-2023\/":[1,0,""],"\/help-support-our-pathway-scholars-for-the-big-give-today-only\/":[1,0,"https:\/\/crowdfund.berkeley.edu\/atdp"],"\/math-placement-test-update-make-up-dates\/":[0,1,"\/news\/placement-testing\/"],"\/s12-summer-newsletter-kicks-off-atdps-secondary-division\/":[0,1,""],"\/sd-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/sd\/"],"\/ed-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/ed\/"],"\/?p=6540":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/ed2014-postmark-deadlines\/":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/aglist\/":[0,1,"https:\/\/hs-articulation.ucop.edu\/agcourselist\/institution\/5308"],"\/now-accepting-applications-for-secondary-division-ta-interns\/":[0,1,"\/opportunities\/#sdinterns"],"\/2022-covid\/":[0,1,"\/covid-safety-procedures\/"],"\/including-atdp-courses-on-your-college-application\/":[0,1,"\/news\/including-atdp-courses\/"],"\/lets-play-a-game\/":[0,0,"http:\/\/www.google.com"],"\/2015-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/calendar\/"],"\/on-and-around-the-uc-berkeley-campus\/":[0,0,"\/news\/on-and-around-the-berkeley-campus\/"],"\/community-newsletter-volume-4-issue-2\/":[0,0,"http:\/\/atdp.berkeley.edu\/community-newsletter-vol-4-i-2\/"],"\/2014-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/about\/calendar\/"],"\/sd\/":[0,0,"\/programs\/sd"],"\/resources\/":[0,0,""],"\/ed-2\/":[0,0,"\/programs\/ed\/#applying"],"\/sd-2\/":[0,0,"\/programs\/sd\/#applying"],"\/apply\/":[0,0,"\/programs"],"\/attending\/tuition\/":[0,0,"\/programs"],"\/attending\/location\/":[0,0,"\/programs"],"\/attending\/":[0,0,"\/programs"],"\/link-what-if-your-child-is-intellectually-gifted-high-ability\/":[0,0,"http:\/\/www.psychologytoday.com\/blog\/how-do-life\/201409\/what-if-your-child-is-intellectually-gifted-high-ability"],"\/2017-program-dates-now-available\/":[0,0,"\/calendar"],"\/new-family-referral-program\/":[0,0,"\/referral"],"\/jobs\/":[0,0,"\/opportunities"],"\/secondary-division-ta-2018\/":[0,0,"\/opportunities\/#tas"],"\/sd-deadline-2018\/":[0,0,"\/calendars\/#sd"],"\/secondary-division-2020-online\/":[0,0,"\/sd2020guide"],"\/elementary-division-2020-online-family-guide\/":[0,0,"\/ed2020guide\/"],"\/secondary-division-orientation-2020\/":[0,0,"\/secondary-division-student-family-orientation-2020\/"],"\/calendars\/":[0,0,"\/programs"],"\/selecting-a-course\/":[0,0,"\/programs\/sd\/#courses"],"\/celebrating-40-years-share-your-story-on-atdps-timeline\/":[0,0,"\/40th\/"],"\/instructor-spotlights-and-more-our-community-newsletter-kicks-off-applications-for-2021\/":[0,0,"\/community-newsletter\/"],"\/programs\/explorations\/":[0,0,"\/programs\/ex\/"],"\/explorations-now-open-for-registration\/":[0,0,"\/programs\/ex\/"],"\/secondary-division-placement-testing\/":[0,0,"\/news\/placement-testing\/"],"\/theres-still-time-to-apply-2022\/":[0,0,"\/news\/extended-deadlines\/"],"\/on-and-around-the-berkeley-campus-sd-on-site\/":[0,0,"\/news\/on-and-around-the-berkeley-campus\/"],"\/fall-updates-2023-program-dates-announced-trfs-now-available\/":[0,0,"https:\/\/academictalentdevelopmentprogram.cmail20.com\/t\/ViewEmail\/r\/535F04BB6EE1CF952540EF23F30FEDED\/E6334D0BC49C64D2DCC9454293137CA2"],"\/new-courses-2013\/":[0,0,""],"\/applications-open-for-2013-summer-session\/":[0,0,""],"\/share-speak-volunteer-be-a-part-of-the-atdp-story\/":[0,0,""],"\/welcome-to-ed-2014\/":[0,0,""],"\/?page_id=1102":[0,0,""],"\/sd\/a-g\/":[0,0,""],"\/subscribe\/":[0,0,""],"\/sd-explorations-available-2\/":[0,0,""],"\/community\/":[0,0,""],"\/mathplacement\/":[0,0,""],"\/account\/applications\/":[0,0,""],"\/account\/enrollment\/":[0,0,""],"\/community-newsletter\/":[0,0,""],"\/sd15-final-evals\/":[0,0,""],"\/sd-final-evaluations-2018\/":[0,0,""],"\/sd14-final-evaluations-released\/":[0,0,""],"\/ed-orientation-2018\/":[0,0,""],"\/ed-orientation-17\/":[0,0,""],"\/ed-orientation-15\/":[0,0,""],"\/ed-orientation-14\/":[0,0,""],"\/including-atdp-courses\/":[0,0,""],"\/on-and-around-the-berkeley-campus\/":[0,0,""],"\/on-and-around-campus\/":[0,0,""],"\/sd-placement-testing-2020\/":[0,0,""],"\/math-placement-testing-2019\/":[0,0,""],"\/math-placement-testing-2018\/":[0,0,""],"\/math-placement-testing-2017\/":[0,0,""],"\/?p=13433":[0,0,""],"\/math-placement-2015\/":[0,0,""],"\/math-placement-2014\/":[0,0,""],"\/math-placement-2013\/":[0,0,""],"\/mathplacement-2012\/":[0,0,""],"\/elementary-division-orientation-2020\/":[0,0,""],"\/ed-orientation-2021\/":[0,0,""],"\/secondary-orientation-2019\/":[0,0,""],"\/secondary-orientation-2018\/":[0,0,""],"\/sd-orientation-2017\/":[0,0,""],"\/?p=13453":[0,0,""],"\/sd-orientation-2015\/":[0,0,""],"\/sd-orientation-2014\/":[0,0,""],"\/sd-orientation-2013\/":[0,0,""],"\/secondary-division-welcome-student-orientation-on-june-2\/":[0,0,""],"\/courses-2\/":[0,0,""],"\/courses\/":[0,0,""],"\/extended-deadlines\/":[0,0,""],"\/after-the-deadline\/":[0,0,""],"\/theres-still-time-to-apply-about-our-extended-deadlines\/":[0,0,""],"\/2020-technology\/":[0,0,""],"\/theres-still-time-to-apply-2023\/":[0,0,""],"\/sd-readiness-testing-2023\/":[0,0,""]},"siteURL":"","siteURLq":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.2.3" id="qppr_frontend_scripts-js"></script>
+<script type="text/javascript" src="/wp-content/themes/rtpanel/js/rtp-concat-lib.js?ver=6.3.1" id="rtp-concat-lib-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.3.1" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/rtpanel-child-theme-master/js/rtp-child-package-min.js?ver=6.3.1" id="rtp-child-package-min-js"></script>
+				<script type="text/javascript">jQuery.noConflict();
+					(
+						function ( $ ) {
+							$( function () {
+								$( "area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane'])" ).click( function () {
+									if ( location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) && location.hostname == this.hostname ) {
+										var target = $( this.hash );
+										target = target.length ? target : $( '[name=' + this.hash.slice( 1 ) + ']' );
+										if ( target.length ) {
+											$( 'html,body' ).animate( {
+												scrollTop: target.offset().top - 80											},900 , 'easeOutQuad' );
+											return false;
+										}
+									}
+								} );
+							} );
+						}
+					)( jQuery );</script>
+			
+        <script type="text/javascript"></script>
+
+        
+
+    </body>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced (SSL caching disabled) 
+Database Caching using disk
+
+Served from: atdp.berkeley.edu @ 2023-10-24 15:42:24 by W3 Total Cache
+-->
+</html>

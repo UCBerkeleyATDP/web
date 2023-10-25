@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-US">
+<!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>ATDP and the Internet: Four alumni… four thousand and one stories | UC Berkeley ATDP</title>
+
+        <!-- Mobile Viewport Fix ( j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag ) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        
+        
+
+        
+        <link rel="pingback" href="/xmlrpc.php">
+
+        <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Comments Feed" href="/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.19 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-ZTG1BWXY14" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.19';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-ZTG1BWXY14',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-ZTG1BWXY14', {"forceSSL":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="simple-banner-style-css" href="/wp-content/plugins/simple-banner/simple-banner.css?ver=2.15.4" type="text/css" media="all">
+<link rel="stylesheet" id="if-menu-site-css-css" href="/wp-content/plugins/if-menu/assets/if-menu-site.css?ver=6.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-google-font-css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-animation-css" href="/wp-content/themes/rtpanel/assets/fontello/css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-css" href="/wp-content/themes/rtpanel/assets/fontello/css/rtpanel-fontello.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtpanel-style-css" href="/wp-content/themes/rtpanel-child-theme-master/style.css?ver=4.1.5" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-icon-fonts-css" href="/wp-content/plugins/rtwidgets/assets/icon-font/css/rtw-fontello.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-plugin-css-css" href="/wp-content/plugins/rtwidgets/assets/rtwidgets-style.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.19" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"","hash_tracking":"false","v4_id":"G-ZTG1BWXY14"};/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="simple-banner-script-js-before" type="text/javascript">const simpleBannerScriptParams = {"version":"2.15.4","hide_simple_banner":"no","simple_banner_position":"footer","header_margin":"","header_padding":"","simple_banner_z_index":"","simple_banner_text":"This is a static copy of atdp.berkeley.edu. User accounts are not available.","pro_version_enabled":"","disabled_on_current_page":false,"debug_mode":"","id":2214,"disabled_pages_array":[],"is_current_page_a_post":true,"disabled_on_posts":"","simple_banner_font_size":"16px","simple_banner_color":"#ff943d","simple_banner_text_color":"#323348","simple_banner_link_color":"","simple_banner_close_color":"#323348","simple_banner_custom_css":"padding: 0.5em;","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","simple_banner_button_css":"font-weight: bold;\r\nbox-shadow: none;","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":true,"close_button_enabled":"on","close_button_expiration":"","close_button_cookie_set":false,"current_date":{"date":"2023-10-24 22:44:00.973679","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2023-10-24 22:44:00.973683","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2023-10-24 22:44:00.973686","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":"","simple_banner_remove_after_date":"","simple_banner_insert_inside_element":""}</script>
+<script type="text/javascript" src="/wp-content/plugins/simple-banner/simple-banner.js?ver=2.15.4" id="simple-banner-script-js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=6.3.1" id="jquery-easing-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/2214">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="/atdp-and-the-internet-2/">
+<link rel="shortlink" href="/?p=2214">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fatdp-and-the-internet-2%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fatdp-and-the-internet-2%2F#038;format=xml">
+<style type="text/css">.simple-banner{position:fixed;bottom:0;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{font-size:16px;}</style>
+<style type="text/css">.simple-banner{background:#ff943d;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{color:#323348;}</style>
+<style type="text/css">.simple-banner .simple-banner-text a{color:#f16521;}</style>
+<style type="text/css">.simple-banner{z-index: 99999;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{color:#323348;}</style>
+<style type="text/css">.simple-banner{padding: 0.5em;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{font-weight: bold;
+box-shadow: none;}</style>
+<style id="simple-banner-site-custom-css-dummy" type="text/css"></style>
+<script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png?v=RyMNJXOPXe">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/manifest.json?v=RyMNJXOPXe">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=RyMNJXOPXe" color="#5bbad5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico?v=RyMNJXOPXe">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=RyMNJXOPXe">
+<meta name="theme-color" content="#ffffff">
+        <!-- <link href='//fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'> -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/wp-content/themes/rtpanel-child-theme-master/js/skrollr.min.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/ixk1zbq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">jQuery(document).ready(function($){
+
+        
+        // CONTENT FILTER BUTTONS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.'+filterkey).slideToggle(400);
+                $('.'+filterkey).toggleClass('toggled');
+                $(this).toggleClass('toggled');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // CONTENT FILTER TABS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.filterblock').removeClass('active');
+                $('.filterblock.'+filterkey).addClass('active');
+                $('.filtertab').removeClass('active');
+                $(this).addClass('active');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // COURSE INTEREST SURVEY
+        $('span.courseInterest.active').on('click', function(e) {
+
+            var button = $(this);
+            let courseNo = button.data("courseno");
+
+            $.ajax({
+                method: "POST",
+                url: "/request/course/?courseNo="+encodeURIComponent(courseNo)
+            }).done(function() {
+                button.removeClass("active");
+                button.children(".fa").show(500);
+                button.off();
+            });
+        });
+
+
+        // mobile check
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+           // not on mobile
+
+            var s = skrollr.init({
+                smoothScrolling: false
+                // smoothScrollingDuration: 100
+            });
+        } else {
+
+            // on mobile
+
+            $('div.scrollbg').each( function () {
+                $(this).children('div.ad').insertAfter($(this));
+            });
+
+            // jQuery('div.scrollbg div.ad').insertAfter(jQuery('div.scrollbg'));
+
+        }
+
+    });</script>
+    </head>
+
+    <body class="post-template-default single single-post postid-2214 single-format-standard unknown">
+<!-- ends in footer.php -->
+
+        
+        <div class="rtp-main-wrapper">
+<!-- ends in footer.php -->
+<!-- id="main-wrapper" -->
+            
+            <div id="header-wrapper" class="rtp-header-wrapper rtp-section-wrapper">
+
+                    
+                    <header id="header" class="row rtp-section-container" role="banner">
+
+                                                
+                        <div class="rtp-header large-12 columns rtp-full-width-grid ">
+                            
+                            <!-- nav is here somewhere. -->
+                            <nav id="rtp-primary-menu" role="navigation" class="rtp-nav-wrapper rtp-mobile-nav"><ul id="rtp-nav-menu" class="menu rtp-nav-container clearfix">
+<li id="menu-item-13116" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-13116"><a href="/news/">News</a></li>
+<li id="menu-item-14226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14226">
+<a href="/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-17240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17240"><a href="/faq/">FAQs</a></li>
+	<li id="menu-item-11934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11934"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-17242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17242"><a href="/policies/">Program Policies</a></li>
+	<li id="menu-item-17936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17936"><a href="/staff-admin/">Staff &#038; Administration</a></li>
+	<li id="menu-item-17241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17241"><a href="/opportunities/">Jobs &#038; Internships</a></li>
+</ul>
+</li>
+<li id="menu-item-11932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11932">
+<a href="/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-18041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041"><a href="/programs/sd/">Secondary Division 2023</a></li>
+	<li id="menu-item-18042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18042"><a href="/programs/ed/">Elementary Division 2023</a></li>
+	<li id="menu-item-18224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18224"><a href="/programs/ex/">Explorations 2023</a></li>
+	<li id="menu-item-17255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17255"><a href="/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16416"><a href="/fa/">Financial Aid</a></li>
+	<li id="menu-item-18039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18039"><a href="/pathway/">Pathway Scholarship</a></li>
+	<li id="menu-item-18040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18040"><a href="/distinguished-scholars/">Distinguished Scholars</a></li>
+</ul>
+</li>
+</ul></nav>
+                            <div class="rtp-logo-container clearfix">
+
+
+                                
+
+                                                                        <h2 class="rtp-site-logo">
+                                    <a role="link" href="/" title="UC Berkeley ATDP">
+
+                                        
+                                        <img role="img" alt="UC Berkeley Academic Talent Development Program" height="143" width="383" src="/wp-content/uploads/2019/12/circlelogo-blue-title.png">
+                                        
+                                    </a>
+</h2>
+
+                                                            </div>
+
+                            <hr>                        </div>
+
+                    </header><!-- #header -->
+
+                    
+            </div>
+<!-- #header-wrapper -->
+
+            
+            
+            <div id="content-wrapper" class="rtp-content-wrapper rtp-section-wrapper">
+<!-- ends in footer.php -->
+
+                
+                <div class="row rtp-section-container">
+                    
+                    
+<section id="content" role="main" class=" rtp-content-section large-8 columns rtp-singular ">
+	
+	
+		<article id="post-2214" class="clearfix rtp-post-box post-2214 post type-post status-publish format-standard hentry category-spotlights tag-alumni tag-republished tag-tic">
+				
+			<header class="post-header ">
+				
+									<h1 class="post-title entry-title">ATDP and the Internet: Four alumni… four thousand and one stories</h1>
+				
+				
+            <div class="clearfix post-meta post-meta-top">
+<span class="rtp-meta-separator">&middot;</span> <time class="published" datetime="2009-05-20T10:50:16-07:00">May 20, 2009</time> <span class="rtp-meta-separator">&middot;</span> <a href="/category/spotlights/" rel="tag">Spotlights</a>
+            </div>
+<!-- .post-meta -->			</header><!-- .post-title -->
+
+			<div class="post-content">
+				
+				
+				<hr size="1">
+<figure aria-describedby="figcaption_" class="wp-caption aligncenter"><img decoding="async" fetchpriority="high" src="http://virtualatdp.berkeley.edu/newsletter/summer09/earlyTICpage.jpg" alt="" width="576" height="372"><figcaption id="figcaption_" class="wp-caption-text">An early Internet Classroom website front page, from Summer 1997</figcaption></figure>
+<hr size="1">
+<p>Thirteen years is an eternity in internet time. 1996 was the Jurassic era, as far as the online world goes, and that was when ATDP first dipped its toes in the nascent WorldWideWeb. <a href="/">The ATDP website</a>, construction on which began in late 1995 and unveiled before the summer of 1996, was among the first such entities in UC Berkeley&#8217;s online space, and a pioneer at the Graduate School of Education. ATDP—a program within the GSE—had a website even before its host school did.</p>
+<p>Also in 1996, <a href="/virtualatdp/tic.html">The Internet Classroom</a> (TIC) was a summer course offering for the first time at ATDP, a unique new class on web design and online culture that proved to be far ahead of its time.</p>
+<p>Starting that summer, ATDP and TIC students delved deeply into the online world, long before websites and online services we nowadays consider internet institutions, existed: Yahoo, Google, eBay, Craigslist, Safari, Firefox, Amazon, MySpace, Facebook, Twitter, et al. Back then, the web browsers we used in TIC were the quaint (now long-gone) Mosaic, and the fledgling Netscape. TIC students started publishing online journals long before blogging was even a gleam in some web developer&#8217;s eye. In effect, those students were literally part of a technological revolutionary vanguard that would utterly transform the world, from the late &#8217;90s through the early years of the new century.</p>
+<p>Every summer since then, numerous students at ATDP have taken TIC as the internet and online world has become normative for their generation. For young people these days, going online and using digital technology is as routine—maybe even as vital—as breathing oxygen. Their lives are mediated by computers and computing, almost literally from the moment they are born.</p>
+<p>Fast forward to today, and a look at four ATDP and TIC alumni, in whose stories are encapsulated the kind of cultural and technological moments that define an era. It&#8217;s basically a story of how the internet has become part and parcel of the lives of young people these days and, specifically, the role that ATDP and TIC played in that process.</p>
+<hr size="1">
+<p><img decoding="async" class="alignright" style="margin-left: 20px; margin-right: 20px; border-style: initial; border-color: initial; margin-top: 10px; margin-bottom: 10px; border-width: 0px;" src="/wp-content/uploads/2009/05/alisoneeds.jpg" alt="" width="216" height="194" align="right" border="0" hspace="20" vspace="10"><span style="color: maroon;"><strong>Alison Eeds</strong></span> was a student in the second Internet Classroom, in 1997. She was so captivated by the potential of the internet that she came back the following summer and became a Teacher&#8217;s Assistant. Alison went on to obtain her BA and MA degrees at UC Davis, then started teaching social science at Vacaville High School in 2005. After just four years as a teacher, she was selected as the 2009 Solano County Teacher of the Year. She was hailed by Vacaville USD superintendent John Aycock as &#8220;a wonderful example of that &#8216;next generation&#8217; teacher who is infusing technology into her lessons&#8221; and, in an e-mail to me Alison&#8217;s mom wrote, &#8220;You will note that she is really into technology—and I think that started at ATDP and the web class she had with you! She even does video podcasts for her students to study for tests.&#8221;</p>
+<p><span style="color: maroon;"><strong>Cynthia Nie</strong></span> took the Advanced Internet Classroom in 2000, and not only became a Teacher&#8217;s Assistant the following summer but took the reins as its lead instructor in 2006, while she was an undergraduate at UC San Diego, and continues to teach the class to this day. Cynthia received a degree in Interdisciplinary Computing and the Arts from UCSD, and is <a href="http://portfolio.metaminstrel.net/">currently working on her Master of Fine Arts degree</a> at USC&#8217;s renowned Interactive Media Division. Her master&#8217;s thesis project, titled <em>Schism,</em> is a fascinating massively multiplayer online game that, unlike most MMOs these days, &#8220;refocuses the player&#8217;s experience away from the individual and onto the team [and&#8230;] Whereas most multiplayer games will reward group effort with individual rewards, <em>Schism</em> seeks to reward individual efforts with group rewards.&#8221;</p>
+<p>In a marvelous lobbying coup, UC Merced&#8217;s inaugural graduating class <a href="http://l.editthispage.com/2009/05/17">got First Lady Michelle Obama to speak at their commencement</a> on Saturday, May 16th. Graduating senior <span style="color: maroon;"><strong>Daniel Hunter</strong></span> (TIC &#8217;00 and AIC &#8217;01) was an instrumental part of the grassroots student effort to get Mrs. Obama to consider giving her only commencement speech of the year at their UC campus. That campaign took place online with YouTube videos made by the graduates, and thousands of heartfelt e-mails to Michelle. Through nine years of middle school, ATDP, high school and college, Daniel maintained a strong relationship with mentors at ATDP, one mediated by our online tools and spaces. In the graduation invitation sent me by the Psychology/Neuroscience major, he handwrote &#8220;To my very first class instructor at a UC campus.&#8221;</p>
+<p><span style="color: maroon;"><strong>Shawn McDonald</strong></span> (AIC &#8217;02) also just graduated this spring, with a degree in Political Science from Johns Hopkins University. In a weblog post entitled <a href="http://www.agnoiology.com/2009/05/06/how-ive-grown-and-an-exploration-of-the-internet-and-culture/">&#8220;How I&#8217;ve grown and an exploration of the internet and culture,&#8221;</a> he wrote: &#8220;I think community can be enhanced by digital components, but you need a place in order to have a center. &#8230; My ATDP experience has been enhanced from digital interaction, but it only works because ATDP exists within a physical location and TIC in particular has continuity in location. JHU lacks community because there is no place for people to congregate.&#8221; Over the years of his continued involvement in ATDP and its online communities, Shawn has brought his political acumen and creative energies to bear on the project of re-envisioning how society works.</p>
+<hr size="1">
+<p>These short paragraphs on these four individuals are mere pixels in the larger canvases of their young lives&#8230; but ones I paint here in this pointillist way so as to suggest a meaningful thing they have in common—from their beginnings as ATDP students fascinated by the potential of the internet to shape culture at large, they have gone on separate paths but have shared common aspects of the journey: they have made technology merely the tool, not the purpose; they have used the online world as a medium, not as the destination.</p>
+<p>Alison&#8217;s, Cynthia&#8217;s, Daniel&#8217;s and Shawn&#8217;s storylines touch and intersect with a thousand and one other stories—of their own students, their classmates, professors, colleagues, all the members of their varied and disparate communities. In doing so, the threads that they created or picked up at ATDP and the Internet Classroom during their years here continue to be woven into the tapestry of American culture at large in the 21st century, with the internet as the loom. The stories they continue to live, and to tell, sustain and inspire many of us as we journey alongside them.</p>
+
+					</div>
+<!-- .post-content -->
+
+		
+		
+		</article><!-- .rtp-post-box -->        <div class="rtp-navigation clearfix">
+        <div class="left"><a href="/from-berkeley-to-watts-and-back-again/" rel="prev">&larr; From Berkeley to Watts, and Back Again</a></div>        <div class="right"><a href="/atdp-newsletter-summer-09/" rel="next">Community Newsletter Vol. 1, I. 2 &rarr;</a></div>        </div>
+<!-- .rtp-navigation -->
+	</section><!-- #content -->
+
+
+    <!-- #sidebar -->
+    <aside id="sidebar" class="rtp-sidebar-section large-4 columns" role="complementary">
+        <div class="rtp-sidebar-inner-wrapper">
+            
+                <div id="search-5" class="widget sidebar-widget widget_search"><form role="search" method="get" class="searchform search-form" action="https://atdp.berkeley.edu/">
+                <div class="rtp-search-form-wrapper">
+                    <label class="screen-reader-text hide">Search for:</label>
+                    <input type="search" required="required" placeholder="Search Here..." value="" name="s" class="search-text search-field rtp-search-input" title="Search Here...">
+                    <input type="submit" class="searchsubmit search-submit rtp-search-button button tiny" value="Search" title="Search">
+                </div>
+             </form></div>
+		<div id="recent-posts-4" class="widget sidebar-widget widget_recent_entries">
+		<h3 class="widgettitle">More News</h3>
+		<ul>
+											<li>
+					<a href="/elementary-division-orientation/">Elementary Division Orientation: July 8</a>
+											<span class="post-date">July 6, 2023</span>
+									</li>
+											<li>
+					<a href="/sd2023-orientation/">Secondary Division Orientation webinar (Updated with recording)</a>
+											<span class="post-date">June 1, 2023</span>
+									</li>
+											<li>
+					<a href="/news/on-and-around-the-berkeley-campus/">On and Around the UC Berkeley Campus</a>
+											<span class="post-date">June 1, 2023</span>
+									</li>
+											<li>
+					<a href="/sd-readiness-testing-2023/">SD Readiness Testing is May 20 for certain courses</a>
+											<span class="post-date">April 20, 2023</span>
+									</li>
+											<li>
+					<a href="/theres-still-time-to-apply-2023/">There’s still time to apply: about our extended deadlines</a>
+											<span class="post-date">April 19, 2023</span>
+									</li>
+											<li>
+					<a href="https://crowdfund.berkeley.edu/atdp">Help support our Pathway Scholars for the BIG GIVE, today only!</a>
+											<span class="post-date">March 9, 2023</span>
+									</li>
+											<li>
+					<a href="/additional-course-options-for-sd-applicants-feb-27/">Additional course options for SD applicants (Feb 27)</a>
+											<span class="post-date">February 27, 2023</span>
+									</li>
+											<li>
+					<a href="/additional-courses-for-sd-applicants-feb-1/">Additional courses for SD applicants (Feb 1)</a>
+											<span class="post-date">February 1, 2023</span>
+									</li>
+					</ul>
+
+		</div>
+<div id="nav_menu-9" class="widget sidebar-widget widget_nav_menu">
+<h3 class="widgettitle">Categories</h3>
+<div class="menu-categories-container"><ul id="menu-categories" class="menu">
+<li id="menu-item-2556" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2556"><a href="/category/news/">News &#038; Announcements</a></li>
+<li id="menu-item-11207" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-11207"><a href="/category/spotlights/">Spotlights</a></li>
+<li id="menu-item-4161" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4161"><a href="/category/course-features/">Inside ATDP Courses</a></li>
+<li id="menu-item-11206" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11206"><a href="/category/research/">Research at ATDP</a></li>
+<li id="menu-item-11204" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11204"><a href="/category/learning/">Teaching and Learning</a></li>
+<li id="menu-item-11203" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11203"><a href="/category/news/community/">Community Newsletter Archive</a></li>
+</ul></div>
+</div>            
+                    </div>
+    </aside>
+
+                </div> <!-- End of content-wrapper row -->
+
+                
+            </div>
+<!-- #content-wrapper -->
+
+            
+            
+            <footer id="footer-wrapper" role="contentinfo" class="clearfix rtp-footer-wrapper rtp-section-wrapper">
+
+                
+                
+
+                <div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+<li id="menu-item-14505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14505">
+<a href="/about/">About ATDP</a>
+<ul class="sub-menu">
+	<li id="menu-item-17387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17387"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-12009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12009"><a href="/faq/">FAQs</a></li>
+	<li id="menu-item-14523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14523"><a href="/opportunities/">Jobs &#038; Internships</a></li>
+	<li id="menu-item-18327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18327"><a href="/techsupport/">Tech Support</a></li>
+</ul>
+</li>
+<li id="menu-item-17385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17385">
+<a href="/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-17382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17382"><a href="/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16415"><a href="/fa/">Financial Aid</a></li>
+	<li id="menu-item-17383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17383"><a href="/policies/">Policies</a></li>
+</ul>
+</li>
+<li id="menu-item-17381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17381">
+<a href="/programs/sd/">Secondary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17389"><a href="/programs/sd/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18289"><a href="/programs/sd/onsiteguide/">On-Site Student Guide</a></li>
+	<li id="menu-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288"><a href="/programs/sd/onlineguide/">Online Student Guide</a></li>
+</ul>
+</li>
+<li id="menu-item-17380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17380">
+<a href="/programs/ed/">Elementary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17388"><a href="/programs/ed/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287"><a href="/programs/ed/onsiteguide/">On-Site Family Guide</a></li>
+	<li id="menu-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286"><a href="/programs/ed/onlineguide/">Online Family Guide</a></li>
+</ul>
+</li>
+</ul></div>
+
+                <div id="sitemap">
+                    <div class="row">
+                        <div class="columns small-12 medium-6 large-3">
+                            <a href="/sitemap/"><i class="fa fa-sitemap"></i> &nbsp;Complete site map</a>
+                        </div>
+                        <div class="columns small-12 medium-6 large-9">
+                            <form role="search" method="get" class="searchform search-form" action="https://atdp.berkeley.edu/">
+                <div class="rtp-search-form-wrapper">
+                    <label class="screen-reader-text hide">Search for:</label>
+                    <input type="search" required="required" placeholder="Search Here..." value="" name="s" class="search-text search-field rtp-search-input" title="Search Here...">
+                    <input type="submit" class="searchsubmit search-submit rtp-search-button button tiny" value="Search" title="Search">
+                </div>
+             </form>                        </div>
+                    </div>
+                </div>
+
+
+                <div id="footer-contact">
+                    <ul id="footer-name" class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
+                        <li>University of California, Berkeley</li>
+                        <li>Academic Talent Development Program</li>
+                        <li>Graduate School of Education</li>
+                    </ul>
+
+                    <ul id="footer-info" class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+                        <li>
+                            <!-- <h6><i class="fa fa-at"></i></h6> -->
+                            atdpoffice@berkeley.edu<br>
+                            <span id="social-icons">
+                                <!--<a href="https://www.facebook.com/ucb.atdp" target=_BLANK><i class="fa fa-facebook-square"></i></a>-->
+                                <a href="https://twitter.com/UCBerkeleyATDP" target="_BLANK"><i class="fa fa-twitter-square"></i></a>
+                                <a href="http://i.instagram.com/ucberkeley_atdp" target="_BLANK"><i class="fa fa-instagram"></i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-phone"></i></h6>
+                            ph 510-642-8308<br>
+                            fax 510-642-0510
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-envelope"></i></h6>
+                            70 University Hall #1160<br>
+                            Berkeley, CA  94720-1160
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-map-marker"></i></h6>
+                            2018 Oxford Street<br>
+                            Berkeley, CA  94720
+                        </li>
+                        
+                    </ul>
+
+                    <p id="copyright-tag">Copyright &copy; 2023 UC Regents; all rights reserved</p>
+                </div>
+
+                
+
+                
+                
+
+                <img src="/wp-content/uploads/2014/10/ucb-logo-gold-on-white-300x92.png" alt="UC Berkeley" width="300" height="92" class="alignright size-medium wp-image-11097">
+
+
+            </footer><!-- #footer-wrapper-->
+
+            
+            
+        </div>
+<!-- #main-wrapper -->
+
+        <div class="simple-banner simple-banner-text" style="display:none !important"></div>
+<script type="text/javascript" id="qppr_frontend_scripts-js-extra">
+/* <![CDATA[ */
+var qpprFrontData = {"linkData":{"\/sd\/catalog\/":[0,1,""],"\/ed\/catalog\/":[0,1,""],"\/ed\/":[0,0,"\/programs\/ed"],"\/pathway-scholarship":[0,1,""],"\/an-end-to-star-testing-the-daily-californian\/":[1,1,"http:\/\/www.dailycal.org\/2013\/09\/09\/state-assembly-considers-bill-to-replace-standardized-testing\/"],"\/looking-back-and-ahead-mark-your-2015-calendars\/":[1,0,""],"\/?p=17127":[1,0,""],"\/applications-are-now-open-for-summer-2022\/":[1,1,"http:\/\/createsend.com\/t\/r-92B8B3ACC2FACE0C2540EF23F30FEDED"],"\/applications-open-for-summer-2023\/":[1,0,""],"\/help-support-our-pathway-scholars-for-the-big-give-today-only\/":[1,0,"https:\/\/crowdfund.berkeley.edu\/atdp"],"\/math-placement-test-update-make-up-dates\/":[0,1,"\/news\/placement-testing\/"],"\/s12-summer-newsletter-kicks-off-atdps-secondary-division\/":[0,1,""],"\/sd-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/sd\/"],"\/ed-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/ed\/"],"\/?p=6540":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/ed2014-postmark-deadlines\/":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/aglist\/":[0,1,"https:\/\/hs-articulation.ucop.edu\/agcourselist\/institution\/5308"],"\/now-accepting-applications-for-secondary-division-ta-interns\/":[0,1,"\/opportunities\/#sdinterns"],"\/2022-covid\/":[0,1,"\/covid-safety-procedures\/"],"\/including-atdp-courses-on-your-college-application\/":[0,1,"\/news\/including-atdp-courses\/"],"\/lets-play-a-game\/":[0,0,"http:\/\/www.google.com"],"\/2015-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/calendar\/"],"\/on-and-around-the-uc-berkeley-campus\/":[0,0,"\/news\/on-and-around-the-berkeley-campus\/"],"\/community-newsletter-volume-4-issue-2\/":[0,0,"http:\/\/atdp.berkeley.edu\/community-newsletter-vol-4-i-2\/"],"\/2014-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/about\/calendar\/"],"\/sd\/":[0,0,"\/programs\/sd"],"\/resources\/":[0,0,""],"\/ed-2\/":[0,0,"\/programs\/ed\/#applying"],"\/sd-2\/":[0,0,"\/programs\/sd\/#applying"],"\/apply\/":[0,0,"\/programs"],"\/attending\/tuition\/":[0,0,"\/programs"],"\/attending\/location\/":[0,0,"\/programs"],"\/attending\/":[0,0,"\/programs"],"\/link-what-if-your-child-is-intellectually-gifted-high-ability\/":[0,0,"http:\/\/www.psychologytoday.com\/blog\/how-do-life\/201409\/what-if-your-child-is-intellectually-gifted-high-ability"],"\/2017-program-dates-now-available\/":[0,0,"\/calendar"],"\/new-family-referral-program\/":[0,0,"\/referral"],"\/jobs\/":[0,0,"\/opportunities"],"\/secondary-division-ta-2018\/":[0,0,"\/opportunities\/#tas"],"\/sd-deadline-2018\/":[0,0,"\/calendars\/#sd"],"\/secondary-division-2020-online\/":[0,0,"\/sd2020guide"],"\/elementary-division-2020-online-family-guide\/":[0,0,"\/ed2020guide\/"],"\/secondary-division-orientation-2020\/":[0,0,"\/secondary-division-student-family-orientation-2020\/"],"\/calendars\/":[0,0,"\/programs"],"\/selecting-a-course\/":[0,0,"\/programs\/sd\/#courses"],"\/celebrating-40-years-share-your-story-on-atdps-timeline\/":[0,0,"\/40th\/"],"\/instructor-spotlights-and-more-our-community-newsletter-kicks-off-applications-for-2021\/":[0,0,"\/community-newsletter\/"],"\/programs\/explorations\/":[0,0,"\/programs\/ex\/"],"\/explorations-now-open-for-registration\/":[0,0,"\/programs\/ex\/"],"\/secondary-division-placement-testing\/":[0,0,"\/news\/placement-testing\/"],"\/theres-still-time-to-apply-2022\/":[0,0,"\/news\/extended-deadlines\/"],"\/on-and-around-the-berkeley-campus-sd-on-site\/":[0,0,"\/news\/on-and-around-the-berkeley-campus\/"],"\/fall-updates-2023-program-dates-announced-trfs-now-available\/":[0,0,"https:\/\/academictalentdevelopmentprogram.cmail20.com\/t\/ViewEmail\/r\/535F04BB6EE1CF952540EF23F30FEDED\/E6334D0BC49C64D2DCC9454293137CA2"],"\/new-courses-2013\/":[0,0,""],"\/applications-open-for-2013-summer-session\/":[0,0,""],"\/share-speak-volunteer-be-a-part-of-the-atdp-story\/":[0,0,""],"\/welcome-to-ed-2014\/":[0,0,""],"\/?page_id=1102":[0,0,""],"\/sd\/a-g\/":[0,0,""],"\/subscribe\/":[0,0,""],"\/sd-explorations-available-2\/":[0,0,""],"\/community\/":[0,0,""],"\/mathplacement\/":[0,0,""],"\/account\/applications\/":[0,0,""],"\/account\/enrollment\/":[0,0,""],"\/community-newsletter\/":[0,0,""],"\/sd15-final-evals\/":[0,0,""],"\/sd-final-evaluations-2018\/":[0,0,""],"\/sd14-final-evaluations-released\/":[0,0,""],"\/ed-orientation-2018\/":[0,0,""],"\/ed-orientation-17\/":[0,0,""],"\/ed-orientation-15\/":[0,0,""],"\/ed-orientation-14\/":[0,0,""],"\/including-atdp-courses\/":[0,0,""],"\/on-and-around-the-berkeley-campus\/":[0,0,""],"\/on-and-around-campus\/":[0,0,""],"\/sd-placement-testing-2020\/":[0,0,""],"\/math-placement-testing-2019\/":[0,0,""],"\/math-placement-testing-2018\/":[0,0,""],"\/math-placement-testing-2017\/":[0,0,""],"\/?p=13433":[0,0,""],"\/math-placement-2015\/":[0,0,""],"\/math-placement-2014\/":[0,0,""],"\/math-placement-2013\/":[0,0,""],"\/mathplacement-2012\/":[0,0,""],"\/elementary-division-orientation-2020\/":[0,0,""],"\/ed-orientation-2021\/":[0,0,""],"\/secondary-orientation-2019\/":[0,0,""],"\/secondary-orientation-2018\/":[0,0,""],"\/sd-orientation-2017\/":[0,0,""],"\/?p=13453":[0,0,""],"\/sd-orientation-2015\/":[0,0,""],"\/sd-orientation-2014\/":[0,0,""],"\/sd-orientation-2013\/":[0,0,""],"\/secondary-division-welcome-student-orientation-on-june-2\/":[0,0,""],"\/courses-2\/":[0,0,""],"\/courses\/":[0,0,""],"\/extended-deadlines\/":[0,0,""],"\/after-the-deadline\/":[0,0,""],"\/theres-still-time-to-apply-about-our-extended-deadlines\/":[0,0,""],"\/2020-technology\/":[0,0,""],"\/theres-still-time-to-apply-2023\/":[0,0,""],"\/sd-readiness-testing-2023\/":[0,0,""]},"siteURL":"","siteURLq":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.2.3" id="qppr_frontend_scripts-js"></script>
+<script type="text/javascript" src="/wp-content/themes/rtpanel/js/rtp-concat-lib.js?ver=6.3.1" id="rtp-concat-lib-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.3.1" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/rtpanel-child-theme-master/js/rtp-child-package-min.js?ver=6.3.1" id="rtp-child-package-min-js"></script>
+				<script type="text/javascript">jQuery.noConflict();
+					(
+						function ( $ ) {
+							$( function () {
+								$( "area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane'])" ).click( function () {
+									if ( location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) && location.hostname == this.hostname ) {
+										var target = $( this.hash );
+										target = target.length ? target : $( '[name=' + this.hash.slice( 1 ) + ']' );
+										if ( target.length ) {
+											$( 'html,body' ).animate( {
+												scrollTop: target.offset().top - 80											},900 , 'easeOutQuad' );
+											return false;
+										}
+									}
+								} );
+							} );
+						}
+					)( jQuery );</script>
+			
+        <script type="text/javascript"></script>
+
+        
+
+    </body>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced (SSL caching disabled) 
+Database Caching using disk
+
+Served from: atdp.berkeley.edu @ 2023-10-24 15:44:01 by W3 Total Cache
+-->
+</html>

@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-US">
+<!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Elementary Division 2023 | UC Berkeley ATDP</title>
+
+        <!-- Mobile Viewport Fix ( j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag ) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        
+        
+
+        
+        <link rel="pingback" href="/xmlrpc.php">
+
+        <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Comments Feed" href="/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.19 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-ZTG1BWXY14" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.19';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-ZTG1BWXY14',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-ZTG1BWXY14', {"forceSSL":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="simple-banner-style-css" href="/wp-content/plugins/simple-banner/simple-banner.css?ver=2.15.4" type="text/css" media="all">
+<link rel="stylesheet" id="if-menu-site-css-css" href="/wp-content/plugins/if-menu/assets/if-menu-site.css?ver=6.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-google-font-css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-animation-css" href="/wp-content/themes/rtpanel/assets/fontello/css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-css" href="/wp-content/themes/rtpanel/assets/fontello/css/rtpanel-fontello.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtpanel-style-css" href="/wp-content/themes/rtpanel-child-theme-master/style.css?ver=4.1.5" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-icon-fonts-css" href="/wp-content/plugins/rtwidgets/assets/icon-font/css/rtw-fontello.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-plugin-css-css" href="/wp-content/plugins/rtwidgets/assets/rtwidgets-style.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.19" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"","hash_tracking":"false","v4_id":"G-ZTG1BWXY14"};/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="simple-banner-script-js-before" type="text/javascript">const simpleBannerScriptParams = {"version":"2.15.4","hide_simple_banner":"no","simple_banner_position":"footer","header_margin":"","header_padding":"","simple_banner_z_index":"","simple_banner_text":"This is a static copy of atdp.berkeley.edu. User accounts are not available.","pro_version_enabled":"","disabled_on_current_page":false,"debug_mode":"","id":17344,"disabled_pages_array":[],"is_current_page_a_post":false,"disabled_on_posts":"","simple_banner_font_size":"16px","simple_banner_color":"#ff943d","simple_banner_text_color":"#323348","simple_banner_link_color":"","simple_banner_close_color":"#323348","simple_banner_custom_css":"padding: 0.5em;","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","simple_banner_button_css":"font-weight: bold;\r\nbox-shadow: none;","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":true,"close_button_enabled":"on","close_button_expiration":"","close_button_cookie_set":false,"current_date":{"date":"2023-10-24 22:42:01.719138","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2023-10-24 22:42:01.719143","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2023-10-24 22:42:01.719146","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":"","simple_banner_remove_after_date":"","simple_banner_insert_inside_element":""}</script>
+<script type="text/javascript" src="/wp-content/plugins/simple-banner/simple-banner.js?ver=2.15.4" id="simple-banner-script-js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=6.3.1" id="jquery-easing-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/17344">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="/programs/ed/">
+<link rel="shortlink" href="/?p=17344">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fprograms%2Fed%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fprograms%2Fed%2F#038;format=xml">
+<style type="text/css">.simple-banner{position:fixed;bottom:0;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{font-size:16px;}</style>
+<style type="text/css">.simple-banner{background:#ff943d;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{color:#323348;}</style>
+<style type="text/css">.simple-banner .simple-banner-text a{color:#f16521;}</style>
+<style type="text/css">.simple-banner{z-index: 99999;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{color:#323348;}</style>
+<style type="text/css">.simple-banner{padding: 0.5em;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{font-weight: bold;
+box-shadow: none;}</style>
+<style id="simple-banner-site-custom-css-dummy" type="text/css"></style>
+<script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png?v=RyMNJXOPXe">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/manifest.json?v=RyMNJXOPXe">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=RyMNJXOPXe" color="#5bbad5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico?v=RyMNJXOPXe">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=RyMNJXOPXe">
+<meta name="theme-color" content="#ffffff">
+        <!-- <link href='//fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'> -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/wp-content/themes/rtpanel-child-theme-master/js/skrollr.min.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/ixk1zbq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">jQuery(document).ready(function($){
+
+        
+        // CONTENT FILTER BUTTONS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.'+filterkey).slideToggle(400);
+                $('.'+filterkey).toggleClass('toggled');
+                $(this).toggleClass('toggled');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // CONTENT FILTER TABS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.filterblock').removeClass('active');
+                $('.filterblock.'+filterkey).addClass('active');
+                $('.filtertab').removeClass('active');
+                $(this).addClass('active');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // COURSE INTEREST SURVEY
+        $('span.courseInterest.active').on('click', function(e) {
+
+            var button = $(this);
+            let courseNo = button.data("courseno");
+
+            $.ajax({
+                method: "POST",
+                url: "/request/course/?courseNo="+encodeURIComponent(courseNo)
+            }).done(function() {
+                button.removeClass("active");
+                button.children(".fa").show(500);
+                button.off();
+            });
+        });
+
+
+        // mobile check
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+           // not on mobile
+
+            var s = skrollr.init({
+                smoothScrolling: false
+                // smoothScrollingDuration: 100
+            });
+        } else {
+
+            // on mobile
+
+            $('div.scrollbg').each( function () {
+                $(this).children('div.ad').insertAfter($(this));
+            });
+
+            // jQuery('div.scrollbg div.ad').insertAfter(jQuery('div.scrollbg'));
+
+        }
+
+    });</script>
+    </head>
+
+    <body class="page-template page-template-template-full-width page-template-template-full-width-php page page-id-17344 page-parent page-child parent-pageid-4698 unknown">
+<!-- ends in footer.php -->
+
+        
+        <div class="rtp-main-wrapper">
+<!-- ends in footer.php -->
+<!-- id="main-wrapper" -->
+            
+            <div id="header-wrapper" class="rtp-header-wrapper rtp-section-wrapper">
+
+                    
+                    <header id="header" class="row rtp-section-container" role="banner">
+
+                                                
+                        <div class="rtp-header large-12 columns rtp-full-width-grid ">
+                            
+                            <!-- nav is here somewhere. -->
+                            <nav id="rtp-primary-menu" role="navigation" class="rtp-nav-wrapper rtp-mobile-nav"><ul id="rtp-nav-menu" class="menu rtp-nav-container clearfix">
+<li id="menu-item-13116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13116"><a href="/news/">News</a></li>
+<li id="menu-item-14226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14226">
+<a href="/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-17240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17240"><a href="/faq/">FAQs</a></li>
+	<li id="menu-item-11934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11934"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-17242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17242"><a href="/policies/">Program Policies</a></li>
+	<li id="menu-item-17936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17936"><a href="/staff-admin/">Staff &#038; Administration</a></li>
+	<li id="menu-item-17241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17241"><a href="/opportunities/">Jobs &#038; Internships</a></li>
+</ul>
+</li>
+<li id="menu-item-11932" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-11932">
+<a href="/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-18041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041"><a href="/programs/sd/">Secondary Division 2023</a></li>
+	<li id="menu-item-18042" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17344 current_page_item menu-item-18042"><a href="/programs/ed/" aria-current="page">Elementary Division 2023</a></li>
+	<li id="menu-item-18224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18224"><a href="/programs/ex/">Explorations 2023</a></li>
+	<li id="menu-item-17255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17255"><a href="/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16416"><a href="/fa/">Financial Aid</a></li>
+	<li id="menu-item-18039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18039"><a href="/pathway/">Pathway Scholarship</a></li>
+	<li id="menu-item-18040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18040"><a href="/distinguished-scholars/">Distinguished Scholars</a></li>
+</ul>
+</li>
+</ul></nav>
+                            <div class="rtp-logo-container clearfix">
+
+
+                                
+
+                                                                        <h2 class="rtp-site-logo">
+                                    <a role="link" href="/" title="UC Berkeley ATDP">
+
+                                        
+                                        <img role="img" alt="UC Berkeley Academic Talent Development Program" height="143" width="383" src="/wp-content/uploads/2019/12/circlelogo-blue-title.png">
+                                        
+                                    </a>
+</h2>
+
+                                                            </div>
+
+                            <hr>                        </div>
+
+                    </header><!-- #header -->
+
+                    
+            </div>
+<!-- #header-wrapper -->
+
+            
+            
+            <div id="content-wrapper" class="rtp-content-wrapper rtp-section-wrapper">
+<!-- ends in footer.php -->
+
+                
+                <div class="row rtp-section-container">
+                    
+                    
+    <section id="content" class="rtp-content-section large-12 columns rtp-full-width-grid">
+        
+        
+		<article id="post-17344" class="clearfix rtp-post-box post-17344 page type-page status-publish hentry">
+				
+			<header class="post-header ">
+				
+									<h1 class="post-title entry-title">Elementary Division 2023</h1>
+				
+							</header><!-- .post-title -->
+
+			<div class="post-content">
+				
+				
+				<div class="magellan-fix">
+	<h1 class="text-center" style="margin-top: 0;">Elementary Division 2023</h1>
+	<h2 class="text-center" style="margin-top: 0;">Program Information</h2>
+	<p>&nbsp;</p>
+
+	<hr>
+
+	<div data-magellan-expedition="fixed">
+
+		<dl class="sub-nav">
+
+			<dd data-magellan-arrival="details">
+				<a href="#details"><span class="hide-for-small-only">Key d</span><span class="show-for-small-only">D</span>etails</a>
+			</dd>
+
+			<dd data-magellan-arrival="calendar">
+				<a href="#calendar">Calendar</a>
+			</dd>
+
+			<dd data-magellan-arrival="courses">
+				<a href="#courses">Courses</a>
+			</dd>
+
+			<dd data-magellan-arrival="attending">
+				<a href="#attending">Attending</a>
+			</dd>
+
+			<dd data-magellan-arrival="applying">
+				<a href="#applying">Applying</a>
+			</dd>
+
+		</dl>
+
+	</div>
+
+
+
+	<a name="welcome"></a>
+	<div data-magellan-destination="welcome" class="scrollbg fluid row" data-top-bottom="background-position: 0% -20%;" data-bottom-top="background-position: 0% 90%;" style="background-image: url('/wp-content/uploads/2018/12/cal-halftone2_halfsize.png'); background-position: 0px 52%;">
+
+		<div class="left ad small-12 medium-6 large-5 columns fluid end ">
+			<p class="show-for-small-only">&nbsp;</p>
+
+			<h1><em>Welcome!</em></h1>
+
+			<p>ATDP remains committed to helping you make the most of your summer. This page contains comprehensive information about our Elementary Division programs for 2023.</p>
+
+		</div>
+	</div>
+
+
+	<div id="triptych" class="row">
+
+		<div class="columns small-12 medium-4 large-4">
+			<img decoding="async" src="/wp-content/uploads/2021/02/micro_kid_sq.jpg">
+			<h3 class="text-center">Deep knowledge acquisition</h3>
+			<p>Each Elementary Division course offers young students the opportunity to become budding experts in a chosen topic. Whether focusing on a specific academic subject or building skills more broadly, each engaging curriculum focuses on learning in depth and having&nbsp;fun!</p>
+		</div>
+
+		<div class="columns small-12 medium-4 large-4">
+			<img decoding="async" src="/wp-content/uploads/2021/02/persuasion_sq.jpg">
+			<h3 class="text-center">Robust engagement</h3>
+			<p>We've always united teachers who are passionate about their subject with students who love to learn. Whether in-person or online, class sessions are highly interactive and aim to maximize the value of every minute. Online classes include a healthy balance of live on-screen interaction with instructors and classmates, activities that are self-directed or parent-assisted, and plenty of screen&nbsp;breaks.</p>
+		</div>
+
+		<div class="columns small-12 medium-4 large-4">
+			<img decoding="async" src="/wp-content/uploads/2021/02/physics_group_sq.jpg">
+			<h3 class="text-center">A community of learners</h3>
+			<p>ATDP courses aren't just about the curriculum. Every summer, students come from far and wide to share their interests with one another, work in class together, and make new friends. In a time of social distancing, it is all the more important that we find ways to maintain students' opportunities for&nbsp;connection.</p>
+		</div>
+
+	</div>
+
+
+	<a name="details" id="details"></a>
+	<p class="clearfix" data-magellan-destination="details">&nbsp;</p>
+	<h1>Key details <a href="#details" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h1>
+	<hr>
+
+	<div class="row">
+
+		<div class="columns small-12 medium-12 large-4">
+			<h3>Class Schedule</h3>
+			<ul>
+				<li>
+<strong>July 10&ndash;28, 2023</strong> (three weeks) meeting on Mondays, Tuesdays, Thursdays, and Fridays (no class on Wednesdays).</li>
+				<li>Meetings take place within our AM window (8:30-12 noon) or PM window (1:00-4:30pm) Pacific time. Refer to each <a href="/programs/ed/catalog/">course’s description</a> for details on course topics, as well as logistics for online courses.</li>
+			</ul>
+		</div>
+
+		<div class="columns small-12 medium-12 large-4">
+			<h3>App Deadlines</h3>
+			<ul>
+				<li>Early Deadline: March 1, 2023</li>
+				<li>Standard Deadline: March 29, 2023</li>
+			</ul>
+		</div>
+
+		<div class="columns small-12 medium-12 large-4">
+			<h3>Eligibility</h3>
+			<ul>
+				<li>For students currently in grades K through 6. Courses are offered by grade level.</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<p class="clearfix"></p>
+
+	<div class="row">
+
+		<div class="columns small-12 medium-12 large-8">
+			<h3 id="caladventures">Cal Adventures Sports &amp; Arts Camp <a href="#caladventures" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+
+			<p>
+			For students attending in person at Washington Elementary School, Cal Adventures offers a separate program to complement ATDP's academic courses, enabling families to schedule a full day of activity on site. <a href="/cal-adventures/" rel="noopener" target="_blank">Read more about Cal Adventures.</a>
+			</p>
+			<p>Please also consider <a href="/ex/">Explorations</a> on Wednesdays if your goal is to plan a full week of activity.</p>
+		</div>
+
+		<div class="columns small-12 medium-12 large-4 hide-for-medium">
+		</div>
+
+	</div>
+
+<!--
+	<div class="row">
+
+		<div class='columns small-12 medium-12 large-8'>
+			<h3 id="newthisyear">New Courses for 2021 <a href="#newthisyear" class='bookmark'><i class="bookmark fa fa-fw fa-link"></i></a></h3>
+
+			<p>
+				These courses have never been held at ATDP before, and demand for these spots may be very high. As applications are evaluated in the order completed, we strongly recommend applying as early as you can!
+			</p>
+			<ul>
+				<li><a href="https://atdp.berkeley.edu/programs/ed/catalog/#lets-learn-mandarin">Let’s Learn Mandarin!</a></li>
+				<li><a href="https://atdp.berkeley.edu/programs/ed/catalog/#tropical-rainforests">Tropical Rainforests</a></li>
+			</ul>
+		</div>
+
+		<div class='columns small-12 medium-12 large-4 hide-for-medium'>
+		</div>
+
+	</div>
+-->
+
+	<p>&nbsp;</p>
+
+
+
+	<div class="pictureblock" data-magellan-destination="calendar" id="calendar">
+		<div class="scrollbg row third end" data-top-bottom="background-position: 50% 00%;" data-bottom-top="background-position: 50% 110%;" style="background-image: url('/wp-content/uploads/2019/10/Physics-of-Motion-and-Force-5.jpg'); background-position:0px 44%;">
+		</div>
+	</div>
+
+	<p><a name="calendar">&nbsp;</a></p>
+	<p>&nbsp;</p>
+	<h1>Program calendar <a href="#calendar" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h1>
+	<hr>
+
+
+	<table style="font-weight: 500;">
+
+
+		<tr class="headerrow">
+			<td colspan="3">
+				<h4>Application dates</h4>
+				<em style="font-size: 1.1em;line-height: 1.2em;display: block;margin-bottom: 0.4em;">ATDP evaluates applications on an ongoing basis in the order they are received, beginning when an application is complete. The earlier you submit a complete application, the better your chances at receiving placement into your preferred course!</em>
+			</td>
+		</tr>
+
+
+
+		<!-- original dates below -->
+
+		<tr>
+			<td colspan="2">
+				<strong>Early</strong> &ndash; Returning students receive priority &middot; <a href="/fa">Financial Aid available</a>
+			</td>
+			<td class="hide-for-small-only">
+			</td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em">Application Deadline
+			</td>
+			<td>Wed., March 1, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em">Placement Information Available
+			</td>
+			<td>Thurs., April 13, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em;padding-bottom:2em">Tuition Deadline (or first tuition installment)
+			</td>
+			<td style="padding-bottom:2em">Wed., May 24, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2">
+				<strong>Standard</strong> &ndash; <a href="/fa">Financial Aid available</a>
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em">Application Deadline
+			</td>
+			<td>Wed., March 29, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em">Placement Information Available
+			</td>
+			<td>Fri., April 28, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em;padding-bottom:2em">Tuition Deadline (or first tuition installment)
+			</td>
+			<td style="padding-bottom:2em">Wed., May 24, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2">
+				<strong>Extended</strong> &ndash; <em>Financial Aid <strong>NOT</strong> available &middot; Limited course availability &middot; Rolling acceptance</em>
+			</td>
+<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em">Application Deadline
+			</td>
+			<td>Thurs., June 1, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em">Placement Information Available
+			</td>
+			<td>within 2 weeks of completed application
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td style="padding-left:1.6em;padding-bottom:2em">Tuition Deadline (or first tuition installment)
+			</td>
+			<td style="padding-bottom:2em">within 2 weeks of placement notification
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+
+
+		<tr class="headerrow">
+			<td colspan="2">
+				<h4>Pre-program dates</h4>
+			</td>
+<td class="hide-for-small-only"></td>
+		</tr>
+
+		<!-- TBD placeholder-->
+		<!-- 
+			<tr>
+			<td colspan="2">
+			To Be Announced
+			</td>
+			<td class="hide-for-small">
+			</td>
+			</tr>
+		-->
+
+
+		<tr>
+			<td>Full <a href="/policies/#refunds">refund</a> deadline
+			</td>
+			<td>Wed., June 7, 2023
+			</td>
+			<td class="hide-for-small-only">
+<em>Last day to request a full <a href="/policies/#refunds">refund</a></em>
+			</td>
+		</tr>
+<!--
+		<tr>
+			<td>Supply kit pickup
+			</td>
+			<td>Sat., June 26 & Sun., June 27, 2021
+			</td>
+			<td class="hide-for-small-only"><em>Each course description indicates whether there is a supply kit</em>
+			</td>
+		</tr>
+-->
+
+		<tr>
+			<td>Final date for tuition payments (drop dead)
+			</td>
+			<td>Thurs., June 29, 2023
+			</td>
+			<td class="hide-for-small-only">
+			</td>
+		</tr>
+
+		<tr>
+			<td>Orientation Meet &amp; Greet
+			</td>
+			<td>Sat., July 8, 2023
+			</td>
+			<td class="hide-for-small-only">
+			</td>
+		</tr>
+
+
+		<tr class="headerrow">
+			<td colspan="2">
+				<h4>Program dates</h4>
+			</td>
+<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td>Classes begin
+			</td>
+			<td>Mon., July 10, 2023</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+<!-- 		<tr>
+			<td>Tuition deadline for second installment
+			</td>
+			<td>Thurs., July 2, 2020
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+-->
+
+
+		<tr>
+			<td>Classes end
+			</td>
+			<td>Fri., July 28, 2023
+			</td>
+			<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr class="headerrow">
+			<td colspan="2">
+				<h4>Post-program dates</h4>
+			</td>
+<td class="hide-for-small-only"></td>
+		</tr>
+
+		<tr>
+			<td>Final evaluations issued
+			</td>
+			<td>Late August, early September
+			</td>
+			<td class="hide-for-small-only">
+<!--<em>Your notification will include dates and instructions for the following</em></td>-->
+		</td>
+</tr>
+
+		<!--
+			<tr>
+			<td>Deadline to authorize school mailing
+			</td>
+			<td>Early September
+			</td>
+			<td class="hide-for-small-only"></td>
+			</tr>
+
+			<tr>
+			<td>ATDP mails Final Evaluations to schools
+			</td>
+			<td>Mid-September
+			</td>
+			<td class="hide-for-small-only"></td>
+			</tr>
+		-->
+
+	</table>
+
+	<!-- end ED calendar -->
+
+
+	<p>&nbsp;</p>
+
+	<div class="pictureblock" data-magellan-destination="courses" id="courses">
+		<div class="scrollbg row third end" data-top-bottom="background-position: 50% 00%;" data-bottom-top="background-position: 50% 110%;" style="background-image: url('/wp-content/uploads/2019/10/Creative-Writing-8.jpg'); background-position:0px 44%;">
+		</div>
+	</div>
+
+
+	<p><a name="courses">&nbsp;</a></p>
+	<p>&nbsp;</p>
+	<h1>Courses <a href="#courses" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h1>
+	<hr>
+
+	<p><a href="/programs/ed/catalog/" class="button"><strong>Browse the online course catalog&nbsp;&nbsp;<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></strong></a></p>
+
+	<p>Our classes unite teachers who love to teach with students who love to learn. While our classes are academic, they are also age appropriate and activity-based. Each course focuses on one specific subject, allowing students to gain deep knowledge. The inspired curriculum makes learning fun.</p>
+
+	<div class="section-directory show-for-small-only">
+		<p>&nbsp;</p>
+		<table>
+			<tr><td class="course-name"><a href="#schedule">Schedule &amp; Workload</a></td></tr>
+			<tr><td class="course-name"><a href="#choosing">Choosing a Course</a></td></tr>
+			<tr><td class="course-name"><a href="#faculty">Our Faculty</a></td></tr>
+		</table>
+	</div>
+
+	<div class="section-block row">
+
+		<div id="courses-block" class="course-descriptions columns small-12 medium-7 large-8">
+
+			<p id="schedule">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Schedule &amp; Workload <a href="#schedule" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+
+						<p>Classes meet within a three and a half hour window. For online classes, the amount of live (synchronous) time may be less. Morning classes are from 8:30 a.m. to noon, and afternoon classes are from 1:00 to 4:30 p.m. Schedules will include recess/screen breaks. For estimated maximum homework times, see each individual course description in the online catalog.</p>
+						<p>Students completing Grades 4 to 6 with strong academic records are allowed to enroll in a second academic class if there is space. Any invitation to enroll in a second class is made available with the acceptance notification.</p>
+						<p>Please also consider Explorations if your goal is to plan a full day or week of activity. Students enrolled in a Elementary Division course can register for Explorations without applying separately.</p>
+
+					</div>
+				</div>
+			</div>
+
+			<p id="choosing">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Choosing a Course <a href="#choosing" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+						<p>Each course will concentrate on one subject area, such as <i>The Art and Science of Math</i> (for 4th graders) or <i>Human Physiology</i> (for 6th graders). Please carefully review the course descriptions for your grade level.</p>
+						<p>We generally recommend that parents discuss all the course options with their child and that they choose together the class that best capitalizes on the child’s academic strengths and deep interests. The subject chosen should be one that the student will want to learn about for three weeks and explore in depth with hands-on projects and interesting activities.</p>
+					</div>
+				</div>
+			</div>
+
+			<p id="faculty">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Our Faculty <a href="#faculty" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+
+						<p>Our teachers, including lead instructors and instructional associates, are carefully chosen from a pool of exceptionally talented public school, private school, and university instructors. In addition to their demonstrated excellence as classroom teachers, they share a serious commitment to rich, deep academic talent development.</p>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="" data-anchor-target="#courses-block" class="section-directory columns medium-5 large-4 hide-for-small-only">
+			<p>&nbsp;</p>
+			<table>
+				<tr><td class="course-name"><a href="#schedule">Schedule &amp; Workload</a></td></tr>
+				<tr><td class="course-name"><a href="#choosing">Choosing a Course</a></td></tr>
+				<tr><td class="course-name"><a href="#faculty">Our Faculty</a></td></tr>
+			</table>
+		</div>
+	</div>
+
+	<p>&nbsp;</p>
+
+
+
+
+
+
+
+	<div class="pictureblock" data-magellan-destination="attending" id="attending">
+		<div class="scrollbg row third end" data-top-bottom="background-position: 50% 00%;" data-bottom-top="background-position: 50% 110%;" style="background-image: url('/wp-content/uploads/2019/10/Creating-with-Computers-3.jpg'); background-position:0px 44%;">
+		</div>
+	</div>
+
+
+	<p><a name="attending">&nbsp;</a></p>
+	<p>&nbsp;</p>
+	<h1>Attending <a href="#attending" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h1>
+	<hr>
+
+	<div class="section-directory show-for-small-only">
+		<p>&nbsp;</p>
+		<table>
+			<tr><td class="course-name"><a href="#acceptance">Acceptance Notification</a></td></tr>
+			<tr><td class="course-name"><a href="#confirming">Confirming Enrollment</a></td></tr>
+			<tr><td class="course-name"><a href="#getting-to-class">Getting to Class</a></td></tr>
+			<tr><td class="course-name"><a href="#attendance">Attendance</a></td></tr>
+			<tr><td class="course-name"><a href="#finaleval">Final Evaluation</a></td></tr>
+		</table>
+	</div>
+
+	<div class="section-block row">
+
+		<div id="attending-block" class="course-descriptions columns small-12 medium-7 large-8">
+
+			<p id="acceptance">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Acceptance Notification <a href="#acceptance" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+						<p>Students who have been accepted to ATDP and who applied by the early or standard postmark deadlines will receive their acceptance notification in their online account and via email approximately one month later (see the <a href="#calendar">program calendar</a>). This notification will come along with our ED Student &amp; Family guide, which contains important information and instructions for confirming your enrollment and preparing to attend class.</p>
+					</div>
+				</div>
+			</div>
+
+			<p id="confirming">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Confirming Enrollment <a href="#confirming" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+						<p>To confirm course placement, a parent or guardian of a student who plans to attend must complete the online Enrollment Form—which includes emergency information, policy agreement, and tuition payment—by the May 25 tuition deadline.</p>
+						<p>The policy agreement will include our safety plan for 2023, which we will calibrate in response to evolving public health conditions, guidelines, and UC Berkeley policies. Agreeing to these policies is a condition of enrollment.</p>
+						<p>Total cost for each ATDP course can be found under the individual course’s description. This includes the base tuition fee, program fee, and (if applicable) supply kit, but does <strong>not</strong> include the application processing fee or expenses for basic supplies on the shopping lists provided by a few online instructors.</p>
+						<h5>Sibling Discount</h5>
+						<p>For families confirming enrollment for two or more siblings, a $35 tuition discount is available for each student. For example, if two siblings attended, each student would receive one $35 discount from tuition, for a total family discount of $70. This discount is taken from the course's base tuition only, not from the application fee or the program fee. </p>
+						<h5>Refunds</h5>
+						<p>A parent whose registered student is unable to attend must withdraw the student in writing and may request a tuition refund prior to Wed., June 7, 2023. No refund will be made in the case of a student who fails to attend classes or is withdrawn from ATDP for failure to meet the standards of appropriate behavior, including completion of homework. See our <a href="/policies/#refunds">refund policy</a>.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<p id="getting-to-class">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Getting to Class<a href="#getting-to-class" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+
+						<p>Elementary Division courses are offered through two different programs: one in-person at Washington School in Pt. Richmond and one remote through live online meetings (Zoom). Choose your preferred format at the time of application.</p>		
+						<h5>In-person classes</h5>			
+						<p>All ED in-person courses are held at Washington Elementary School, located at 565 Wine Street in Point Richmond, nine miles northwest of UC Berkeley. The historic small town of Point Richmond is nestled in a quiet area between Interstate 580 and San Francisco Bay, near the eastern anchorage of the Richmond-San Rafael Bridge. Many families choose to carpool, and information about our automated commuter directory will be provided in the student’s acceptance materials. </p>
+<p>For families that want a full day of activity on site, see also <a href="/cal-adventures/" rel="noopener" target="_blank">Cal Adventures Sports &amp; Arts Camp</a>.</p>
+						<h5>Remote learning classes</h5>			
+						<p>All ED remote learning courses are held live on Zoom, and attendance and participation expectations are similar in-person courses. Students will need to have a stable internet connection of sufficient speed, a computer capable of joining Zoom meetings, and a camera. ATDP remote classes have a program-wide “cameras on” policy, so students should be prepared for live interactions with instructors and classmates. Course descriptions for online courses contain additional information about that course’s particular remote format, including how much parental involvement may be required.</p>	
+					</div>
+				</div>
+			</div>
+
+
+
+			<p id="attendance">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Attendance <a href="#attendance" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+
+						<p><em>There are no excused absences at ATDP.</em> As expectations are high and courses are fast-paced, even one absence makes it difficult to keep pace. Therefore, students are expected to attend every class session. <em>Missing too much class time for any reason may result in dismissal from the program without refund.</em> See our <a href="/policies/#attendance">attendance policy</a>.</p>					
+
+					</div>
+				</div>
+			</div>
+
+			<p id="finaleval">&nbsp;</p>
+			<div class="description-block">
+				<div class="course-name">Final Evaluation <a href="#finaleval" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</div>
+				<div class="description-content">
+					<div class="description">
+
+						<p>After classes end, parents will receive a Final Evaluation summarizing their child’s academic progress and interests in class. It will review and report on the student’s performance and achievement.</p>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<div id="" data-anchor-target="#attending-block" class="section-directory columns medium-5 large-4 hide-for-small-only">
+			<p>&nbsp;</p>
+			<table>
+				<tr><td class="course-name"><a href="#acceptance">Acceptance Notification</a></td></tr>
+				<tr><td class="course-name"><a href="#confirming">Confirming Enrollment</a></td></tr>
+				<tr><td class="course-name"><a href="#getting-to-class">Getting to Class</a></td></tr>
+				<tr><td class="course-name"><a href="#attendance">Attendance</a></td></tr>
+				<tr><td class="course-name"><a href="#finaleval">Final Evaluation</a></td></tr>
+			</table>
+		</div>
+	</div>
+
+	<p>&nbsp;</p>
+
+
+
+
+	<div class="pictureblock" data-magellan-destination="applying" id="applying">
+		<div class="scrollbg row third end" data-top-bottom="background-position: 50% 0%;" data-bottom-top="background-position: 50% 80%;" style="background-image: url('/wp-content/uploads/2019/10/Art-of-Persuasion-7.jpg'); background-position:0px 44%;">
+		</div>
+	</div>
+
+
+	<p><a name="applying">&nbsp;</a></p>
+	<p>&nbsp;</p>
+	<h1>Applying <a href="#applying" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h1>
+	<hr>
+
+	<h5>Please review the <a href="#application-process"><strong>application instructions</strong></a> below before applying.</h5>
+	<p>Ready to go? <a href="/wp-login.php">Log in</a> or <a href="/wp-login.php?action=register">register a new account</a>, then go to your <a href="/account">account menu</a>.</p>
+
+
+	<div class="row">
+		<div id="instructions-block" class="columns small-12 medium-12 large-8">
+
+
+			<hr>
+
+
+			<h3 id="application-process">The Application Process <a href="#application-process" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+			<p>
+				ATDP evaluates applications on an ongoing basis in the order they are received, beginning when an application is marked complete. The earlier you submit a complete application, the better your chances at receiving placement into your preferred course!
+			</p>
+			<ul>
+				<li>The application process is the same for new and returning students.</li>
+				<li>Students must reapply every year, and returning students are not guaranteed automatic readmission or placement in their first choice of course.</li>
+				<li>Incomplete applications are not considered for placement.</li>
+			</ul>
+
+			<h4 class="filterkey description" id="new-or-returning">
+				Am I a new or returning student?<i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+			</h4>
+			<p class="description new-or-returning">A student who applied in a previous year and then withdrew without completing a course will be considered a new student for admission purposes. Students who have attended the Elementary Division previously and are applying to the Secondary Division for the first time are also considered new students, but their previous participation is noted.</p>
+
+
+			<hr>
+
+
+			<h3 id="deadlines">Deadlines <a href="#deadlines" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+			<h4>Early Application Deadline - Wed., March 1, 2023</h4>
+			<ul>
+				<li>Financial aid available</li>
+				<li>Returning students receive priority</li>
+				<li>A limited number of spots in each course will be reserved for early applicants. Based on the number and relative strength of other early applications, an early applicant may be automatically deferred to a standard applicant if no early acceptance decision is possible.</li>
+			</ul>
+			<h4>Standard Application Deadline - Wed., March 29, 2023</h4>
+			<ul>
+				<li>Financial aid available</li>
+				<li>Availability may be limited in the case of very popular courses</li>
+			</ul>
+			<h4>Extended Application Deadline - Thurs., June 1, 2023</h4>
+			<ul>
+				<li>Financial aid <strong>NOT</strong> available</li>
+				<li>Course availability may be very limited</li>
+			</ul>
+
+
+
+			<hr>
+
+			
+			<h3 id="instructions">Instructions <a href="#instructions" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+
+			<h4 id="step1">Step 1: Choose a Course <a href="#step1" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h4>
+
+			<p>Browse our <a href="/programs/ed/catalog/">course offerings</a>, then choose one course that interests you and up to three alternates. Keep our <a href="/policies/#attendance">attendance policy</a> in mind: all ED courses run during the three weeks of July 10&ndash;28, 2023.</p>
+
+			<p>Course availability may change throughout the application season as courses fill. Check our list of <a href="/programs/ed/catalog/">course offerings</a> for frequent updates.</p>
+
+
+			<h4 id="step2">Step 2: Prepare Required Materials <a href="#step2" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h4>
+
+			<p>Please prepare the following items in the order listed below. Items numbered 1 through 5 are required for a complete application. Please include federal tax documentation (item 6) if you wish to apply for financial aid. </p>
+
+			<p>Items 1-5 can be submitted in the online application as a PDF (recommended) or image file. Due to campus policy, tax documents (item 6) must be provided as a paper copy via fax or mail.</p>
+
+			<ol style="list-style-type: none;">
+				<li>
+					<h4 class="filterkey description" id="appitem1">
+						1. Application Fee  <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+					</h4>
+					<div class="description appitem1">
+						<p>There is an application fee for each prospective student. The fee is $50 for domestic students. For students attending school outside the US, the fee is $80. This fee is non-refundable. It covers only the cost of application processing and does not apply toward tuition or facilities fees. Available payment methods include:</p>
+						<ul>
+							<li>Online payment by credit/debit card <strong>(preferred)</strong>
+</li>
+							<li>Check or money order made payable to “UC Regents.” Write “ED” and the student’s first and last name on the memo line. Mail your check payment to ATDP (see “Mailing Instructions” below).
+								<div class="warning" style="margin-top: 0.5em;">Mailed payments WILL delay your application. We strongly recommend making your payment online if at all possible.</div>
+							</li>
+							<li>
+								Those applying for need-based financial aid may apply for an application fee waiver if the fee poses a financial hardship. See our <a href="/fa">Financial Aid page</a> for details.
+							</li>
+						</ul>
+					</div>					
+				</li>
+				<li>
+					<h4 class="filterkey description" id="appitem2">
+						2. Teacher Referral Form  <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+					</h4>
+					<div class="description appitem2">
+						<p>ATDP’s Teacher Referral Form (TRF) is a brief online form that collects feedback from your teacher, and must be completed as part of your online application before it can be submitted. It must be completed by the student’s current primary teacher or another current teacher who instructs in any academic subject (e.g., mathematics, science, language arts; <strong>not</strong> elective, advisory, or extracurricular classes). The teacher’s academic subject need not match the subject of the ATDP course(s) to which you are applying. </p>
+						<p>Remember that your teacher’s time is valuable. Ask your teacher ahead of time before send them an online request. We recommend sending your teacher this form at least one week before you plan to submit it with your application.</p>
+						<p>You have two options for requesting that your teacher complete it:</p>
+						<ul>
+							<li>
+<strong>Identify your teacher in your online application <em>(preferred)</em>.</strong> We’ll email your teacher a link to an online form for them to complete. Note that you won’t be able to submit your online application until your teacher completes the form.<br><strong>or</strong>
+							</li>
+							<li>
+<strong>Send your teacher a request before applying online.</strong> You can request a Teacher Referral Form early by visiting <a href="/trf/student" target="_BLANK" rel="noopener">atdp.berkeley.edu/trf/student</a> and providing your teacher’s information. We’ll email your teacher a link to an online form for them to complete. Once they’re done, we’ll email you a code that you can use to add the completed form to an online application. (Teachers can also send referrals to students that they feel would be a good fit for our program!)</li>
+						</ul>
+						<p>
+							<strong>Do not request a letter of recommendation. Do not submit more than one Teacher Referral Form with your application materials.</strong>
+						</p>
+					</div>					
+				</li>
+				<li>
+					<h4 class="filterkey description" id="appitem3">
+						3. Copy of Report Card  <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+					</h4>
+					<div class="description appitem3">
+						<p>Submit a legible copy of your first semester (or most recent) report card for the current (’22–’23) school year.</p>
+						<p>We request that you send final grades, but if those are not available, you may submit your most recent progress report. Do not delay submitting your application to wait for final grades; if necessary, we may ask for an updated report card after receiving your application. If you need assistance obtaining a copy, contact your school office.</p>
+						<p>If your school does not issue grades or marks, please submit whatever kind of progress report is provided.</p>
+						<p>Screenshots of online reports are only acceptable if they clearly include the student's name and date of the grades displayed, and we may ask for an updated report card after receiving your application.</p>
+					</div>					
+				</li>
+
+				<li>
+					<h4 class="filterkey description" id="appitem4">
+						4. Copy of Achievement Test Scores  <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+					</h4>
+					<div class="description appitem4">
+						<p class="info">Students in grade 2 and below may skip this item. Students in grade 3 may skip this item if they have not taken any achievement tests.</p>
+						<p>Submit a legible copy of your most recent California standardized test (CAASPP) or other standardized achievement test scores (e.g., Stanford Achievement Test, Iowa Test of Basic Skills, or other school-administered test that gives national percentile scores). The test must have been taken within the past three years (i.e., 2022, 2021, or 2020) and include scores in the areas of math and reading/ELA.</p>
+						<p class="warning"><strong>Note:</strong> Since CAASPP testing did not occur in 2020, most California public school students should submit the CAASPP scores they received in 2021 or 2022.</p>
+						<p>Do not delay submitting your application to wait for more recent test scores. Include whatever acceptable test scores you have from the last three years.</p>
+						<p>If you have not taken a standardized achievement test in the past three years, please mention it at the end of your Statement of Interest.</p>
+					</div>					
+				</li>
+
+				<li>
+					<h4 class="filterkey description" id="appitem5">
+						5. Academic Product or Essay  <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+					</h4>
+					<div class="description appitem5">
+						<p>Please submit a product written in English and of grade-appropriate length. As a rough guide:</p>
+						<ul>
+							<li>
+								Kindergarten to Grade 1:  3-5 sentences
+							</li>
+							<li>
+								Grade 2 to Grade 4:  2-3 paragraphs
+							</li>
+							<li>
+								Grade 5 to Grade 6:  1-2 pages
+							</li>
+						</ul>
+						<h5>Option A - Existing Essay or Story</h5>
+						<p>Submit a piece of original written work that shows your own original thinking. This work should be one of which you are especially proud and which was completed since September 2022. While the work may have been done for a school assignment, it need not have been. The product you submit need not be in the same subject area to which you are applying. Examples of appropriate products include English essays, social studies reports, and poetry. (Poems must include a paragraph explaining the meaning behind the words.) Examples of unacceptable products include drawings not accompanied by original writing, spelling tests, arithmetic exercises, slideshow presentations, fill-in-the-blank worksheets, and multiple choice tests. While you may submit photos, videos, or drawings in support of your work, they may not be submitted in place of original writing. </p>
+						<h5>Option B - Written Response to a Question</h5>
+						<p>Please write your own answer to the question listed for your grade level. Students currently in Kindergarten may write their answers or dictate their answers to an older person.</p>
+						<ul>
+							<li>
+<strong>For students in Kindergarten to Grade 1 (3-5 sentences):</strong> What is your favorite time of day? Why? What do you like to do during that time?</li>
+							<li>
+<strong>For students in Grade 2 to Grade 4 (2-3 paragraphs):</strong> If you could tell every adult one piece of advice, what would it be? Why do you think this is good advice?</li>
+							<li>
+<strong>For students in Grade 5 to Grade 6 (1-2 pages):</strong> What non-academic subject do you feel is important for everyone to learn? Why do you think this subject is important? Why do you think it is not taught at school? How might you take it upon yourself to learn it on your own?</li>
+						</ul>
+						<p class="clearfix">&nbsp;</p>
+					</div>					
+				</li>
+
+				<li>
+					<h4 class="filterkey description" id="appitem6">
+						6. Need-based Financial Aid (optional)  <i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i>
+					</h4>
+					<div class="description appitem6">
+						<p><em><strong>See our <a href="/fa"><strong>Financial Aid page</strong></a> for complete information and detailed instructions.</strong></em></p>
+						<p>To apply for financial aid, please provide both parents’ most recent Federal Tax Return AND ALL SCHEDULES (i.e., the complete tax return) for each applicant.</p>
+						<p>If the $50 application fee poses a financial hardship, submit a letter of explanation and supporting documents. You may include these in your financial aid documents or as part of the student's Statement of Interest.</p>
+						<p>Send your supporting materials no later than Wednesday, March 29, the standard application deadline.</p>
+					</div>	
+				</li>
+			</ol>
+
+
+
+
+			<h4 id="step3">Step 3: Submit Your Application <a href="#step3" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h4>
+
+			<p>If you have not yet done so, <a href="/wp-login.php?action=register">register a new account</a> and then access the <a href="/account">"My Account" menu</a>. Click on the name of a returning student, or select "Apply for a new student", and follow the on-screen instructions. You can do this multiple times with the same account if there is more than one student in your household applying to ATDP. If you have used your account for the same applicant previously, some of the application will be completed for you. <em>Double-check this information for accuracy and update as needed before submitting!</em></p>
+
+			<p>You can log in at any time to check the status of your application, review placement information, make payments by credit/debit card, print receipts, and access your educational records from previously completed courses.</p>
+
+		</div>
+
+		<div id="" data-anchor-target="#instructions-block" class="section-directory columns medium-5 large-4 hide-for-small-only">
+			<p>&nbsp;</p>
+			<table>
+				<tr><td class="course-name"><a href="#application-process">The Application Process</a></td></tr>
+				<tr><td class="course-name"><a href="#deadlines">Deadlines</a></td></tr>
+				<tr><td class="course-name"><a href="#step1">Step 1: Choose a Course</a></td></tr>
+				<tr><td class="course-name"><a href="#step2">Step 2: Prepare Required Materials</a></td></tr>
+				<tr><td class="course-name"><a href="#step3">Step 3: Submit Your Application</a></td></tr>
+			</table>
+		</div>
+
+	</div>
+
+	<p>&nbsp;</p>
+
+
+</div>
+
+
+
+
+<div id="see-also">
+<h4>See also</h4>
+<a href="/policies/">Program policies</a>
+<a href="/faq/">FAQs</a>
+</div>
+					</div>
+<!-- .post-content -->
+
+		
+		
+		</article><!-- .rtp-post-box -->
+            </section><!-- #content -->
+
+
+                </div> <!-- End of content-wrapper row -->
+
+                
+            </div>
+<!-- #content-wrapper -->
+
+            
+            
+            <footer id="footer-wrapper" role="contentinfo" class="clearfix rtp-footer-wrapper rtp-section-wrapper">
+
+                
+                
+
+                <div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+<li id="menu-item-14505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14505">
+<a href="/about/">About ATDP</a>
+<ul class="sub-menu">
+	<li id="menu-item-17387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17387"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-12009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12009"><a href="/faq/">FAQs</a></li>
+	<li id="menu-item-14523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14523"><a href="/opportunities/">Jobs &#038; Internships</a></li>
+	<li id="menu-item-18327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18327"><a href="/techsupport/">Tech Support</a></li>
+</ul>
+</li>
+<li id="menu-item-17385" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-has-children menu-item-17385">
+<a href="/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-17382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17382"><a href="/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16415"><a href="/fa/">Financial Aid</a></li>
+	<li id="menu-item-17383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17383"><a href="/policies/">Policies</a></li>
+</ul>
+</li>
+<li id="menu-item-17381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17381">
+<a href="/programs/sd/">Secondary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17389"><a href="/programs/sd/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18289"><a href="/programs/sd/onsiteguide/">On-Site Student Guide</a></li>
+	<li id="menu-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288"><a href="/programs/sd/onlineguide/">Online Student Guide</a></li>
+</ul>
+</li>
+<li id="menu-item-17380" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17344 current_page_item menu-item-has-children menu-item-17380">
+<a href="/programs/ed/" aria-current="page">Elementary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17388"><a href="/programs/ed/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287"><a href="/programs/ed/onsiteguide/">On-Site Family Guide</a></li>
+	<li id="menu-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286"><a href="/programs/ed/onlineguide/">Online Family Guide</a></li>
+</ul>
+</li>
+</ul></div>
+
+                <div id="sitemap">
+                    <div class="row">
+                        <div class="columns small-12 medium-6 large-3">
+                            <a href="/sitemap/"><i class="fa fa-sitemap"></i> &nbsp;Complete site map</a>
+                        </div>
+                        <div class="columns small-12 medium-6 large-9">
+                            <form role="search" method="get" class="searchform search-form" action="https://atdp.berkeley.edu/">
+                <div class="rtp-search-form-wrapper">
+                    <label class="screen-reader-text hide">Search for:</label>
+                    <input type="search" required="required" placeholder="Search Here..." value="" name="s" class="search-text search-field rtp-search-input" title="Search Here...">
+                    <input type="submit" class="searchsubmit search-submit rtp-search-button button tiny" value="Search" title="Search">
+                </div>
+             </form>                        </div>
+                    </div>
+                </div>
+
+
+                <div id="footer-contact">
+                    <ul id="footer-name" class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
+                        <li>University of California, Berkeley</li>
+                        <li>Academic Talent Development Program</li>
+                        <li>Graduate School of Education</li>
+                    </ul>
+
+                    <ul id="footer-info" class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+                        <li>
+                            <!-- <h6><i class="fa fa-at"></i></h6> -->
+                            atdpoffice@berkeley.edu<br>
+                            <span id="social-icons">
+                                <!--<a href="https://www.facebook.com/ucb.atdp" target=_BLANK><i class="fa fa-facebook-square"></i></a>-->
+                                <a href="https://twitter.com/UCBerkeleyATDP" target="_BLANK"><i class="fa fa-twitter-square"></i></a>
+                                <a href="http://i.instagram.com/ucberkeley_atdp" target="_BLANK"><i class="fa fa-instagram"></i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-phone"></i></h6>
+                            ph 510-642-8308<br>
+                            fax 510-642-0510
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-envelope"></i></h6>
+                            70 University Hall #1160<br>
+                            Berkeley, CA  94720-1160
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-map-marker"></i></h6>
+                            2018 Oxford Street<br>
+                            Berkeley, CA  94720
+                        </li>
+                        
+                    </ul>
+
+                    <p id="copyright-tag">Copyright &copy; 2023 UC Regents; all rights reserved</p>
+                </div>
+
+                
+
+                
+                
+
+                <img src="/wp-content/uploads/2014/10/ucb-logo-gold-on-white-300x92.png" alt="UC Berkeley" width="300" height="92" class="alignright size-medium wp-image-11097">
+
+
+            </footer><!-- #footer-wrapper-->
+
+            
+            
+        </div>
+<!-- #main-wrapper -->
+
+        <div class="simple-banner simple-banner-text" style="display:none !important"></div>
+<script type="text/javascript" id="qppr_frontend_scripts-js-extra">
+/* <![CDATA[ */
+var qpprFrontData = {"linkData":{"\/sd\/catalog\/":[0,1,""],"\/ed\/catalog\/":[0,1,""],"\/ed\/":[0,0,"\/programs\/ed"],"\/pathway-scholarship":[0,1,""],"\/an-end-to-star-testing-the-daily-californian\/":[1,1,"http:\/\/www.dailycal.org\/2013\/09\/09\/state-assembly-considers-bill-to-replace-standardized-testing\/"],"\/looking-back-and-ahead-mark-your-2015-calendars\/":[1,0,""],"\/?p=17127":[1,0,""],"\/applications-are-now-open-for-summer-2022\/":[1,1,"http:\/\/createsend.com\/t\/r-92B8B3ACC2FACE0C2540EF23F30FEDED"],"\/applications-open-for-summer-2023\/":[1,0,""],"\/help-support-our-pathway-scholars-for-the-big-give-today-only\/":[1,0,"https:\/\/crowdfund.berkeley.edu\/atdp"],"\/math-placement-test-update-make-up-dates\/":[0,1,"\/news\/placement-testing\/"],"\/s12-summer-newsletter-kicks-off-atdps-secondary-division\/":[0,1,""],"\/sd-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/sd\/"],"\/ed-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/ed\/"],"\/?p=6540":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/ed2014-postmark-deadlines\/":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/aglist\/":[0,1,"https:\/\/hs-articulation.ucop.edu\/agcourselist\/institution\/5308"],"\/now-accepting-applications-for-secondary-division-ta-interns\/":[0,1,"\/opportunities\/#sdinterns"],"\/2022-covid\/":[0,1,"\/covid-safety-procedures\/"],"\/including-atdp-courses-on-your-college-application\/":[0,1,"\/news\/including-atdp-courses\/"],"\/lets-play-a-game\/":[0,0,"http:\/\/www.google.com"],"\/2015-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/calendar\/"],"\/on-and-around-the-uc-berkeley-campus\/":[0,0,"\/news\/on-and-around-the-berkeley-campus\/"],"\/community-newsletter-volume-4-issue-2\/":[0,0,"http:\/\/atdp.berkeley.edu\/community-newsletter-vol-4-i-2\/"],"\/2014-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/about\/calendar\/"],"\/sd\/":[0,0,"\/programs\/sd"],"\/resources\/":[0,0,""],"\/ed-2\/":[0,0,"\/programs\/ed\/#applying"],"\/sd-2\/":[0,0,"\/programs\/sd\/#applying"],"\/apply\/":[0,0,"\/programs"],"\/attending\/tuition\/":[0,0,"\/programs"],"\/attending\/location\/":[0,0,"\/programs"],"\/attending\/":[0,0,"\/programs"],"\/link-what-if-your-child-is-intellectually-gifted-high-ability\/":[0,0,"http:\/\/www.psychologytoday.com\/blog\/how-do-life\/201409\/what-if-your-child-is-intellectually-gifted-high-ability"],"\/2017-program-dates-now-available\/":[0,0,"\/calendar"],"\/new-family-referral-program\/":[0,0,"\/referral"],"\/jobs\/":[0,0,"\/opportunities"],"\/secondary-division-ta-2018\/":[0,0,"\/opportunities\/#tas"],"\/sd-deadline-2018\/":[0,0,"\/calendars\/#sd"],"\/secondary-division-2020-online\/":[0,0,"\/sd2020guide"],"\/elementary-division-2020-online-family-guide\/":[0,0,"\/ed2020guide\/"],"\/secondary-division-orientation-2020\/":[0,0,"\/secondary-division-student-family-orientation-2020\/"],"\/calendars\/":[0,0,"\/programs"],"\/selecting-a-course\/":[0,0,"\/programs\/sd\/#courses"],"\/celebrating-40-years-share-your-story-on-atdps-timeline\/":[0,0,"\/40th\/"],"\/instructor-spotlights-and-more-our-community-newsletter-kicks-off-applications-for-2021\/":[0,0,"\/community-newsletter\/"],"\/programs\/explorations\/":[0,0,"\/programs\/ex\/"],"\/explorations-now-open-for-registration\/":[0,0,"\/programs\/ex\/"],"\/secondary-division-placement-testing\/":[0,0,"\/news\/placement-testing\/"],"\/theres-still-time-to-apply-2022\/":[0,0,"\/news\/extended-deadlines\/"],"\/on-and-around-the-berkeley-campus-sd-on-site\/":[0,0,"\/news\/on-and-around-the-berkeley-campus\/"],"\/fall-updates-2023-program-dates-announced-trfs-now-available\/":[0,0,"https:\/\/academictalentdevelopmentprogram.cmail20.com\/t\/ViewEmail\/r\/535F04BB6EE1CF952540EF23F30FEDED\/E6334D0BC49C64D2DCC9454293137CA2"],"\/new-courses-2013\/":[0,0,""],"\/applications-open-for-2013-summer-session\/":[0,0,""],"\/share-speak-volunteer-be-a-part-of-the-atdp-story\/":[0,0,""],"\/welcome-to-ed-2014\/":[0,0,""],"\/?page_id=1102":[0,0,""],"\/sd\/a-g\/":[0,0,""],"\/subscribe\/":[0,0,""],"\/sd-explorations-available-2\/":[0,0,""],"\/community\/":[0,0,""],"\/mathplacement\/":[0,0,""],"\/account\/applications\/":[0,0,""],"\/account\/enrollment\/":[0,0,""],"\/community-newsletter\/":[0,0,""],"\/sd15-final-evals\/":[0,0,""],"\/sd-final-evaluations-2018\/":[0,0,""],"\/sd14-final-evaluations-released\/":[0,0,""],"\/ed-orientation-2018\/":[0,0,""],"\/ed-orientation-17\/":[0,0,""],"\/ed-orientation-15\/":[0,0,""],"\/ed-orientation-14\/":[0,0,""],"\/including-atdp-courses\/":[0,0,""],"\/on-and-around-the-berkeley-campus\/":[0,0,""],"\/on-and-around-campus\/":[0,0,""],"\/sd-placement-testing-2020\/":[0,0,""],"\/math-placement-testing-2019\/":[0,0,""],"\/math-placement-testing-2018\/":[0,0,""],"\/math-placement-testing-2017\/":[0,0,""],"\/?p=13433":[0,0,""],"\/math-placement-2015\/":[0,0,""],"\/math-placement-2014\/":[0,0,""],"\/math-placement-2013\/":[0,0,""],"\/mathplacement-2012\/":[0,0,""],"\/elementary-division-orientation-2020\/":[0,0,""],"\/ed-orientation-2021\/":[0,0,""],"\/secondary-orientation-2019\/":[0,0,""],"\/secondary-orientation-2018\/":[0,0,""],"\/sd-orientation-2017\/":[0,0,""],"\/?p=13453":[0,0,""],"\/sd-orientation-2015\/":[0,0,""],"\/sd-orientation-2014\/":[0,0,""],"\/sd-orientation-2013\/":[0,0,""],"\/secondary-division-welcome-student-orientation-on-june-2\/":[0,0,""],"\/courses-2\/":[0,0,""],"\/courses\/":[0,0,""],"\/extended-deadlines\/":[0,0,""],"\/after-the-deadline\/":[0,0,""],"\/theres-still-time-to-apply-about-our-extended-deadlines\/":[0,0,""],"\/2020-technology\/":[0,0,""],"\/theres-still-time-to-apply-2023\/":[0,0,""],"\/sd-readiness-testing-2023\/":[0,0,""]},"siteURL":"","siteURLq":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.2.3" id="qppr_frontend_scripts-js"></script>
+<script type="text/javascript" src="/wp-content/themes/rtpanel/js/rtp-concat-lib.js?ver=6.3.1" id="rtp-concat-lib-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.3.1" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/rtpanel-child-theme-master/js/rtp-child-package-min.js?ver=6.3.1" id="rtp-child-package-min-js"></script>
+				<script type="text/javascript">jQuery.noConflict();
+					(
+						function ( $ ) {
+							$( function () {
+								$( "area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane'])" ).click( function () {
+									if ( location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) && location.hostname == this.hostname ) {
+										var target = $( this.hash );
+										target = target.length ? target : $( '[name=' + this.hash.slice( 1 ) + ']' );
+										if ( target.length ) {
+											$( 'html,body' ).animate( {
+												scrollTop: target.offset().top - 80											},900 , 'easeOutQuad' );
+											return false;
+										}
+									}
+								} );
+							} );
+						}
+					)( jQuery );</script>
+			
+        <script type="text/javascript"></script>
+
+        
+
+    </body>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced (SSL caching disabled) 
+Database Caching using disk
+
+Served from: atdp.berkeley.edu @ 2023-10-24 15:42:02 by W3 Total Cache
+-->
+</html>
