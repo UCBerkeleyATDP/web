@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Spotlights &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/spotlights/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/spotlights/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Fri, 12 Feb 2021 23:12:06 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,14 +21,14 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>Instructor spotlights and more: Our Community Newsletter kicks off applications for 2021</title>
-		<link>/community-newsletter/</link>
+		<link>/web/community-newsletter/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Fri, 12 Feb 2021 23:10:53 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=17415</guid>
+		<guid isPermaLink="false">/web/?p=17415</guid>
 
 					<description><![CDATA[If you didn't receive it in your email inbox, check out our latest Community Newsletter, featuring SD instructor Jay Chugh and introducing Nicole Lockwood as our new teacher for Tropical Rainforests!]]></description>
 		
@@ -37,12 +37,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Ameer Fortier-Bourne</title>
-		<link>/voices-from-orientation-ameer/</link>
+		<link>/web/voices-from-orientation-ameer/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 06 Jun 2017 18:22:41 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=14902</guid>
+		<guid isPermaLink="false">/web/?p=14902</guid>
 
 					<description><![CDATA[Good morning everyone. My name is Ameer. I’m a longtime ATDP student, since third grade. In the Elementary Division, classes like “Simple Machines” and “Energy” were straight forward in their material and were not meant to build upon each other. Once I entered the Secondary Division and chose to take “First-Year Japanese,” it was a [&#8230;]]]></description>
 		
@@ -51,12 +51,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Ariana Salimi</title>
-		<link>/voices-from-orientation-salimi/</link>
+		<link>/web/voices-from-orientation-salimi/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 06 Jun 2017 18:04:18 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=14896</guid>
+		<guid isPermaLink="false">/web/?p=14896</guid>
 
 					<description><![CDATA[Good morning everyone. My name is Ariana Salimi, I’m 16 years old, I go to St. Mary’s College High School, and I’ve been taking ATDP courses every summer since 3rd grade. 9 whole years of ATDP! My expedition of ATDP started when my Dad’s dentist was just simply talking to my dad about the program. [&#8230;]]]></description>
 		
@@ -65,12 +65,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Ariana Salimi</title>
-		<link>/sd-orientation-ariana/</link>
+		<link>/web/sd-orientation-ariana/</link>
 		
 		<dc:creator><![CDATA[Stevie Jeung]]></dc:creator>
 		<pubDate>Mon, 13 Jun 2016 21:42:35 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=13485</guid>
+		<guid isPermaLink="false">/web/?p=13485</guid>
 
 					<description><![CDATA[I&#8217;ve been going to ATDP for half of my life. Although I have been taking classes at ATDP for 8 years, I still find it interesting. The first class I took was Simple Machines in Elementary Division. I remember being really bad at it because it was so hard. However, over time my performance improved. [&#8230;]]]></description>
 		
@@ -79,12 +79,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Veronica Wong</title>
-		<link>/sd-orientation-veronica/</link>
+		<link>/web/sd-orientation-veronica/</link>
 		
 		<dc:creator><![CDATA[Stevie Jeung]]></dc:creator>
 		<pubDate>Mon, 13 Jun 2016 21:33:14 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=13481</guid>
+		<guid isPermaLink="false">/web/?p=13481</guid>
 
 					<description><![CDATA[Hi everyone, and welcome, new and returning Secondary Division students! My name is Veronica Wong and I’m a rising senior at Piedmont High School. Today I’ll be sharing with you a few thoughts I have about ATDP. But since you’ve already heard so much about how wonderful it is, I’d like to present a different [&#8230;]]]></description>
 		
@@ -93,13 +93,13 @@
 			</item>
 		<item>
 		<title>ATDP has a new Program Director!</title>
-		<link>/new-program-director/</link>
+		<link>/web/new-program-director/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Wed, 16 Dec 2015 22:52:43 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=13325</guid>
+		<guid isPermaLink="false">/web/?p=13325</guid>
 
 					<description><![CDATA[After four years under the tireless stewardship of our Faculty Director, Dr. Frank C. Worrell, we are pleased to announce that we will have a new Program Director starting in January.]]></description>
 		
@@ -108,12 +108,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Gaby Battle</title>
-		<link>/sd-orientation-gaby/</link>
+		<link>/web/sd-orientation-gaby/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 16 Jun 2015 22:01:11 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=12406</guid>
+		<guid isPermaLink="false">/web/?p=12406</guid>
 
 					<description><![CDATA[Hello! My name is Gabrielle Battle. I will begin my freshman year at the College Preparatory School in Oakland this fall, and this summer is my 8th summer attending ATDP! There are so many things I can tell you about ATDP, and so much advice I could give you to help you succeed in this [&#8230;]]]></description>
 		
@@ -122,12 +122,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Tommy Tokunaga</title>
-		<link>/sd-orientation-tommy/</link>
+		<link>/web/sd-orientation-tommy/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 16 Jun 2015 21:45:33 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=12409</guid>
+		<guid isPermaLink="false">/web/?p=12409</guid>
 
 					<description><![CDATA[Hi, my name is Tommy Tokunaga. I’m going into my junior year of high school and I’d like to share a few thoughts on my own ATDP experience. My ATDP experience has been a varied and lengthy voyage. I started way back in kindergarten with the Oviparous Animals course in the Elementary Division where I [&#8230;]]]></description>
 		
@@ -136,12 +136,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Anaïs González</title>
-		<link>/sd-orientation-anais/</link>
+		<link>/web/sd-orientation-anais/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 16 Jun 2015 21:33:07 +0000</pubDate>
 				<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=12404</guid>
+		<guid isPermaLink="false">/web/?p=12404</guid>
 
 					<description><![CDATA[Hola! Ni hao! Hello all, new and returning secondary division students! My name is Anaïs González, a rising senior at the Lawrenceville School in New Jersey, and I&#8217;d be lying to you all if I said that ATDP has not changed my life. Before I begin, by the show of hands, how many members of [&#8230;]]]></description>
 		
@@ -150,13 +150,13 @@
 			</item>
 		<item>
 		<title>Minds in Motion: Dann Bearson on The Physics of Motion and Force</title>
-		<link>/dann-bearson/</link>
+		<link>/web/dann-bearson/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Wed, 19 Dec 2012 01:34:30 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=6432</guid>
+		<guid isPermaLink="false">/web/?p=6432</guid>
 
 					<description><![CDATA[The interview below is a part of a series on New ATDP Courses for 2013. Dann Bearson discusses The Physics of motion and Force, which he will co-teach with Dana Ozer. Read the course description here. What is your favorite thing about teaching science at this level (5th grade)?  Both Dana and I love the energy [&#8230;]]]></description>
 		
@@ -172,5 +172,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:43:01 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:57:07 by W3 Total Cache
 -->

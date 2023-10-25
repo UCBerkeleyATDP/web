@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: S&#8217;11 Week 2: From the Director	</title>
-	<atom:link href="/from-the-director-week-2/feed/" rel="self" type="application/rss+xml" />
-	<link>/from-the-director-week-2/</link>
+	<atom:link href="/web/from-the-director-week-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/from-the-director-week-2/</link>
 	<description></description>
 	<lastBuildDate>Tue, 13 Dec 2011 21:03:58 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		By: Stevie		</title>
-		<link>/from-the-director-week-2/#comment-29</link>
+		<link>/web/from-the-director-week-2/#comment-29</link>
 
 		<dc:creator><![CDATA[Stevie]]></dc:creator>
 		<pubDate>Tue, 28 Jun 2011 23:31:17 +0000</pubDate>
-		<guid isPermaLink="false">/commons/?p=325#comment-29</guid>
+		<guid isPermaLink="false">/web/commons/?p=325#comment-29</guid>
 
 					<description><![CDATA[Congrats to the baseball team! I&#039;m so glad they managed to escape the budget cuts.]]></description>
 			<content:encoded><![CDATA[<p>Congrats to the baseball team! I&#8217;m so glad they managed to escape the budget cuts.</p>
@@ -40,5 +40,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:45:42 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:59:48 by W3 Total Cache
 -->

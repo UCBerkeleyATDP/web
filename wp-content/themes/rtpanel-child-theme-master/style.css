@@ -29,7 +29,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{di
     height: 16px;
     width: 16px;
     border: 0;
-    background: transparent url('/wp-includes/js/mediaelement/controls.svg') no-repeat;
+    background: transparent url('/web/wp-includes/js/mediaelement/controls.svg') no-repeat;
 }
 	
 #buddypress .mejs-controls .mejs-play button{background-position:0 0 !important}
@@ -41,7 +41,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{di
 #buddypress .mejs-controls .mejs-mute button{background-position:-16px -16px !important}
 #buddypress .mejs-controls .mejs-unmute button{background-position:-16px 0 !important}
 #buddypress .mejs-controls .mejs-volume-button{position:relative !important}
-#buddypress .mejs-controls .mejs-volume-button .mejs-volume-slider{display:none;height:115px;width:25px;background:url(/wp-content/themes/rtpanel-child-theme-master/background.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}
+#buddypress .mejs-controls .mejs-volume-button .mejs-volume-slider{display:none;height:115px;width:25px;background:url(/web/wp-content/themes/rtpanel-child-theme-master/background.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}
 
 .rtp-main-wrapper {
     overflow-x: initial;
@@ -212,7 +212,7 @@ body.page-template-template-home {
 
 body.page-template-template-home #welcome {
 	margin-top: 46px;
-	background-image: url('/wp-content/uploads/2018/12/cal-halftone2-1.png');
+	background-image: url('/web/wp-content/uploads/2018/12/cal-halftone2-1.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -593,7 +593,7 @@ body.page-template-template-home #news #see-all {
 body.page-template-template-home #quotes {
 	
 	padding-top: 1.8rem;
-	background: url('/wp-content/uploads/2021/01/tess-calblue-on-sather.png') 73vw center no-repeat, url('/wp-content/uploads/2021/01/tess-calblue-on-sather.png') 165vw top no-repeat;
+	background: url('/web/wp-content/uploads/2021/01/tess-calblue-on-sather.png') 73vw center no-repeat, url('/web/wp-content/uploads/2021/01/tess-calblue-on-sather.png') 165vw top no-repeat;
 	background-size: 510px auto, 510px auto;
 	background-color: #B9D3B6;
 }
@@ -625,7 +625,7 @@ body.page-template-template-home #quotes #quote-slider p {
 
 body.page-template-template-home #mission {
 	padding: 3rem 1rem 5rem 17%;
-	background-image: url('/wp-content/uploads/2014/10/bg_sd_tobycamp.jpg');
+	background-image: url('/web/wp-content/uploads/2014/10/bg_sd_tobycamp.jpg');
 	background-size: cover;
 	background-position-y: 28%;
 }
@@ -656,7 +656,7 @@ body.page-template-template-home2018 {
 
 body.page-template-template-home2018 #welcome {
 	margin-top: 46px;
-	background-image: url('/wp-content/uploads/2018/12/cal-halftone2-1.png');
+	background-image: url('/web/wp-content/uploads/2018/12/cal-halftone2-1.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -878,7 +878,7 @@ body.page-template-template-home2018 #GP-info {
 	background-image: 
 		linear-gradient(rgba(213,182,245,0.8), rgba(213,182,245,0)),
 		linear-gradient(rgba(213,182,245,0), rgba(213,182,245,0.2), rgba(213,182,245,0.5), rgba(213,182,245,1)),
-		url('/wp-content/uploads/2018/09/2018bg_GP.jpg');
+		url('/web/wp-content/uploads/2018/09/2018bg_GP.jpg');
 	background-size: 100% 130px, 100% 800px, cover;
 	background-position: top, bottom, center;
 	background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1149,7 +1149,7 @@ h1#splashslide {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: url('/wp-content/uploads/2014/11/splashslide.png');
+	background-image: url('/web/wp-content/uploads/2014/11/splashslide.png');
 	background-size: cover;
 	background-position: center center;
 	box-shadow: 0px 0px 14px rgba(0,0,0,0.7);
@@ -1544,7 +1544,7 @@ ul.pricing-table.columned + p {
 	padding: 2.4rem 6rem 2rem 4rem;
 	margin-left: -0.625rem;
 	margin-right: -0.625rem;
-	background-image: url('/wp-content/uploads/2014/11/see-also-stripe.png');
+	background-image: url('/web/wp-content/uploads/2014/11/see-also-stripe.png');
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 101%;
@@ -1912,25 +1912,25 @@ h1 span.ed-prefix {
 	position: absolute;
 }
 #courses-index th.writing::after {
-	background-image: url('/wp-content/uploads/2014/11/writing_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/writing_white.png');
 }
 #courses-index th.arts::after {
-	background-image: url('/wp-content/uploads/2014/11/arts_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/arts_white.png');
 }
 #courses-index th.languages::after {
-	background-image: url('/wp-content/uploads/2014/11/languages_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/languages_white.png');
 }
 #courses-index th.computer::after {
-	background-image: url('/wp-content/uploads/2014/11/computer_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/computer_white.png');
 }
 #courses-index th.math::after {
-	background-image: url('/wp-content/uploads/2014/11/math_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/math_white.png');
 }
 #courses-index th.social::after {
-	background-image: url('/wp-content/uploads/2014/11/social_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/social_white.png');
 }
 #courses-index th.natural::after {
-	background-image: url('/wp-content/uploads/2014/11/natural_white.png');
+	background-image: url('/web/wp-content/uploads/2014/11/natural_white.png');
 }
 
 #courses-index tr#course-filter > th {
@@ -3053,7 +3053,7 @@ footer#footer-wrapper {
 	margin:auto;
 	background-color: #53626f;
 	color: white;
-	background-image: url('/wp-content/uploads/2014/10/footer-stripe.png');
+	background-image: url('/web/wp-content/uploads/2014/10/footer-stripe.png');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	position: relative;

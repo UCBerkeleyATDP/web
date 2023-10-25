@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Featured &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/featured/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/featured/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Sun, 04 Jun 2023 20:23:28 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,17 +21,17 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>Secondary Division Orientation webinar (Updated with recording)</title>
-		<link>/sd2023-orientation/</link>
-					<comments>/sd2023-orientation/#comments</comments>
+		<link>/web/sd2023-orientation/</link>
+					<comments>/web/sd2023-orientation/#comments</comments>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Thu, 01 Jun 2023 23:19:33 +0000</pubDate>
 				<category><![CDATA[Featured]]></category>
-		<guid isPermaLink="false">/?p=18846</guid>
+		<guid isPermaLink="false">/web/?p=18846</guid>
 
 					<description><![CDATA[Secondary Division students and families are invited to join us this Sunday for our live 2023 Welcome &#38; Orientation online program. Read on to find links to registration and resources.]]></description>
 		
-					<wfw:commentRss>/sd2023-orientation/feed/</wfw:commentRss>
+					<wfw:commentRss>/web/sd2023-orientation/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
@@ -45,5 +45,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:42:37 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:56:43 by W3 Total Cache
 -->

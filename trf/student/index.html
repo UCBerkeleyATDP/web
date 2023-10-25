@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UC Berkeley ATDP - Online Teacher Referral Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/web/trf/jquery.fullPage.css">
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:400,800" rel="stylesheet">
+	<link rel="icon" href="/web/trf/favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/web/trf/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="/web/js/bsn.AutoSuggest_2.1.3a.js"></script>
+	
+	<script type="text/javascript">
+
+		function storeSchool(schoolObj) {
+			$('form input[name=schoolname]').val(schoolObj.value);
+			$('#schoolid').val(schoolObj.id);
+			console.log(schoolObj);
+		}
+
+		$(document).ready(function() {
+
+			// test connection!
+			$.ajax({
+			    url : '/atdp-ajax-relay.php',
+			    type : 'POST',
+			    timeout : 8000,
+			    data : {
+			    	'dbfunction' : 'XML_FindSchools',
+			        'schoolname' : 'dev'
+			    },
+			    success : function(data) {
+			        console.log('Connection confirmed.');
+			    },
+			    error : function(request,error)
+			    {
+			        console.log('Cannot connect to database!');
+			        $("#ajax-error").show();
+			    }
+			});
+
+			// set up school autocomplete script
+		    var options = {
+		        script: "/atdp-ajax-relay.php?dbfunction=XML_FindSchools&",
+		        varname: "schoolname",
+		        json: false,
+		        maxentries: 6,
+		        noresults: "No school found; please try again.",
+		        timeout: 120000,
+		        delay: 150,
+		        minchars: 2,
+		        offsety: -780,
+		        callback: storeSchool
+		    };
+		    var as = new bsn.AutoSuggest('schoolname', options);
+
+		    
+
+			$('#fullpage').fullpage({
+				anchors: ['intro', 'student', 'teacher', 'done'],
+				menu: '#menu',
+				controlArrows: false,
+				keyboardScrolling: false,
+				loopHorizontal: false,
+			});
+			$.fn.fullpage.setAllowScrolling(false);
+
+			$('button.continue').click(function() {
+				$.fn.fullpage.moveSectionDown();
+			});
+
+			$('#yes-app').click(function() {
+				$.fn.fullpage.moveSlideRight();
+				
+				$('#menu').animate({width: "0px"},600, "swing", function() {
+					$('#menu').hide();
+				});
+				// $("form input[name='reader']").val("Yes");
+				// console.log('got a reader!');
+			});
+
+			$('#no-app').click(function() {
+				// $("form input[name='reader']").val("None");
+				$.fn.fullpage.moveSectionDown();
+				// console.log('no reader!');
+			});
+
+			$("#incomplete-warning").show();
+			$("#submit").hide();
+
+			$("input[type=text], input[type=date], input[type=email], textarea, select").change(function() {
+
+				var name = $(this).attr("name");
+				$("form input[name="+name+"]").val($(this).val());
+				if($("form input[name="+name+"]").val() != "") {
+					$("form input[name="+name+"]").addClass("complete");
+				} else {
+					$("form input[name="+name+"]").val("Incomplete");
+					$("form input[name="+name+"]").removeClass("complete");
+				}
+				
+				console.log(name);
+
+				if($("form input[type=text].complete, form input[type=email].complete").length < 7) {
+					$("#incomplete-warning").show();
+					$("#submit").hide();
+				} else {
+					$("#incomplete-warning").hide();
+					$("#submit").show();
+				}
+			});
+
+			$("#s-firstname, #s-lastname").change(function() {
+				if(($("#s-firstname").val() != "") && ($("#s-lastname").val() != "")) {
+					$("form input[name=studentname]").val($("#s-firstname").val() + " " + $("#s-lastname").val());
+					$("form input[name=studentname]").addClass("complete");
+				} else {
+					$("form input[name=studentname]").removeClass("complete");
+					$("form input[name=studentname]").val("Incomplete");
+				}
+			});
+
+			$("#t-firstname, #t-lastname").change(function() {
+				if(($("#t-firstname").val() != "") && ($("#t-lastname").val() != "")) {
+					$("form input[name=teachername]").val($("#t-firstname").val() + " " + $("#t-lastname").val());
+					$("form input[name=teachername]").addClass("complete");
+				} else {
+					$("form input[name=teachername]").removeClass("complete");
+					$("form input[name=teachername]").val("Incomplete");
+				}
+			});
+
+			$("#submit").click(function (e) {
+
+				if($("form input[type=text].complete, form input[type=email].complete").length < 7) {
+
+					e.preventDefault();
+					alert("All fields are required! Please go back and fill in missing information.");
+
+				} else {
+					$('#sending').show();
+					$('form#send-request').submit();
+				}
+			});
+		});
+
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/web/trf/style.css">
+	<style type="text/css"></style>
+	
+</head>
+<body lang="en-US">
+
+	<div id="sending" class="fullscreen">
+		<p><i class="fa fa-cog fa-spin fa-2x fa-fw"></i><br> Sending email...<br>One moment...</p>
+	</div>
+
+	<div id="ajax-error" class="fullscreen">
+		<h1>
+<i class="fa fa-frown-o fa-2x fa-fw"></i><br>Connection error</h1>
+		<p>It looks like you are using a network or device that won't connect to our database server. Some free wifi networks or devices administrated by institutions use incompatible security settings. If you're the network or device administrator, you can <a href="/web/known-issue/">read more about this known issue</a>.</p>
+	</div>
+
+	<ul id="menu">
+		<li data-menuanchor="intro" class="active"><a href="#intro">Start</a></li>
+		<li data-menuanchor="student"><a href="#student">About you</a></li>
+		<li data-menuanchor="teacher"><a href="#teacher">Teacher info</a></li>
+		<li data-menuanchor="done"><a href="#done">Send request</a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div id="" data-anchor="intro" class="section">
+			<div class="slide">
+				<h3>UC Berkeley Academic Talent Development Program</h3>
+				<h1 class="spacer">Request a Teacher Referral</h1>
+
+				<p class="spacer">This form is for students who plan to apply to ATDP but have not yet begun an online application, and who want to give their teacher more time to complete this required step.</p>
+
+				<p class="spacer">You'll need to enter some of this information again when you apply. Depending on how soon you plan to start the online application, you may wish to wait and list your teacher on the application itself instead of sending a request now.</p>
+
+				<p class="spacer">Please note that <em>ATDP does not review seperate letters of recommendation.</em></p>
+
+				<h2 class="input">Have you already started an online application for ATDP?</h2>
+
+				<p>
+					<button class="" id="no-app">
+					  	<div class="button-answer no">
+						<strong>NO</strong>
+</div>
+					</button>
+
+					<button class="" id="yes-app">
+						<div class="button-answer yes">
+						<strong>YES</strong>
+</div>
+					</button>
+				</p>
+
+				<p>&nbsp;</p>
+<p>&nbsp;</p>
+			</div>
+			<div class="slide">
+				<p class="spacer"><i class="fa fa-hand-paper-o fa-5x"></i></p>
+				<h3>Whoa there!</h3>
+				<p class="spacer">You should add your teacher's email to your online application instead of sending them a separate request here.</p>
+				<p class="spacer"><a href="/web/account/"><strong>Go to your online account</strong></a> to access your application</p>
+				<p class="footnote">or <a href="/web/trf/student/">start over</a></p>
+			</div>
+
+		</div>
+
+		<div id="" data-anchor="student" class="section">
+
+			<h3>Your (the student applicant's) information</h3>
+
+			<p class="spacer">Make sure you enter the exact same information when you begin your application!</p>
+
+			<p class="input">
+				<label for="s-firstname">Student's first name </label><input id="s-firstname" type="text" name="s-firstname" size="45" placeholder="e.g. Harriet">
+			</p>
+
+			<p class="input">
+				<label for="s-lastname">Student's last name </label><input id="s-lastname" type="text" name="s-lastname" size="45" placeholder="Welsch">
+			</p>
+
+			<p class="input">
+				<label for="s-email">Email </label><input id="s-email" type="email" name="s-email" size="34" maxlength="120" placeholder="hwelsch@ms116.org"> <span class="footnote">Be sure to enter an email address where you and your family can check for notifications!</span>
+			</p>
+
+			<p id="autosuggest_id" class="input">
+				<label for="schoolname">Student's school </label><input id="schoolname" type="TEXT" name="schoolname" size="45" maxlength="120" placeholder="Gregory School, The"> <span class="footnote">Type to search and then click when you have found your school</span>
+			</p>
+
+			<p>
+				<label>&nbsp;</label><button class="continue" id="student-continue">Continue</button>
+			</p>
+		</div>
+
+		<div id="" data-anchor="teacher" class="section">
+
+			<h3>Your teacher's information</h3>
+
+			<p class="spacer">
+				Be sure you have spoken with your teacher <em>before</em> you send them this request. Remember that your teacher's time is valuable. We recommend sending your teacher this request <em>at least two weeks</em> before you plan to submit your application.
+			</p>
+
+			<p class="spacer">
+				The referral must be completed by a <strong>2023-2024 school year teacher in any academic subject</strong>; not fine arts, PE/health, advisory, or extracurricular classes. SD students applying to accelerated math courses must request a referral from their current math teacher. Otherwise, the teacher's academic subject <strong>need not</strong> match the subject of the ATDP course to which you are applying.
+			</p>
+
+			<p class="input">
+				<label for="subject">Subject/type of teacher </label>
+				<select id="subject" name="subject">
+					<option value=""> </option>
+					<option value="Primary">Primary school</option>
+					<option value="English/Language Arts">English/Language Arts</option>
+					<option value="Foreign Language">LOTE (Foreign Language)</option>
+					<option value="Mathematics">Mathematics</option>
+					<option value="Computer Science">Computer Science</option>
+					<option value="History">History/Social Studies</option>
+					<option value="Biology">Science, Biology</option>
+					<option value="Chemistry">Science, Chemistry</option>
+					<option value="Physics">Science, Physics</option>
+					<option value="AP">Advanced Placement</option>
+					<option value="Only">This is my only teacher</option>
+				</select>
+				<span class="footnote">If your teacher does not fit into one of these options, <strong>select a different teacher.</strong> Reach out to <a href="mailto:atdpoffice@berkeley.edu">atdpoffice@berkeley.edu</a> if you're unsure. Submitting an ineligible form is a poor use of your teachers' time and <strong>WILL significantly delay</strong> your application.</span>
+			</p>
+
+			<p class="spacer">
+				<label for="course">Course</label><input id="course" type="text" name="course" size="45" placeholder="e.g. Geometry, Core, First-Year French, etc."> <span class="footnote">Name of the academic course in which this teacher teaches you</span>
+			</p>
+
+			<p class="input">
+				<label for="t-firstname">Teacher's first name </label><input id="t-firstname" type="text" name="t-firstname" size="45" placeholder="e.g. Charity">
+			</p>
+
+			<p class="input">
+				<label for="t-lastname">Teacher's last name </label><input id="t-lastname" type="text" name="t-lastname" size="45" placeholder="Burbage">
+			</p>
+
+			<p class="input">
+				<label for="t-email">Email </label><input id="t-email" type="email" name="t-email" size="34" maxlength="120" placeholder="cburbage@hogwarts.ac.uk"> <span class="footnote">Double-check that the address is correct; <strong>your teacher won't receive your request email unless you enter it correctly!</strong></span>
+			</p>
+
+			<p class="spacer">
+				<label for="app-deadline">Your intended application submission&nbsp;date </label>
+				<input type="date" id="app-deadline" name="app-deadline" min="2023-10-26" max="2024-06-01">
+				<span class="footnote">We strongly advise that you send your teacher a request for a referral <strong>at least two weeks before</strong> your intended application submission date. (<a href="/web/programs/" target="_blank">See deadlines</a>.) Remember that you cannot submit your application without a completed referral.</span>
+			</p>
+
+			<p>
+				<label>&nbsp;</label><button class="continue" id="student-continue">Continue</button>
+			</p>
+		</div>
+
+		<div id="" data-anchor="done" class="section">
+			<h2 class="input">All good?</h2>
+			<p class="spacer">Before you send your request, please double-check the information below for accuracy. You can go back to edit <a href="#student">student</a> or <a href="#teacher">teacher</a> information if needed.</p>
+
+			<form id="send-request" class="spacer" method="POST" action="/atdp-data-relay.php">
+				<input type="hidden" name="dbfunction" value="TRF_StudentRequest">
+				
+ 				<p>
+ 					<label>Student name </label><input type="text" name="studentname" value="Incomplete" readonly>
+ 					<input type="hidden" name="s-firstname">
+ 					<input type="hidden" name="s-lastname">
+ 				</p>
+				<p><label>Student/family email </label><input type="email" name="s-email" value="Incomplete" readonly></p>
+				<p><label>School </label><input type="text" name="schoolname" value="Incomplete" readonly></p>
+				<input id="schoolid" type="hidden" name="schoolid" value="">
+				<p><label>App submission date </label><input type="text" name="app-deadline" value="Incomplete" readonly></p>
+				<p>
+ 					<label>Teacher name </label><input type="text" name="teachername" value="Incomplete" readonly>
+ 					<input type="hidden" name="t-firstname">
+ 					<input type="hidden" name="t-lastname">
+ 				</p>
+				<p><label>Teacher type </label><input type="text" name="subject" value="Incomplete" readonly></p>
+				<p><label>Teacher email </label><input type="email" name="t-email" value="Incomplete" readonly></p>
+					
+				<p>
+					<input type="submit" class="continue" id="submit" value="Send email request">
+					<span id="incomplete-warning">All fields are required! Please go back and fill in missing information.</span>
+				</p>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

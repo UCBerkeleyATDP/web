@@ -9,8 +9,8 @@
 
 <channel>
 	<title>SD Newsletter &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/news/s/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/news/s/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Tue, 29 Sep 2015 18:27:50 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,14 +21,14 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>From the Counselor: Reflection on Failure</title>
-		<link>/from-the-counselor-reflection-on-failure/</link>
+		<link>/web/from-the-counselor-reflection-on-failure/</link>
 		
 		<dc:creator><![CDATA[hila]]></dc:creator>
 		<pubDate>Thu, 16 Jul 2015 23:15:21 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=12921</guid>
+		<guid isPermaLink="false">/web/?p=12921</guid>
 
 					<description><![CDATA[By: Christine Gerchow, PhD In his book, &#8220;Failing Forward,&#8221; John Maxwell argues that successful people take a specific approach to failure. They tend to take responsibility, learn from mistakes, understand that failure is part of the learning process, and continue to take risks and persevere. Maxwell calls this approach &#8220;failing forward.&#8221; At ATDP, students who [&#8230;]]]></description>
 		
@@ -37,31 +37,31 @@
 			</item>
 		<item>
 		<title>S&#8217;12 Issue 6: Final Grades FAQ; Photos, Student Work</title>
-		<link>/s12-6/</link>
-					<comments>/s12-6/#comments</comments>
+		<link>/web/s12-6/</link>
+					<comments>/web/s12-6/#comments</comments>
 		
 		<dc:creator><![CDATA[Frank C. Worrell]]></dc:creator>
 		<pubDate>Fri, 20 Jul 2012 23:34:22 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5883</guid>
+		<guid isPermaLink="false">/web/?p=5883</guid>
 
 					<description><![CDATA[The last issue of the S'12 Newsletter contains a review of photos in Secondary Division courses all over campus, as well as student work and a final memorandum from Faculty Director Dr. Frank C. Worrell.]]></description>
 		
-					<wfw:commentRss>/s12-6/feed/</wfw:commentRss>
+					<wfw:commentRss>/web/s12-6/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Architecture Student Exhibition &#8211; July 27 &#038; 28</title>
-		<link>/architecture-exhibition-july-27-28/</link>
+		<link>/web/architecture-exhibition-july-27-28/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Fri, 20 Jul 2012 21:51:47 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5908</guid>
+		<guid isPermaLink="false">/web/?p=5908</guid>
 
 					<description><![CDATA[Exhibition of Student Work Course SD3215 Architectural Design 2515 Tolman Hall Friday, July 27 12:00 &#8211; 1:00 pm Saturday, July 28 during the ATDP Picnic (roughly 12:00 &#8211; 2:00 pm) Work displayed will include the final project, which is a treehouse of the students&#8217; own design, and a sampling of some of the other projects students completed [&#8230;]]]></description>
 		
@@ -70,13 +70,13 @@
 			</item>
 		<item>
 		<title>&#8220;Blue&#8221;</title>
-		<link>/blue/</link>
+		<link>/web/blue/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Tue, 17 Jul 2012 20:48:44 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5858</guid>
+		<guid isPermaLink="false">/web/?p=5858</guid>
 
 					<description><![CDATA[Last week we gave you odes from the Students of Paul Heller&#8217;s Reading for Creative Writing (SD3202) class. This week we have even more poetic works from that class in which students wrote about the color blue: Celena Chang Blue, sticky and slimy, is a dark jelly-y consistency. Since it lacks energy, blue drags itself [&#8230;]]]></description>
 		
@@ -85,13 +85,13 @@
 			</item>
 		<item>
 		<title>Ode to a Tree</title>
-		<link>/ode-to-a-tree/</link>
+		<link>/web/ode-to-a-tree/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Fri, 13 Jul 2012 23:15:30 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5807</guid>
+		<guid isPermaLink="false">/web/?p=5807</guid>
 
 					<description><![CDATA[Ode to a Tree By Eric Yu Amid the forest lies you, a tree, A bridge to life That is a living organism, But your seeds will sprout into The new generations of trees ahead of you. They will feel the same Feeling of luxurious sunlight that you have felt. And as the seed sprouts, [&#8230;]]]></description>
 		
@@ -100,13 +100,13 @@
 			</item>
 		<item>
 		<title>Ode to a Blade of Grass</title>
-		<link>/ode-to-a-blade-of-grass/</link>
+		<link>/web/ode-to-a-blade-of-grass/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 12 Jul 2012 23:49:35 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5804</guid>
+		<guid isPermaLink="false">/web/?p=5804</guid>
 
 					<description><![CDATA[Ode to a Blade of Grass By Vasco Villas-Boas I see you carefully tilting in the breeze You want to slide out of your roots (that won’t give in) and be guided by the wind And Be free like a leaf floating downwards from a tree You are like a Human That wants to Jump [&#8230;]]]></description>
 		
@@ -115,13 +115,13 @@
 			</item>
 		<item>
 		<title>Ode to My Racket</title>
-		<link>/ode-to-my-racket/</link>
+		<link>/web/ode-to-my-racket/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 12 Jul 2012 23:48:07 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5801</guid>
+		<guid isPermaLink="false">/web/?p=5801</guid>
 
 					<description><![CDATA[Ode to my Racket By Vanessa Van Pell You are Nervous Your strings tighten As I warm up I feel the blood start to pump Through every vein in my body You start to settle Knowing I will protect you I will not let you down All the nights you stayed up Just to let [&#8230;]]]></description>
 		
@@ -130,13 +130,13 @@
 			</item>
 		<item>
 		<title>Ode to a Stone on the Shore</title>
-		<link>/ode-to-stone-on-shore/</link>
+		<link>/web/ode-to-stone-on-shore/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 12 Jul 2012 23:46:49 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5798</guid>
+		<guid isPermaLink="false">/web/?p=5798</guid>
 
 					<description><![CDATA[Ode to a Stone on the Shore By Joshua Morgan One day, Wandering, lost Along the shore, I saw you A stone whiter than sun-bleached bone and as smooth as the crystal Sky, Floating in a sea of others. Yet somehow, You were different, A gem, Smoother and rounder, Filled with a more Ethereal Energy [&#8230;]]]></description>
 		
@@ -145,13 +145,13 @@
 			</item>
 		<item>
 		<title>Ode to the Red MP3</title>
-		<link>/ode-to-red-mp3/</link>
+		<link>/web/ode-to-red-mp3/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 12 Jul 2012 23:43:51 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5794</guid>
+		<guid isPermaLink="false">/web/?p=5794</guid>
 
 					<description><![CDATA[Ode to the Red MP3 By Nia Jones Hear you playing Like an orchestra. Your strings, bass, percussion In each and every song come together Just profoundly. Like a great, big, musical family reunion. Your melodies gently brush Against my music–craving eardrums. Their heavy lust for your music Is indescribable. It’s not a want, no, [&#8230;]]]></description>
 		
@@ -160,13 +160,13 @@
 			</item>
 		<item>
 		<title>Ode to the Acoustic Guitar On my Wall</title>
-		<link>/ode-to-acoustic-guitar/</link>
+		<link>/web/ode-to-acoustic-guitar/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 12 Jul 2012 23:41:22 +0000</pubDate>
 				<category><![CDATA[Course Features]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5789</guid>
+		<guid isPermaLink="false">/web/?p=5789</guid>
 
 					<description><![CDATA[Ode to the Acoustic Guitar On my Wall by Tiffany Huynh Against the Bumpy cream wall of My bedroom, You are the full moon that Glows against Night, but with the soft Warmth of the sun. I pick you up Mesmerized by your beauty and Stare, you are the well-known sculpture in a Famous museum [&#8230;]]]></description>
 		
@@ -182,5 +182,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:44:22 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:58:28 by W3 Total Cache
 -->

@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Community Newsletter Archive &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/news/community/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/news/community/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Fri, 12 Feb 2021 23:12:06 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,14 +21,14 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>Instructor spotlights and more: Our Community Newsletter kicks off applications for 2021</title>
-		<link>/community-newsletter/</link>
+		<link>/web/community-newsletter/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Fri, 12 Feb 2021 23:10:53 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=17415</guid>
+		<guid isPermaLink="false">/web/?p=17415</guid>
 
 					<description><![CDATA[If you didn't receive it in your email inbox, check out our latest Community Newsletter, featuring SD instructor Jay Chugh and introducing Nicole Lockwood as our new teacher for Tropical Rainforests!]]></description>
 		
@@ -37,14 +37,14 @@
 			</item>
 		<item>
 		<title>Who Made the Decision to Attend ATDP?</title>
-		<link>/who-made-the-decision-to-attend-atdp/</link>
+		<link>/web/who-made-the-decision-to-attend-atdp/</link>
 		
 		<dc:creator><![CDATA[hila]]></dc:creator>
 		<pubDate>Thu, 29 Oct 2015 00:10:55 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Research]]></category>
-		<guid isPermaLink="false">/?p=13188</guid>
+		<guid isPermaLink="false">/web/?p=13188</guid>
 
 					<description><![CDATA[What student decision-making means for grades, effort level, and enjoyment of the program Have you ever wondered what ATDP does with the end-of-summer surveys? We use the data for several purposes. Primarily, participants’ responses inform us about students’ satisfaction with their courses and instructors. They also help us learn how we can improve the program for [&#8230;]]]></description>
 		
@@ -53,12 +53,12 @@
 			</item>
 		<item>
 		<title>Looking Back and Ahead: Mark your 2015 calendars!</title>
-		<link>/looking-back-and-ahead-mark-your-2015-calendars/</link>
+		<link>/web/looking-back-and-ahead-mark-your-2015-calendars/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 21 Oct 2014 20:26:33 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
-		<guid isPermaLink="false">/?p=12215</guid>
+		<guid isPermaLink="false">/web/?p=12215</guid>
 
 					<description><![CDATA[]]></description>
 		
@@ -67,12 +67,12 @@
 			</item>
 		<item>
 		<title>Share, Speak, Volunteer: Be a Part of the ATDP Story</title>
-		<link>/share-speak-volunteer-be-a-part-of-the-atdp-story/</link>
+		<link>/web/share-speak-volunteer-be-a-part-of-the-atdp-story/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 04 Feb 2014 22:48:45 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
-		<guid isPermaLink="false">/?p=9488</guid>
+		<guid isPermaLink="false">/web/?p=9488</guid>
 
 					<description><![CDATA[Our Spring Community Newsletter contains many opportunities for students and their families to give back to the program by sharing their ATDP experiences, or making new ones! Learn about ATDP's Case for Support, the Secondary Division TA program, and more.]]></description>
 		
@@ -81,12 +81,12 @@
 			</item>
 		<item>
 		<title>Community Newsletter, Vol. 4, I. 2</title>
-		<link>/community-newsletter-vol-4-i-2/</link>
+		<link>/web/community-newsletter-vol-4-i-2/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Mon, 12 Dec 2011 22:09:55 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
-		<guid isPermaLink="false">/?p=6173</guid>
+		<guid isPermaLink="false">/web/?p=6173</guid>
 
 					<description><![CDATA[Inside this issue… News &#38; Announcements Nine Tips for Navigating the Application Process Course Catalogs Ready for 2012 &#8211; See What&#8217;s New! Spotlights How to Get to Sesame Street: A San Francisco Counselor Finds Herself in Nigeria Bragging Rights: Christina Büchmann, Advanced Reading &#38; Writing Unlikely Twins: Making Peer Effects Explicit Inside ATDP Courses Take [&#8230;]]]></description>
 		
@@ -95,12 +95,12 @@
 			</item>
 		<item>
 		<title>Community Newsletter, Vol. 4, I. 1</title>
-		<link>/community-newsletter-vol-4-i-1/</link>
+		<link>/web/community-newsletter-vol-4-i-1/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Mon, 17 Oct 2011 15:00:23 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
-		<guid isPermaLink="false">/?p=3747</guid>
+		<guid isPermaLink="false">/web/?p=3747</guid>
 
 					<description><![CDATA[Inside this issue… Features Continuing the Academic Conversation Leaving ATDP Smiling: A Look Back on Nina&#8217;s 44 Years of Service to Education Research at ATDP: Why We Do It and How It&#8217;s Used How did they do that? Cognitive Neuroscience Extra-Terrestrial Trigonometry First-Year Japanese Human Anatomy &#38; Physiology New at ATDP Important dates for our 2012 [&#8230;]]]></description>
 		
@@ -109,13 +109,13 @@
 			</item>
 		<item>
 		<title>Community Newsletter Vol. 3</title>
-		<link>/atdp-newsletter-fall-2010/</link>
+		<link>/web/atdp-newsletter-fall-2010/</link>
 		
 		<dc:creator><![CDATA[Nina Hersch Gabelko]]></dc:creator>
 		<pubDate>Wed, 01 Dec 2010 00:24:35 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[republished]]></category>
-		<guid isPermaLink="false">/commons/?p=2025</guid>
+		<guid isPermaLink="false">/web/commons/?p=2025</guid>
 
 					<description><![CDATA[Everyone at ATDP Is Here to Learn Students, Instructional Associates, Expert Teachers, Doctoral Students and Professors At ATDP, we grow academic talent; we don&#8217;t mine for it. This includes everyone affiliated with the program. Our group begins with novice scientists aged 5 and extends upward to Secondary Division, to ATDP teachers, to doctoral students, professors, [&#8230;]]]></description>
 		
@@ -124,13 +124,13 @@
 			</item>
 		<item>
 		<title>Community Newsletter Vol. 2</title>
-		<link>/atdp-newsletter-fallwinter-09/</link>
+		<link>/web/atdp-newsletter-fallwinter-09/</link>
 		
 		<dc:creator><![CDATA[Nina Hersch Gabelko]]></dc:creator>
 		<pubDate>Mon, 28 Dec 2009 06:21:13 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[republished]]></category>
-		<guid isPermaLink="false">/commons/?p=2212</guid>
+		<guid isPermaLink="false">/web/commons/?p=2212</guid>
 
 					<description><![CDATA[Dear ATDP students, parents, alumni, and friends Vignettes from the Summer of &#8217;09 by Teachers Patty, Paul, Nate and Junko-sama From Watts to Berkeley, Part 2 by Erin Donohue AP Art History at ATDP by Laura Shefler A Day in the Life of Washington School&#8230; An ED photo gallery from Summer &#8217;09 Classes jumping for [&#8230;]]]></description>
 		
@@ -139,13 +139,13 @@
 			</item>
 		<item>
 		<title>Community Newsletter Vol. 1, I. 2</title>
-		<link>/atdp-newsletter-summer-09/</link>
+		<link>/web/atdp-newsletter-summer-09/</link>
 		
 		<dc:creator><![CDATA[Nina Hersch Gabelko]]></dc:creator>
 		<pubDate>Wed, 15 Jul 2009 13:50:53 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[republished]]></category>
-		<guid isPermaLink="false">/commons/?p=2228</guid>
+		<guid isPermaLink="false">/web/commons/?p=2228</guid>
 
 					<description><![CDATA[Welcome to the ATDP Family E-Newsletter Dear ATDP students, parents, alumni, and friends, Welcome to our Summer 2009 e-newsletter. Regardless of whether you are joining us for the first time or are returning to ATDP for the twelfth time, as are a few students, this issue offers new insights into our learning community and useful [&#8230;]]]></description>
 		
@@ -154,12 +154,12 @@
 			</item>
 		<item>
 		<title>Community Newsletter Vol. 1, I. 1</title>
-		<link>/welcome-to-the-atdp-family-enewsletter/</link>
+		<link>/web/welcome-to-the-atdp-family-enewsletter/</link>
 		
 		<dc:creator><![CDATA[Nina Hersch Gabelko]]></dc:creator>
 		<pubDate>Mon, 08 Sep 2008 21:54:47 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
-		<guid isPermaLink="false">/?p=3289</guid>
+		<guid isPermaLink="false">/web/?p=3289</guid>
 
 					<description><![CDATA[Dear ATDP students, parents, alumni, and friends, At ATDP we think of ourselves as a family. The program orientations held before each Division begins its session are our family reunions. But right about now, there isn&#8217;t any reason why we can&#8217;t get together (virtually) one more time before we start talking about 2009. The newsletter [&#8230;]]]></description>
 		
@@ -175,5 +175,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:43:15 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:57:21 by W3 Total Cache
 -->

@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Research &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/research/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/research/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Thu, 13 Dec 2018 22:54:16 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,12 +21,12 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>Calling All SD Alumni</title>
-		<link>/calling-all-sd-alumni/</link>
+		<link>/web/calling-all-sd-alumni/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Fri, 06 Oct 2017 21:50:13 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
-		<guid isPermaLink="false">/?p=14938</guid>
+		<guid isPermaLink="false">/web/?p=14938</guid>
 
 					<description><![CDATA[If you have ever attended the Secondary Division and have completed at least high school, please take a brief moment to let us know about what you're doing now!]]></description>
 		
@@ -35,13 +35,13 @@
 			</item>
 		<item>
 		<title>Flipping an ATDP Classroom</title>
-		<link>/flipping-an-atdp-classroom/</link>
+		<link>/web/flipping-an-atdp-classroom/</link>
 		
 		<dc:creator><![CDATA[Kass]]></dc:creator>
 		<pubDate>Mon, 19 Dec 2016 19:27:47 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=14777</guid>
+		<guid isPermaLink="false">/web/?p=14777</guid>
 
 					<description><![CDATA[What does a "flipped" classroom look like? What's the effect? See the results of our study that investigated the difference between a flipped class and a traditionally-structured class.]]></description>
 		
@@ -50,13 +50,13 @@
 			</item>
 		<item>
 		<title>For Teachers: Creativity in the Classroom</title>
-		<link>/creativity-in-the-classroom/</link>
+		<link>/web/creativity-in-the-classroom/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Thu, 24 Mar 2016 18:33:22 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=13419</guid>
+		<guid isPermaLink="false">/web/?p=13419</guid>
 
 					<description><![CDATA[From our connections in the American Psychological Association&#8217;s CPSE, we learned of a new web series focused on creativity! (Entirely topical for our active summer classrooms, we feel.) Through the use of interviews with renowned scholars in the field and practice based narrative, the module gives an overview of the use of creativity in a [&#8230;]]]></description>
 		
@@ -65,14 +65,14 @@
 			</item>
 		<item>
 		<title>Who Made the Decision to Attend ATDP?</title>
-		<link>/who-made-the-decision-to-attend-atdp/</link>
+		<link>/web/who-made-the-decision-to-attend-atdp/</link>
 		
 		<dc:creator><![CDATA[hila]]></dc:creator>
 		<pubDate>Thu, 29 Oct 2015 00:10:55 +0000</pubDate>
 				<category><![CDATA[Community Newsletter Archive]]></category>
 		<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Research]]></category>
-		<guid isPermaLink="false">/?p=13188</guid>
+		<guid isPermaLink="false">/web/?p=13188</guid>
 
 					<description><![CDATA[What student decision-making means for grades, effort level, and enjoyment of the program Have you ever wondered what ATDP does with the end-of-summer surveys? We use the data for several purposes. Primarily, participants’ responses inform us about students’ satisfaction with their courses and instructors. They also help us learn how we can improve the program for [&#8230;]]]></description>
 		
@@ -81,12 +81,12 @@
 			</item>
 		<item>
 		<title>ATDP 2015 by the Numbers</title>
-		<link>/atdp-2015-by-the-numbers/</link>
+		<link>/web/atdp-2015-by-the-numbers/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Fri, 25 Sep 2015 18:10:40 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
-		<guid isPermaLink="false">/?p=13111</guid>
+		<guid isPermaLink="false">/web/?p=13111</guid>
 
 					<description><![CDATA[]]></description>
 		
@@ -95,12 +95,12 @@
 			</item>
 		<item>
 		<title>ATDP 2014 by the Numbers</title>
-		<link>/atdp-2014-by-the-numbers/</link>
+		<link>/web/atdp-2014-by-the-numbers/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Wed, 03 Sep 2014 20:00:13 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
-		<guid isPermaLink="false">/?p=12237</guid>
+		<guid isPermaLink="false">/web/?p=12237</guid>
 
 					<description><![CDATA[]]></description>
 		
@@ -109,12 +109,12 @@
 			</item>
 		<item>
 		<title>ATDP 2013 by the Numbers</title>
-		<link>/atdp-2013-by-the-numbers/</link>
+		<link>/web/atdp-2013-by-the-numbers/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Fri, 01 Nov 2013 23:33:07 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
-		<guid isPermaLink="false">/?p=9304</guid>
+		<guid isPermaLink="false">/web/?p=9304</guid>
 
 					<description><![CDATA[]]></description>
 		
@@ -123,13 +123,13 @@
 			</item>
 		<item>
 		<title>ED Faculty Make Advances in Comp. Sci. Instruction</title>
-		<link>/ed-computer-science-research/</link>
+		<link>/web/ed-computer-science-research/</link>
 		
 		<dc:creator><![CDATA[Stevie Jeung]]></dc:creator>
 		<pubDate>Wed, 03 Oct 2012 06:40:00 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=6118</guid>
+		<guid isPermaLink="false">/web/?p=6118</guid>
 
 					<description><![CDATA[Dr. Colleen Lewis has been teaching with us since 2009, and her goal each summer is not only to teach her students but to learn from them—her research at ATDP has yielded four publications that will help inform computer science teaching all over the world.]]></description>
 		
@@ -138,13 +138,13 @@
 			</item>
 		<item>
 		<title>Contribute to UC Berkeley Research (and earn some cash!)</title>
-		<link>/parent-teen-study/</link>
+		<link>/web/parent-teen-study/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 12 Jul 2012 23:18:58 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
-		<guid isPermaLink="false">/?p=5679</guid>
+		<guid isPermaLink="false">/web/?p=5679</guid>
 
 					<description><![CDATA[The study focuses on teens aged 17-18 and will continue though August 31st. Tell your friends! View original flyer here.]]></description>
 		
@@ -153,13 +153,13 @@
 			</item>
 		<item>
 		<title>On “Rethinking Giftedness and Gifted Education”</title>
-		<link>/on-rethinking-giftedness-and-gifted-education/</link>
+		<link>/web/on-rethinking-giftedness-and-gifted-education/</link>
 		
 		<dc:creator><![CDATA[Adena Young]]></dc:creator>
 		<pubDate>Mon, 12 Dec 2011 23:00:23 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Spotlights]]></category>
-		<guid isPermaLink="false">/?p=3643</guid>
+		<guid isPermaLink="false">/web/?p=3643</guid>
 
 					<description><![CDATA[Interim Director Adena Young interviews ATDP Faculty Director and Talent Development Researcher Frank Worrell on his recent article in <em>Psychological Science in the Public Interest</em>.]]></description>
 		
@@ -175,5 +175,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:43:09 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:57:15 by W3 Total Cache
 -->

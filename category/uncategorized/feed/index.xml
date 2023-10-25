@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Uncategorized &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Thu, 17 Jun 2021 21:26:24 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,12 +21,12 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>There&#8217;s still time to apply: about our extended deadlines</title>
-		<link>/theres-still-time-to-apply-about-our-extended-deadlines/</link>
+		<link>/web/theres-still-time-to-apply-about-our-extended-deadlines/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Mon, 05 Apr 2021 16:43:50 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=17511</guid>
+		<guid isPermaLink="false">/web/?p=17511</guid>
 
 					<description><![CDATA[ATDP gladly accepts applications up until the extended deadline for each program. We make placement decisions on a rolling basis until all spots are filled. ]]></description>
 		
@@ -35,12 +35,12 @@
 			</item>
 		<item>
 		<title>Secondary Division Student Orientation: June 1</title>
-		<link>/secondary-orientation-2019/</link>
+		<link>/web/secondary-orientation-2019/</link>
 		
 		<dc:creator><![CDATA[Kass]]></dc:creator>
 		<pubDate>Tue, 28 May 2019 19:46:07 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=15777</guid>
+		<guid isPermaLink="false">/web/?p=15777</guid>
 
 					<description><![CDATA[Secondary Division Orientation is this Saturday! Hear from student speakers, meet your teacher, and explore the Berkeley campus. (Attendance is optional, but recommended especially for families new to the program.)]]></description>
 		
@@ -49,12 +49,12 @@
 			</item>
 		<item>
 		<title>Voices from SD Orientation: Ivan Gomez-Siu</title>
-		<link>/sd-orientation-ivan/</link>
+		<link>/web/sd-orientation-ivan/</link>
 		
 		<dc:creator><![CDATA[Stevie Jeung]]></dc:creator>
 		<pubDate>Mon, 13 Jun 2016 21:46:44 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=13487</guid>
+		<guid isPermaLink="false">/web/?p=13487</guid>
 
 					<description><![CDATA[Good morning everyone!  Glad you decided to wake up so early.  It’s nice to see so many people here. Since senioritis has hit its apex for me, and I’ve procrastinated on writing this speech until this week, I’ve decided that I’ll have you guys do some of the work.   So, how many of you [&#8230;]]]></description>
 		
@@ -63,12 +63,12 @@
 			</item>
 		<item>
 		<title>Known issue: Online application form does not save</title>
-		<link>/known-issue/</link>
+		<link>/web/known-issue/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Thu, 04 Feb 2016 20:53:17 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=14716</guid>
+		<guid isPermaLink="false">/web/?p=14716</guid>
 
 					<description><![CDATA[There is a known connectivity issue affecting certain network configurations&#8217; ability to route data from ATDP&#8217;s database. Our database server is hosted remotely by the Graduate School of Education. Our online forms use Cross-Origin Resource Sharing to allow users to seamlessly update their information during the application process. Unfortunately, we do not have direct control [&#8230;]]]></description>
 		
@@ -77,12 +77,12 @@
 			</item>
 		<item>
 		<title>Class Attendance &#038; Campus Courtesy</title>
-		<link>/class-attendance-campus-courtesy-2/</link>
+		<link>/web/class-attendance-campus-courtesy-2/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Mon, 30 Jun 2014 17:38:59 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=9751</guid>
+		<guid isPermaLink="false">/web/?p=9751</guid>
 
 					<description><![CDATA[Attendance Policy Attendance is taken shortly after each class session begins (8:30 am or 1:00 pm), so it is important to be on time for class. The ATDP office staff immediately calls the parents of absent students to ascertain the reason for the absence. If you know that you will miss all or part of [&#8230;]]]></description>
 		
@@ -91,12 +91,12 @@
 			</item>
 		<item>
 		<title>Elementary Division Postmark Deadlines Approaching</title>
-		<link>/applying/ed/</link>
+		<link>/web/applying/ed/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Thu, 27 Feb 2014 01:00:51 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=9485</guid>
+		<guid isPermaLink="false">/web/?p=9485</guid>
 
 					<description><![CDATA[Returning Elementary Division students should have their materials postmarked by Wed., March 12. New Elementary Division applicants should send theirs by Wed., March 26. While ATDP accepts late applications on a space-available basis, you should apply as early as you can for the best chance at your preferred course!]]></description>
 		
@@ -105,12 +105,12 @@
 			</item>
 		<item>
 		<title>ATDP closed Presidents&#8217; Day weekend (Monday, Feb. 17)</title>
-		<link>/atdp-closed-monday/</link>
+		<link>/web/atdp-closed-monday/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Sat, 15 Feb 2014 23:22:27 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=9480</guid>
+		<guid isPermaLink="false">/web/?p=9480</guid>
 
 					<description><![CDATA[The ATDP Office and the UC Berkeley campus will be closed on Monday, February 17. Please feel free to contact us and leave a voicemail or email message, and we will get back do you as soon as we can.]]></description>
 		
@@ -119,12 +119,12 @@
 			</item>
 		<item>
 		<title>Challenge #5: The Bears and the Maiden Fair</title>
-		<link>/princess/</link>
+		<link>/web/princess/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Mon, 22 Jul 2013 23:49:25 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=6971</guid>
+		<guid isPermaLink="false">/web/?p=6971</guid>
 
 					<description><![CDATA[The final challenge of 2013 is part puzzle, part story, and part game! An evil wizard has locked the princess in the dungeon. Luckily, she had a hairpin, and used it to pick the lock and escape from her cell.  Now, she’s trying to make her way out of the dungeon. (See a static map [&#8230;]]]></description>
 		
@@ -133,12 +133,12 @@
 			</item>
 		<item>
 		<title>ATDP Challenge #3: All of the Lights (25 pts)</title>
-		<link>/atdp-challenge-3/</link>
+		<link>/web/atdp-challenge-3/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Tue, 09 Jul 2013 00:34:40 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=6913</guid>
+		<guid isPermaLink="false">/web/?p=6913</guid>
 
 					<description><![CDATA[In front of you appears a 5&#215;5 grid of cells. When you reach out and touch a cell, it toggles itself along with its adjacent cells (above, below, right, and left). The cells toggle through 3 states: off, red, and green. So, if you touched cell C3 three times, it would look like this: Here’s [&#8230;]]]></description>
 		
@@ -147,12 +147,12 @@
 			</item>
 		<item>
 		<title>ATDP Challenge #2: With Love XOXO (15-20 Points)</title>
-		<link>/atdp-challenge-2-with-love-xoxo/</link>
+		<link>/web/atdp-challenge-2-with-love-xoxo/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Mon, 01 Jul 2013 23:20:50 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=6808</guid>
+		<guid isPermaLink="false">/web/?p=6808</guid>
 
 					<description><![CDATA[Here is a grid of X’s and O’s. (Why is it here? There is no elaborate backstory. It simply is.) Now, let’s draw a path on top of it. When you draw the path, something curious happens.  As you move from one box to the next box, the X’s and O’s switch spots. So, as [&#8230;]]]></description>
 		
@@ -168,5 +168,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:45:12 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:59:17 by W3 Total Cache
 -->

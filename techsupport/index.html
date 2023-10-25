@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-US">
+<!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Tech Support | UC Berkeley ATDP</title>
+
+        <!-- Mobile Viewport Fix ( j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag ) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        
+        
+
+        
+        <link rel="pingback" href="/web/xmlrpc.php">
+
+        <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Feed" href="/web/feed/">
+<link rel="alternate" type="application/rss+xml" title="UC Berkeley ATDP &raquo; Comments Feed" href="/web/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.19 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-ZTG1BWXY14" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.19';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-ZTG1BWXY14',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-ZTG1BWXY14', {"forceSSL":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/web\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="simple-banner-style-css" href="/web/wp-content/plugins/simple-banner/simple-banner.css?ver=2.15.4" type="text/css" media="all">
+<link rel="stylesheet" id="if-menu-site-css-css" href="/web/wp-content/plugins/if-menu/assets/if-menu-site.css?ver=6.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-google-font-css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-animation-css" href="/web/wp-content/themes/rtpanel/assets/fontello/css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtp-icon-fonts-css" href="/web/wp-content/themes/rtpanel/assets/fontello/css/rtpanel-fontello.css" type="text/css" media="all">
+<link rel="stylesheet" id="rtpanel-style-css" href="/web/wp-content/themes/rtpanel-child-theme-master/style.css?ver=4.1.5" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-icon-fonts-css" href="/web/wp-content/plugins/rtwidgets/assets/icon-font/css/rtw-fontello.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rtw-plugin-css-css" href="/web/wp-content/plugins/rtwidgets/assets/rtwidgets-style.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="/web/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.19" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"\/web","hash_tracking":"false","v4_id":"G-ZTG1BWXY14"};/* ]]> */
+</script>
+<script type="text/javascript" src="/web/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/web/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="simple-banner-script-js-before" type="text/javascript">const simpleBannerScriptParams = {"version":"2.15.4","hide_simple_banner":"no","simple_banner_position":"footer","header_margin":"","header_padding":"","simple_banner_z_index":"","simple_banner_text":"This is a static copy of atdp.berkeley.edu. User accounts are not available.","pro_version_enabled":"","disabled_on_current_page":false,"debug_mode":"","id":16829,"disabled_pages_array":[],"is_current_page_a_post":false,"disabled_on_posts":"","simple_banner_font_size":"16px","simple_banner_color":"#ff943d","simple_banner_text_color":"#323348","simple_banner_link_color":"","simple_banner_close_color":"#323348","simple_banner_custom_css":"padding: 0.5em;","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","simple_banner_button_css":"font-weight: bold;\r\nbox-shadow: none;","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":true,"close_button_enabled":"on","close_button_expiration":"","close_button_cookie_set":false,"current_date":{"date":"2023-10-25 00:56:13.832783","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2023-10-25 00:56:13.832788","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2023-10-25 00:56:13.832792","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":"","simple_banner_remove_after_date":"","simple_banner_insert_inside_element":""}</script>
+<script type="text/javascript" src="/web/wp-content/plugins/simple-banner/simple-banner.js?ver=2.15.4" id="simple-banner-script-js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=6.3.1" id="jquery-easing-js"></script>
+<link rel="https://api.w.org/" href="/web/wp-json/">
+<link rel="alternate" type="application/json" href="/web/wp-json/wp/v2/pages/16829">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/web/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="/web/techsupport/">
+<link rel="shortlink" href="/web/?p=16829">
+<link rel="alternate" type="application/json+oembed" href="/web/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Ftechsupport%2F">
+<link rel="alternate" type="text/xml+oembed" href="/web/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Ftechsupport%2F#038;format=xml">
+<style type="text/css">.simple-banner{position:fixed;bottom:0;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{font-size:16px;}</style>
+<style type="text/css">.simple-banner{background:#ff943d;}</style>
+<style type="text/css">.simple-banner .simple-banner-text{color:#323348;}</style>
+<style type="text/css">.simple-banner .simple-banner-text a{color:#f16521;}</style>
+<style type="text/css">.simple-banner{z-index: 99999;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{color:#323348;}</style>
+<style type="text/css">.simple-banner{padding: 0.5em;}</style>
+<style type="text/css">.simple-banner .simple-banner-button{font-weight: bold;
+box-shadow: none;}</style>
+<style id="simple-banner-site-custom-css-dummy" type="text/css"></style>
+<script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script><link rel="apple-touch-icon" sizes="180x180" href="/web/wp-content/uploads/fbrfg/apple-touch-icon.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="32x32" href="/web/wp-content/uploads/fbrfg/favicon-32x32.png?v=RyMNJXOPXe">
+<link rel="icon" type="image/png" sizes="16x16" href="/web/wp-content/uploads/fbrfg/favicon-16x16.png?v=RyMNJXOPXe">
+<link rel="manifest" href="/web/wp-content/uploads/fbrfg/manifest.json?v=RyMNJXOPXe">
+<link rel="mask-icon" href="/web/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=RyMNJXOPXe" color="#5bbad5">
+<link rel="shortcut icon" href="/web/wp-content/uploads/fbrfg/favicon.ico?v=RyMNJXOPXe">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=RyMNJXOPXe">
+<meta name="theme-color" content="#ffffff">
+        <!-- <link href='//fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'> -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/web/wp-content/themes/rtpanel-child-theme-master/js/skrollr.min.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/ixk1zbq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">jQuery(document).ready(function($){
+
+        
+        // CONTENT FILTER BUTTONS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.'+filterkey).slideToggle(400);
+                $('.'+filterkey).toggleClass('toggled');
+                $(this).toggleClass('toggled');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // CONTENT FILTER TABS
+        $('.filterkey').on('click', function (event) {
+            if($(this).attr("id") != undefined) {
+                // console.log('id defined!:' + $(this).attr("id"));
+
+                var filterkey = $(this).attr("id");
+                $('.filterblock').removeClass('active');
+                $('.filterblock.'+filterkey).addClass('active');
+                $('.filtertab').removeClass('active');
+                $(this).addClass('active');
+
+            } else {
+                // console.log('no id defined!');
+            }
+        });
+
+
+        // COURSE INTEREST SURVEY
+        $('span.courseInterest.active').on('click', function(e) {
+
+            var button = $(this);
+            let courseNo = button.data("courseno");
+
+            $.ajax({
+                method: "POST",
+                url: "/request/course/?courseNo="+encodeURIComponent(courseNo)
+            }).done(function() {
+                button.removeClass("active");
+                button.children(".fa").show(500);
+                button.off();
+            });
+        });
+
+
+        // mobile check
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+           // not on mobile
+
+            var s = skrollr.init({
+                smoothScrolling: false
+                // smoothScrollingDuration: 100
+            });
+        } else {
+
+            // on mobile
+
+            $('div.scrollbg').each( function () {
+                $(this).children('div.ad').insertAfter($(this));
+            });
+
+            // jQuery('div.scrollbg div.ad').insertAfter(jQuery('div.scrollbg'));
+
+        }
+
+    });</script>
+    </head>
+
+    <body class="page-template page-template-template-full-width page-template-template-full-width-php page page-id-16829 unknown">
+<!-- ends in footer.php -->
+
+        
+        <div class="rtp-main-wrapper">
+<!-- ends in footer.php -->
+<!-- id="main-wrapper" -->
+            
+            <div id="header-wrapper" class="rtp-header-wrapper rtp-section-wrapper">
+
+                    
+                    <header id="header" class="row rtp-section-container" role="banner">
+
+                                                
+                        <div class="rtp-header large-12 columns rtp-full-width-grid ">
+                            
+                            <!-- nav is here somewhere. -->
+                            <nav id="rtp-primary-menu" role="navigation" class="rtp-nav-wrapper rtp-mobile-nav"><ul id="rtp-nav-menu" class="menu rtp-nav-container clearfix">
+<li id="menu-item-13116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13116"><a href="/web/news/">News</a></li>
+<li id="menu-item-14226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14226">
+<a href="/web/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-17240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17240"><a href="/web/faq/">FAQs</a></li>
+	<li id="menu-item-11934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11934"><a href="/web/contact-us/">Contact Us</a></li>
+	<li id="menu-item-17242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17242"><a href="/web/policies/">Program Policies</a></li>
+	<li id="menu-item-17936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17936"><a href="/web/staff-admin/">Staff &#038; Administration</a></li>
+	<li id="menu-item-17241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17241"><a href="/web/opportunities/">Jobs &#038; Internships</a></li>
+</ul>
+</li>
+<li id="menu-item-11932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11932">
+<a href="/web/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-18041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041"><a href="/web/programs/sd/">Secondary Division 2023</a></li>
+	<li id="menu-item-18042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18042"><a href="/web/programs/ed/">Elementary Division 2023</a></li>
+	<li id="menu-item-18224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18224"><a href="/web/programs/ex/">Explorations 2023</a></li>
+	<li id="menu-item-17255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17255"><a href="/web/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16416"><a href="/web/fa/">Financial Aid</a></li>
+	<li id="menu-item-18039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18039"><a href="/web/pathway/">Pathway Scholarship</a></li>
+	<li id="menu-item-18040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18040"><a href="/web/distinguished-scholars/">Distinguished Scholars</a></li>
+</ul>
+</li>
+</ul></nav>
+                            <div class="rtp-logo-container clearfix">
+
+
+                                
+
+                                                                        <h2 class="rtp-site-logo">
+                                    <a role="link" href="/web/" title="UC Berkeley ATDP">
+
+                                        
+                                        <img role="img" alt="UC Berkeley Academic Talent Development Program" height="143" width="383" src="/web/wp-content/uploads/2019/12/circlelogo-blue-title.png">
+                                        
+                                    </a>
+</h2>
+
+                                                            </div>
+
+                            <hr>                        </div>
+
+                    </header><!-- #header -->
+
+                    
+            </div>
+<!-- #header-wrapper -->
+
+            
+            
+            <div id="content-wrapper" class="rtp-content-wrapper rtp-section-wrapper">
+<!-- ends in footer.php -->
+
+                
+                <div class="row rtp-section-container">
+                    
+                    
+    <section id="content" class="rtp-content-section large-12 columns rtp-full-width-grid">
+        
+        
+		<article id="post-16829" class="clearfix rtp-post-box post-16829 page type-page status-publish hentry">
+				
+			<header class="post-header ">
+				
+									<h1 class="post-title entry-title">Tech Support</h1>
+				
+							</header><!-- .post-title -->
+
+			<div class="post-content">
+				
+				
+				<h1>Tech Support for ATDP Students</h1>
+
+<div class="panel" style="margin-top:1.5em; background-color: #EAFAFF; border-color: #00b0da;">
+<h3>Download and complete the <a href="/web/2021/ATDPTechChecklist.pdf" target="_blank" rel="noopener"><strong>Student Tech Checklist</strong></a>! (PDF)</h3>
+<p style="margin-bottom:0;">Instructors in some SD courses may provide extra credit for turning this in as an assignment.</p>
+</div>
+
+<h3>Need help? Contact our Tech Support Coordinator:
+<div class="row">
+
+<div class="column small-12 medium-6 large-5">
+<p style="font-size: 1.3rem; line-height: 2.2rem;"><i class="fa fa-envelope fa-2x" style="margin-right: 0.5rem;position: relative;bottom: -0.4rem;"></i> <strong>Email:</strong> <a href="mailto:atdptech@berkeley.edu">atdptech@berkeley.edu</a></p>
+</div>
+
+
+<div class="column small-12 medium-6 large-5">
+<p style="font-size: 1.3rem; line-height: 2.2rem; margin-bottom: 0.4rem;"><i class="fa fa-phone fa-2x" style="margin-right: 0.5rem;position: relative;bottom: -0.7rem;"></i> <strong>Phone:</strong> <span style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;">(510) 255-5055</span></p>
+</div>
+
+<div class="column small-12 medium-6 large-5">
+<p style="font-size: 1.3rem; line-height: 2.2rem; margin-bottom: 0.4rem;"><i class="fa fa-comment fa-2x" style="margin-right: 0.5rem;position: relative;bottom: -0.7rem;"></i> <strong>SMS-Text:</strong> <span style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;">(510) 255-5055</span></p>
+</div>
+
+
+<div class="column small-0 medium-0 large-2">
+</div>
+</div>
+
+
+<h2>Self-help topics:</h2>
+
+<div class="row">
+
+<a href="#zoom">
+<div class="column small-12 medium-6 large-3" style="background-color: #e3fffb; text-align: center; color: #004f67; font-size: 1.4rem; font-weight: 600; padding: 1rem; border: 3px solid white; min-height: 2rem;">
+Connecting to Zoom
+</div>
+</a>
+
+<a href="#lms">
+<div class="column small-12 medium-6 large-3" style="background-color: #edebff; text-align: center; color: navy; font-size: 1.4rem; font-weight: 600; padding: 1rem; border: 3px solid white;">
+Joining your class site
+</div>
+</a>
+
+<a href="#internet">
+<div class="column small-12 medium-6 large-3" style="background-color: #fffceb; text-align: center; color: #743600; font-size: 1.4rem; font-weight: 600; padding: 1rem; border: 3px solid white;">
+Internet speed &amp; stability
+</div>
+</a>
+
+<a href="#access">
+<div class="column small-12 medium-6 large-3" style="background-color: #eaffd5; text-align: center; color: #075a00; font-size: 1.4rem; font-weight: 600; padding: 1rem; border: 3px solid white;">
+Technology access
+</div>
+</a>
+
+</div>
+
+
+
+</h3>
+<p>&nbsp;</p>
+
+
+<p id="zoom">&nbsp;</p>
+<div class="section-block row">
+<h1 style="color:#004f67; border-bottom: 1px solid; margin-bottom: 2.2rem;">Connecting to Zoom</h1>
+
+
+<div id="" data-anchor-target="#zoom-faqs" class="section-directory columns small-12 medium-5 large-4 hide-for-small-only">
+<table>
+<tr><th style="background-color: #e3fffb; text-align: center; color: #004f67;">Zoom topics</th></tr>
+<tr><td class="course-name"><a href="#installing">Installing Zoom</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-account">Do I need a Zoom account?</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-version">How do I check my Zoom version?</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-chromebook">Can I use Zoom on a Chromebook?</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-audio">People have difficulty hearing what I say</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-testvideo">How do I test my video?</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-testaudio">How do I test my audio?</a></td></tr>
+<tr><td class="course-name"><a href="#zoom-tutorials">Zoom tutorials</a></td></tr>
+
+</table>
+</div>
+
+<div id="zoom-faqs" class="course-descriptions columns small-12 medium-7 large-8">
+
+<div class="faq-block" id="installing">
+<h3 class="question">
+Installing Zoom
+<a href="#installing" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">Go to <a href="https://zoom.us/download" rel="noopener" target="_blank">https://zoom.us/download</a> and download the <strong>Zoom Client for Meetings</strong>. Follow the on-screen instructions to complete the installation. Once installed, the Zoom app icon should appear like this: <br><img decoding="async" src="/web/wp-content/uploads/2021/05/Screenshot-2021-05-24-133536.jpg" alt="" width="54" height="54" class="alignnone size-full wp-image-17780"></p>
+</div>
+
+
+<div class="faq-block" id="zoom-account">
+<h3 class="question">
+Do I need a Zoom account?
+<a href="#zoom-account" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">Yes! Starting in 2021, all Zoom meetings hosted by UC Berkeley require participants to sign into a Zoom account. Any Zoom account is fine! You can create a free Zoom account by registering at <a href="https://zoom.us/signup" rel="noopener" target="_blank">https://zoom.us/signup</a>. For students under age 16, a parent should create their own Zoom account for their student to use under their supervision. If you already have a Zoom account through your school, that will also work.</p>
+</div>
+
+
+<div class="faq-block" id="zoom-version">
+<h3 class="question">
+How do I check my Zoom version?
+<a href="#zoom-version" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">Refer to this <a href="https://support.zoom.us/hc/en-us/articles/201362393" rel="noopener" target="_blank">Zoom support article: Viewing the Zoom version number</a>. Certain functions on Zoom are not available in older versions. Therefore, please be sure to keep your Zoom software up-to-date, as some class activities may require you to use Zoom in a certain way.</p>
+</div>
+
+
+
+<div class="faq-block" id="zoom-chromebook">
+<h3 class="question">
+Can I use Zoom on a Chromebook?
+<a href="#zoom-chromebook" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Most Chromebooks are designed to be used only to browse webpages, and they struggle to run Zoom well. If you have a more powerful laptop or desktop computer, Zoom will probably run more smoothly on that device. If you must use a Chromebook, close as many other browser windows, tabs, and apps as possible to reduce demand on the computer. Sometimes turning off your video camera can also help; in that case, just turn it on when you need to interact.
+</p>
+<p>
+You may also find that Zoom runs better on a smartphone or tablet. If your Internet connection is strong enough, you may be able to join the Zoom meeting both on your Chromebook and your mobile device at the same time; use your mobile device for video and audio, and your Chromebook to use the chat feature, view screen sharing, and work on course assignments.
+</p>
+</div>
+
+
+
+<div class="faq-block" id="zoom-audio">
+<h3 class="question">
+People have difficulty hearing what I say
+<a href="#zoom-audio" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+If you find you are often asked to repeat yourself, your voice may be getting cut off. Try connecting a set of headphones to your device so that the sounds you hear in the meeting do not interfere with the sound of your voice.
+</p>
+</div>
+
+
+
+
+<div class="faq-block" id="zoom-testvideo">
+<h3 class="question">
+How do I test my video?
+<a href="#zoom-testvideo" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Refer to this <a href="https://support.zoom.us/hc/en-us/articles/201362313-How-Do-I-Test-My-Video-" rel="noopener" target="_blank">Zoom support article: Testing your video</a>. For best results, sit facing a light source (such as a window or desk lamp).</p>
+</div>
+
+
+
+
+<div class="faq-block" id="zoom-testaudio">
+<h3 class="question">
+How do I test my audio (speakers/headphones and microphone)?
+<a href="#zoom-testaudio" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Refer to this <a href="https://support.zoom.us/hc/en-us/articles/201362283-How-Do-I-Join-or-Test-My-Computer-Audio-" rel="noopener" target="_blank">Zoom support article: Testing computer or device audio</a>.</p>
+</div>
+
+
+
+<div class="faq-block" id="zoom-tutorials">
+<h3 class="question">
+Additional Zoom tutorials
+<a href="#zoom-tutorials" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">See a <a href="https://support.zoom.us/hc/en-us/articles/206618765-Zoom-Video-Tutorials" rel="noopener" target="_blank">full list of tutorials from Zoom</a> to learn more about the platform.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<p id="lms">&nbsp;</p>
+<div class="section-block row">
+<h1 style="color: navy; border-bottom: 1px solid; margin-bottom: 2.2rem;">Joining your class site (LMS)</h1>
+
+
+<div id="" data-anchor-target="#lms-faqs" class="section-directory columns small-12 medium-5 large-4 hide-for-small-only">
+<table>
+<tr><th style="background-color: #edebff; text-align: center; color: navy;">Class site (LMS) topics</th></tr>
+<tr><td class="course-name"><a href="#lms-what">What does "LMS" mean?</a></td></tr>
+<tr><td class="course-name"><a href="#lms-how">How do I find my class site?</a></td></tr>
+<tr><td class="course-name"><a href="#lms-googlejoin">When I type in the Google Classroom join code, it says the class doesn't exist. Help!</a></td></tr>
+<tr><td class="course-name"><a href="#lms-canvasjoin">How do I join my class on Canvas?</a></td></tr>
+<tr><td class="course-name"><a href="#lms-canvaslogin">I joined my class on Canvas, but now when I log in I don't see it!</a></td></tr>
+<tr><td class="course-name"><a href="#lms-canvas-nameisnumbers">My name shows up as a bunch of numbers in Canvas. What's going on?</a></td></tr>
+<tr><td class="course-name"><a href="#lms-canvas-multiplelogins">My name shows up multiple times in my Canvas class's People list. What do I do?</a></td></tr>
+<tr><td class="course-name"><a href="#lms-canvas-timezone">Canvas is showing me times that are one hour off. What's going on?</a></td></tr>
+
+</table>
+</div>
+
+<div id="lms-faqs" class="course-descriptions columns small-12 medium-7 large-8">
+
+<div class="faq-block" id="lms-what">
+<h3 class="question">
+What does "LMS" mean?
+<a href="#lms-what" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+LMS stands for "Learning Management System," which is a fancy way of referring to a website or platform that is used to help run an academic course. Most ATDP courses use <strong>Canvas</strong> or <strong>Google Classroom</strong>, which are two popular LMS platforms. (A few classes may use something else!)
+</p>
+</div>
+
+
+<div class="faq-block" id="lms-how">
+<h3 class="question">
+How do I find my class site?
+<a href="#lms-how" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Once available, information about your class site will be listed in the <strong>Course Placement</strong> tab of your account on the ATDP website. Log in, go to <a href="/web/account" rel="noopener" target="_blank">atdp.berkeley.edu/account</a>, select your student, then click on "Course Placement" in the menu. Instructions are listed near the bottom of your course details.
+</p>
+</div>
+
+
+
+
+<div class="faq-block" id="lms-googlejoin">
+<h3 class="question">
+When I type in the Google Classroom join code, it says the class doesn't exist. Help!
+<a href="#lms-googlejoin" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+First, double check that you are typing it correctly. Assuming it is, this error often occurs because you are using a Google account through your school district or some other institution that will not allow you to join a Google Classroom that is outside of its organization. You will need to create a free/personal Google account. <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp" rel="noopener" target="_blank">Create a new account here</a>. For students under age 13, a parent should create their own Gmail account for their student to use under their supervision.
+</p>
+</div>
+
+
+
+<div class="faq-block" id="lms-canvasjoin">
+<h3 class="question">
+How do I join my class on Canvas?
+<a href="#lms-canvasjoin" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Since there are many ways to join a class on Canvas, it can be confusing! First, make sure you're logging into <a href="https://canvas.instructure.com/login/canvas" rel="noopener" target="_blank"><strong>canvas.instructure.com</strong></a>, not a Canvas site run by a school or other program. We strongly recommend taking this two-step approach:
+</p>
+<ol>
+	<li>
+<a href="https://canvas.instructure.com/login/canvas" rel="noopener" target="_blank">Log in to Canvas</a> with an existing account, or create a new account, and then,</li>
+	<li>Use the link in your ATDP account to enroll in the course</li>
+</ol>
+<p>See <a href="/web/2020/CanvasAccess.pdf" rel="noopener" target="_blank">this visual guide</a> for more details.</p>
+</div>
+
+
+
+<div class="faq-block" id="lms-canvaslogin">
+<h3 class="question">
+I joined my class on Canvas, but now when I log in I don't see it!
+<a href="#lms-canvasjoin" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+You might be logging into the wrong account. First, make sure you're logging into <a href="https://canvas.instructure.com/login/canvas" rel="noopener" target="_blank"><strong>canvas.instructure.com</strong></a>, not a Canvas site run by a school or other program. Note that this website provides several different options for creating and logging into an account. For example, if you used existing Google or Facebook credentials to create a Canvas account, logging in using an email and password may act as a separate account. Be sure you log into Canvas using the same method each time.
+</p>
+</div>
+
+
+<div class="faq-block" id="lms-canvas-nameisnumbers">
+<h3 class="question">
+My name shows up as a bunch of numbers in Canvas. What's going on?
+<a href="#lms-canvas-nameisnumbers" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+This typically occurs because you used another internet service (Gmail, Facebook, Twitter, etc.) to create your Canvas account. You're encouraged to change this information by going to your account settings (Account icon in the sidebar > Settings > "Edit Settings" button on the far right). The "full name" field should be the name that we have for you from your ATDP application. Feel free to change any of the settings there; it will not impact your access to the class. 
+</p>
+</div>
+
+
+<div class="faq-block" id="lms-canvas-multiplelogins">
+<h3 class="question">
+My name shows up multiple times in my Canvas class's People list. What do I do?
+<a href="#lms-canvas-multiplelogins" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+You may have created multiple Canvas accounts and joined the class site on all of them. If you have access to those other accounts, you can remove your enrollment by leaving the class. But if this is not an option, we recommend verifying which account you plan to use for the summer and then ask your class's TA or instructor to help "Deactivate" any accounts that are duplicates. You can also email a deactivation request to the ATDP Office account (atdpoffice@berkeley.edu); make sure you include your name, your class, and which login should be disabled.
+</p>
+</div>
+
+<div class="faq-block" id="lms-canvas-timezones">
+<h3 class="question">
+Canvas is showing me times that are one hour off. What's going on?
+<a href="#lms-canvas-timezones" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Unfortunately, the Canvas/Instructure installation sets new users to the Mountain timezone, while our classes are all located in the Pacific timezone. You can change your Canvas account's timezone by going to the account settings (Account icon in the sidebar > Settings > "Edit Settings" button on the far right). This should adjust all the relevant dates to your local timezone.
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<p id="internet">&nbsp;</p>
+<div class="section-block row">
+<h1 style="color: #743600; border-bottom: 1px solid; margin-bottom: 2.2rem;">Internet speed &amp; stability</h1>
+
+
+<div id="" data-anchor-target="#internet-faqs" class="section-directory columns small-12 medium-5 large-4 hide-for-small-only">
+<table>
+<tr><th style="background-color: #fffceb; text-align: center; color: #743600;">Internet stability topics</th></tr>
+<tr><td class="course-name"><a href="#internet-speed">How do I know if my Internet connection is fast enough?</a></td></tr>
+<tr><td class="course-name"><a href="#internet-cutout">My Internet connection cuts out sometimes</a></td></tr>
+<tr><td class="course-name"><a href="#internet-zoom">What do I do if I can't get back to class on Zoom?</a></td></tr>
+
+</table>
+</div>
+
+<div id="internet-faqs" class="course-descriptions columns small-12 medium-7 large-8">
+
+<div class="faq-block" id="internet-speed">
+<h3 class="question">
+How do I know if my Internet connection is fast enough?
+<a href="#internet-speed" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Run a speed test at <a href="https://speed.measurementlab.net/" rel="noopener" target="_blank">speed.measurementlab.net</a> or <a href="https://speedtest.net/" rel="noopener" target="_blank">speedtest.net</a>. You should have a consistent test result of 6 Mbps download and 3 Mbps upload speed <strong>at minimum;</strong> try running the test multiple times at different times of day and, if necessary, in different locations to see if your area network or Wi-Fi signal are causing intermittent issues. When it comes to video conferencing, remember that upload speed is just as important as download speed. 
+</p>
+</div>
+
+
+<div class="faq-block" id="internet-cutout">
+<h3 class="question">
+My Internet connection cuts out sometimes
+<a href="#internet-cutout" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Try the following troubleshooting steps:
+</p>
+<ul>
+	<li>The #1 culprit of dropped connections is using a weak or slow Wi-Fi signal instead of a wired connection, especially if your Internet connection is slow overall. To see if this issue is affecting you, try using a <a href="https://www.wikihow.com/Set-up-Ethernet" rel="noopener" target="_blank">wired Ethernet connection</a> for a while and observe whether this helps. Note that some laptops do not have an Ethernet port built in and may need an adapter to connect via an Ethernet cable.</li>
+	<li>In Zoom, try disabling your webcam. This may help especially if you have lower upload speeds (since your video stream is being uploaded).</li>
+	<li>Remember that bandwidth is a shared resource. See if any other computers or devices are making heavy use of their Internet connection. For example, your household may need to avoid streaming Netflix videos while you are in class.</li>
+	<li>Restart your device. Sometimes running a device for a long time without restarting can lead to poor performance.</li>
+</ul>
+</div>
+
+
+<div class="faq-block" id="internet-zoom">
+<h3 class="question">
+What do I do if I can't get back to class on Zoom?
+<a href="#internet-zoom" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+Make it a point to ask your teacher about their strategies for staying connected in the event of technical problems, especially if you have experienced problems in the past. Many instructors will have guidance listed in their Orientation Letter. For example, your Zoom classroom has a phone number that you can call to join the meeting via voice, which may be better than nothing in some circumstances. Some classes, however, require students to engage face-to-face during class activities (such as Public Speaking or our Japanese language courses). Please note: even provided good faith efforts on the part of the student and of ATDP to resolve technical issues, missing too much live class time may affect the student's grade, affect eligibility for a recommendation of credit, or result in dismissal from the program without refund.
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<p id="access">&nbsp;</p>
+<div class="section-block row">
+<h1 style="color: #075a00; border-bottom: 1px solid; margin-bottom: 2.2rem;">Technology access</h1>
+
+
+<div id="" data-anchor-target="#access-faqs" class="section-directory columns small-12 medium-5 large-4 hide-for-small-only">
+<table>
+<tr><th style="background-color: #eaffd5; text-align: center; color: #075a00;">Technology access topics</th></tr>
+<tr><td class="course-name"><a href="#access-internet">Low-cost internet</a></td></tr>
+<tr><td class="course-name"><a href="#access-computer">Low-cost computers &amp; devices</a></td></tr>
+<tr><td class="course-name"><a href="#access-literacy">Digital literacy</a></td></tr>
+
+</table>
+</div>
+
+<div id="access-faqs" class="course-descriptions columns small-12 medium-7 large-8">
+
+<div class="faq-block" id="access-internet">
+<h3 class="question">
+Low-cost internet
+<a href="#access-internet" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+</p>
+<ul>
+<li>The FCC's <a href="https://getemergencybroadband.org/" rel="noopener" target="_blank">Emergency Broadband Benefit Program</a> helps low-income families by subsidizing some or all of their monthly Internet service bill, as well as providing discounts on the purchase of a computer or device.</li>
+<li>Comcast's COVID program, <a href="https://www.internetessentials.com/covid19" rel="noopener" target="_blank">Internet Essentials</a>, is still available to those who are approved by June 30, 2021.</li>
+<li>
+<a href="https://www.att.com/shop/internet/access/" rel="noopener" target="_blank">AT&amp;T Access</a> offers $5-10/month plans for families on free or reduced lunch.</li>
+</ul>
+
+
+
+
+<div class="faq-block" id="access-computer">
+<h3 class="question">
+Low-cost computers &amp; devices
+<a href="#access-computer" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+</p>
+<ul>
+<li>Tech Exchange is a Bay Area non-profit that refurbishes and recycles computers and connected devices, and sells them at low cost: <a href="https://www.ebay.com/str/techxorg" rel="noopener" target="_blank">see their store</a>.</li>
+</ul>
+
+
+<div class="faq-block" id="access-literacy">
+<h3 class="question">
+Digital literacy
+<a href="#access-literacy" class="bookmark"><i class="bookmark fa fa-fw fa-link"></i></a>
+</h3>
+<p class="answer">
+</p>
+<ul>
+<li>Tech Exchange also offers digital literacy courses that may benefit students new to online classes or parents and family members that want to better support their student's digital learning: <a href="https://tinyurl.com/techxsupport" rel="noopener" target="_blank">register here</a>. Offered every Tuesday at 2:30 PM.</li>
+</ul>
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+
+
+<script type="text/javascript">
+    window._chatlio = window._chatlio||[];
+    !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline", "page", "open", "showOrHide"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.3");
+       n.setAttribute('data-widget-id','45422fac-7330-4887-50b4-a133f4424998');
+       c.parentNode.insertBefore(n,c);
+    }();
+</script>
+
+
+
+					</div>
+<!-- .post-content -->
+
+		
+		
+		<!-- .rtp-post-box -->
+            <!-- #content -->
+
+
+                </div> <!-- End of content-wrapper row -->
+
+                
+            </div>
+<!-- #content-wrapper -->
+
+            
+            
+            <footer id="footer-wrapper" role="contentinfo" class="clearfix rtp-footer-wrapper rtp-section-wrapper">
+
+                
+                
+
+                <div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+<li id="menu-item-14505" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-14505">
+<a href="/web/about/">About ATDP</a>
+<ul class="sub-menu">
+	<li id="menu-item-17387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17387"><a href="/web/contact-us/">Contact Us</a></li>
+	<li id="menu-item-12009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12009"><a href="/web/faq/">FAQs</a></li>
+	<li id="menu-item-14523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14523"><a href="/web/opportunities/">Jobs &#038; Internships</a></li>
+	<li id="menu-item-18327" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16829 current_page_item menu-item-18327"><a href="/web/techsupport/" aria-current="page">Tech Support</a></li>
+</ul>
+</li>
+<li id="menu-item-17385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17385">
+<a href="/web/programs/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-17382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17382"><a href="/web/documenting/">Documenting Coursework</a></li>
+	<li id="menu-item-16415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16415"><a href="/web/fa/">Financial Aid</a></li>
+	<li id="menu-item-17383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17383"><a href="/web/policies/">Policies</a></li>
+</ul>
+</li>
+<li id="menu-item-17381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17381">
+<a href="/web/programs/sd/">Secondary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17389"><a href="/web/programs/sd/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18289"><a href="/web/programs/sd/onsiteguide/">On-Site Student Guide</a></li>
+	<li id="menu-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288"><a href="/web/programs/sd/onlineguide/">Online Student Guide</a></li>
+</ul>
+</li>
+<li id="menu-item-17380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17380">
+<a href="/web/programs/ed/">Elementary Division</a>
+<ul class="sub-menu">
+	<li id="menu-item-17388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17388"><a href="/web/programs/ed/catalog/">Course Catalog</a></li>
+	<li id="menu-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287"><a href="/web/programs/ed/onsiteguide/">On-Site Family Guide</a></li>
+	<li id="menu-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286"><a href="/web/programs/ed/onlineguide/">Online Family Guide</a></li>
+</ul>
+</li>
+</ul></div>
+
+                <div id="sitemap">
+                    <div class="row">
+                        <div class="columns small-12 medium-6 large-3">
+                            <a href="/web/sitemap/"><i class="fa fa-sitemap"></i> &nbsp;Complete site map</a>
+                        </div>
+                        <div class="columns small-12 medium-6 large-9">
+                            <form role="search" method="get" class="searchform search-form" action="https://atdp.berkeley.edu/">
+                <div class="rtp-search-form-wrapper">
+                    <label class="screen-reader-text hide">Search for:</label>
+                    <input type="search" required="required" placeholder="Search Here..." value="" name="s" class="search-text search-field rtp-search-input" title="Search Here...">
+                    <input type="submit" class="searchsubmit search-submit rtp-search-button button tiny" value="Search" title="Search">
+                </div>
+             </form>                        </div>
+                    </div>
+                </div>
+
+
+                <div id="footer-contact">
+                    <ul id="footer-name" class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
+                        <li>University of California, Berkeley</li>
+                        <li>Academic Talent Development Program</li>
+                        <li>Graduate School of Education</li>
+                    </ul>
+
+                    <ul id="footer-info" class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+                        <li>
+                            <!-- <h6><i class="fa fa-at"></i></h6> -->
+                            atdpoffice@berkeley.edu<br>
+                            <span id="social-icons">
+                                <!--<a href="https://www.facebook.com/ucb.atdp" target=_BLANK><i class="fa fa-facebook-square"></i></a>-->
+                                <a href="https://twitter.com/UCBerkeleyATDP" target="_BLANK"><i class="fa fa-twitter-square"></i></a>
+                                <a href="http://i.instagram.com/ucberkeley_atdp" target="_BLANK"><i class="fa fa-instagram"></i></a>
+                            </span>
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-phone"></i></h6>
+                            ph 510-642-8308<br>
+                            fax 510-642-0510
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-envelope"></i></h6>
+                            70 University Hall #1160<br>
+                            Berkeley, CA  94720-1160
+                        </li>
+                        <li>
+                            <h6><i class="fa fa-fw fa-map-marker"></i></h6>
+                            2018 Oxford Street<br>
+                            Berkeley, CA  94720
+                        </li>
+                        
+                    </ul>
+
+                    <p id="copyright-tag">Copyright &copy; 2023 UC Regents; all rights reserved</p>
+                </div>
+
+                
+
+                
+                
+
+                <img src="/web/wp-content/uploads/2014/10/ucb-logo-gold-on-white-300x92.png" alt="UC Berkeley" width="300" height="92" class="alignright size-medium wp-image-11097">
+
+
+            </footer><!-- #footer-wrapper-->
+
+            
+            
+        </article></section>
+</div>
+<!-- #main-wrapper -->
+
+        <div class="simple-banner simple-banner-text" style="display:none !important"></div>
+<script type="text/javascript" id="qppr_frontend_scripts-js-extra">
+/* <![CDATA[ */
+var qpprFrontData = {"linkData":{"\/web\/sd\/catalog\/":[0,1,""],"\/web\/ed\/catalog\/":[0,1,""],"\/web\/ed\/":[0,0,"\/web\/programs\/ed"],"\/web\/pathway-scholarship":[0,1,""],"\/web\/an-end-to-star-testing-the-daily-californian\/":[1,1,"http:\/\/www.dailycal.org\/2013\/09\/09\/state-assembly-considers-bill-to-replace-standardized-testing\/"],"\/web\/looking-back-and-ahead-mark-your-2015-calendars\/":[1,0,""],"\/web\/?p=17127":[1,0,""],"\/web\/applications-are-now-open-for-summer-2022\/":[1,1,"http:\/\/createsend.com\/t\/r-92B8B3ACC2FACE0C2540EF23F30FEDED"],"\/web\/applications-open-for-summer-2023\/":[1,0,""],"\/web\/help-support-our-pathway-scholars-for-the-big-give-today-only\/":[1,0,"https:\/\/crowdfund.berkeley.edu\/atdp"],"\/web\/math-placement-test-update-make-up-dates\/":[0,1,"\/web\/news\/placement-testing\/"],"\/web\/s12-summer-newsletter-kicks-off-atdps-secondary-division\/":[0,1,""],"\/web\/sd-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/sd\/"],"\/web\/ed-welcome\/":[0,1,"http:\/\/atdp.berkeley.edu\/about\/ed\/"],"\/web\/?p=6540":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/web\/ed2014-postmark-deadlines\/":[0,1,"http:\/\/atdp.berkeley.edu\/applying\/ed\/"],"\/web\/aglist\/":[0,1,"https:\/\/hs-articulation.ucop.edu\/agcourselist\/institution\/5308"],"\/web\/now-accepting-applications-for-secondary-division-ta-interns\/":[0,1,"\/web\/opportunities\/#sdinterns"],"\/web\/2022-covid\/":[0,1,"\/web\/covid-safety-procedures\/"],"\/web\/including-atdp-courses-on-your-college-application\/":[0,1,"\/web\/news\/including-atdp-courses\/"],"\/web\/lets-play-a-game\/":[0,0,"http:\/\/www.google.com"],"\/web\/2015-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/calendar\/"],"\/web\/on-and-around-the-uc-berkeley-campus\/":[0,0,"\/web\/news\/on-and-around-the-berkeley-campus\/"],"\/web\/community-newsletter-volume-4-issue-2\/":[0,0,"http:\/\/atdp.berkeley.edu\/community-newsletter-vol-4-i-2\/"],"\/web\/2014-dates\/":[0,0,"http:\/\/atdp.berkeley.edu\/about\/calendar\/"],"\/web\/sd\/":[0,0,"\/web\/programs\/sd"],"\/web\/resources\/":[0,0,"\/web"],"\/web\/ed-2\/":[0,0,"\/web\/programs\/ed\/#applying"],"\/web\/sd-2\/":[0,0,"\/web\/programs\/sd\/#applying"],"\/web\/apply\/":[0,0,"\/web\/programs"],"\/web\/attending\/tuition\/":[0,0,"\/web\/programs"],"\/web\/attending\/location\/":[0,0,"\/web\/programs"],"\/web\/attending\/":[0,0,"\/web\/programs"],"\/web\/link-what-if-your-child-is-intellectually-gifted-high-ability\/":[0,0,"http:\/\/www.psychologytoday.com\/blog\/how-do-life\/201409\/what-if-your-child-is-intellectually-gifted-high-ability"],"\/web\/2017-program-dates-now-available\/":[0,0,"\/web\/calendar"],"\/web\/new-family-referral-program\/":[0,0,"\/web\/referral"],"\/web\/jobs\/":[0,0,"\/opportunities"],"\/web\/secondary-division-ta-2018\/":[0,0,"\/web\/opportunities\/#tas"],"\/web\/sd-deadline-2018\/":[0,0,"\/web\/calendars\/#sd"],"\/web\/secondary-division-2020-online\/":[0,0,"\/web\/sd2020guide"],"\/web\/elementary-division-2020-online-family-guide\/":[0,0,"\/web\/ed2020guide\/"],"\/web\/secondary-division-orientation-2020\/":[0,0,"\/web\/secondary-division-student-family-orientation-2020\/"],"\/web\/calendars\/":[0,0,"\/web\/programs"],"\/web\/selecting-a-course\/":[0,0,"\/web\/programs\/sd\/#courses"],"\/web\/celebrating-40-years-share-your-story-on-atdps-timeline\/":[0,0,"\/web\/40th\/"],"\/web\/instructor-spotlights-and-more-our-community-newsletter-kicks-off-applications-for-2021\/":[0,0,"\/web\/community-newsletter\/"],"\/web\/programs\/explorations\/":[0,0,"\/web\/programs\/ex\/"],"\/web\/explorations-now-open-for-registration\/":[0,0,"\/web\/programs\/ex\/"],"\/web\/secondary-division-placement-testing\/":[0,0,"\/news\/placement-testing\/"],"\/web\/theres-still-time-to-apply-2022\/":[0,0,"\/web\/news\/extended-deadlines\/"],"\/web\/on-and-around-the-berkeley-campus-sd-on-site\/":[0,0,"\/web\/news\/on-and-around-the-berkeley-campus\/"],"\/web\/fall-updates-2023-program-dates-announced-trfs-now-available\/":[0,0,"https:\/\/academictalentdevelopmentprogram.cmail20.com\/t\/ViewEmail\/r\/535F04BB6EE1CF952540EF23F30FEDED\/E6334D0BC49C64D2DCC9454293137CA2"],"\/web\/new-courses-2013\/":[0,0,""],"\/web\/applications-open-for-2013-summer-session\/":[0,0,""],"\/web\/share-speak-volunteer-be-a-part-of-the-atdp-story\/":[0,0,""],"\/web\/welcome-to-ed-2014\/":[0,0,""],"\/web\/?page_id=1102":[0,0,""],"\/web\/sd\/a-g\/":[0,0,""],"\/web\/subscribe\/":[0,0,""],"\/web\/sd-explorations-available-2\/":[0,0,""],"\/web\/community\/":[0,0,""],"\/web\/mathplacement\/":[0,0,""],"\/web\/account\/applications\/":[0,0,""],"\/web\/account\/enrollment\/":[0,0,""],"\/web\/community-newsletter\/":[0,0,""],"\/web\/sd15-final-evals\/":[0,0,""],"\/web\/sd-final-evaluations-2018\/":[0,0,""],"\/web\/sd14-final-evaluations-released\/":[0,0,""],"\/web\/ed-orientation-2018\/":[0,0,""],"\/web\/ed-orientation-17\/":[0,0,""],"\/web\/ed-orientation-15\/":[0,0,""],"\/web\/ed-orientation-14\/":[0,0,""],"\/web\/including-atdp-courses\/":[0,0,""],"\/web\/on-and-around-the-berkeley-campus\/":[0,0,""],"\/web\/on-and-around-campus\/":[0,0,""],"\/web\/sd-placement-testing-2020\/":[0,0,""],"\/web\/math-placement-testing-2019\/":[0,0,""],"\/web\/math-placement-testing-2018\/":[0,0,""],"\/web\/math-placement-testing-2017\/":[0,0,""],"\/web\/?p=13433":[0,0,""],"\/web\/math-placement-2015\/":[0,0,""],"\/web\/math-placement-2014\/":[0,0,""],"\/web\/math-placement-2013\/":[0,0,""],"\/web\/mathplacement-2012\/":[0,0,""],"\/web\/elementary-division-orientation-2020\/":[0,0,""],"\/web\/ed-orientation-2021\/":[0,0,""],"\/web\/secondary-orientation-2019\/":[0,0,""],"\/web\/secondary-orientation-2018\/":[0,0,""],"\/web\/sd-orientation-2017\/":[0,0,""],"\/web\/?p=13453":[0,0,""],"\/web\/sd-orientation-2015\/":[0,0,""],"\/web\/sd-orientation-2014\/":[0,0,""],"\/web\/sd-orientation-2013\/":[0,0,""],"\/web\/secondary-division-welcome-student-orientation-on-june-2\/":[0,0,""],"\/web\/courses-2\/":[0,0,""],"\/web\/courses\/":[0,0,""],"\/web\/extended-deadlines\/":[0,0,""],"\/web\/after-the-deadline\/":[0,0,""],"\/web\/theres-still-time-to-apply-about-our-extended-deadlines\/":[0,0,""],"\/web\/2020-technology\/":[0,0,""],"\/web\/theres-still-time-to-apply-2023\/":[0,0,""],"\/web\/sd-readiness-testing-2023\/":[0,0,""]},"siteURL":"\/web","siteURLq":"\/web"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/web/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.2.3" id="qppr_frontend_scripts-js"></script>
+<script type="text/javascript" src="/web/wp-content/themes/rtpanel/js/rtp-concat-lib.js?ver=6.3.1" id="rtp-concat-lib-js"></script>
+<script type="text/javascript" src="/web/wp-includes/js/comment-reply.min.js?ver=6.3.1" id="comment-reply-js"></script>
+<script type="text/javascript" src="/web/wp-content/themes/rtpanel-child-theme-master/js/rtp-child-package-min.js?ver=6.3.1" id="rtp-child-package-min-js"></script>
+				<script type="text/javascript">jQuery.noConflict();
+					(
+						function ( $ ) {
+							$( function () {
+								$( "area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane'])" ).click( function () {
+									if ( location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) && location.hostname == this.hostname ) {
+										var target = $( this.hash );
+										target = target.length ? target : $( '[name=' + this.hash.slice( 1 ) + ']' );
+										if ( target.length ) {
+											$( 'html,body' ).animate( {
+												scrollTop: target.offset().top - 80											},900 , 'easeOutQuad' );
+											return false;
+										}
+									}
+								} );
+							} );
+						}
+					)( jQuery );</script>
+			
+        <script type="text/javascript"></script>
+
+        
+
+    </div>
+</div>
+</body>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced (SSL caching disabled) 
+Database Caching using disk
+
+Served from: atdp.berkeley.edu @ 2023-10-24 17:56:14 by W3 Total Cache
+-->
+</html>

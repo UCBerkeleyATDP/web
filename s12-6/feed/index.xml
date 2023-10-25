@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: S&#8217;12 Issue 6: Final Grades FAQ; Photos, Student Work	</title>
-	<atom:link href="/s12-6/feed/" rel="self" type="application/rss+xml" />
-	<link>/s12-6/</link>
+	<atom:link href="/web/s12-6/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/s12-6/</link>
 	<description></description>
 	<lastBuildDate>Fri, 19 Dec 2014 21:24:09 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		By: JanTutor		</title>
-		<link>/s12-6/#comment-324</link>
+		<link>/web/s12-6/#comment-324</link>
 
 		<dc:creator><![CDATA[JanTutor]]></dc:creator>
 		<pubDate>Sun, 23 Sep 2012 15:56:48 +0000</pubDate>
-		<guid isPermaLink="false">/?p=5883#comment-324</guid>
+		<guid isPermaLink="false">/web/?p=5883#comment-324</guid>
 
 					<description><![CDATA[I was very interested to read your comment &quot;academic success is dependent on hard work, or task commitment ...&quot; Unfortunately in the UK we&#039;ve found that this isn&#039;t always the case. 
 
@@ -59,5 +59,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:45:30 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:59:36 by W3 Total Cache
 -->

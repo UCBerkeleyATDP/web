@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Featured ED &#038; SD Courses for Summer 2014	</title>
-	<atom:link href="/featured-courses-2014/feed/" rel="self" type="application/rss+xml" />
-	<link>/featured-courses-2014/</link>
+	<atom:link href="/web/featured-courses-2014/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/featured-courses-2014/</link>
 	<description></description>
 	<lastBuildDate>Thu, 02 Jan 2014 07:18:46 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,34 +20,34 @@
 	<item>
 		<title>
 		By: Sam Pierce		</title>
-		<link>/featured-courses-2014/#comment-880</link>
+		<link>/web/featured-courses-2014/#comment-880</link>
 
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Thu, 02 Jan 2014 07:18:46 +0000</pubDate>
-		<guid isPermaLink="false">/?p=9435#comment-880</guid>
+		<guid isPermaLink="false">/web/?p=9435#comment-880</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;/featured-courses-2014/#comment-879&quot;&gt;Irene Huang&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/web/featured-courses-2014/#comment-879&quot;&gt;Irene Huang&lt;/a&gt;.
 
 You can apply for both, but you would only be admitted to one or the other.
 
 If you&#039;ve attended the Elementary Division in the past, you are eligible to apply for a small number of Secondary Division courses as a returning 6th grader. Fill out a Secondary Division application. You can include Elementary Division 6th-grade course selections on that same application, if desired.
 
-See the bottom of the page at /about/ed/catalog/sixth/ for more.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/featured-courses-2014/#comment-879">Irene Huang</a>.</p>
+See the bottom of the page at /web/about/ed/catalog/sixth/ for more.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/web/featured-courses-2014/#comment-879">Irene Huang</a>.</p>
 <p>You can apply for both, but you would only be admitted to one or the other.</p>
 <p>If you&#8217;ve attended the Elementary Division in the past, you are eligible to apply for a small number of Secondary Division courses as a returning 6th grader. Fill out a Secondary Division application. You can include Elementary Division 6th-grade course selections on that same application, if desired.</p>
-<p>See the bottom of the page at <a href="/about/ed/catalog/sixth/" rel="ugc">/about/ed/catalog/sixth/</a> for more.</p>
+<p>See the bottom of the page at <a href="/web/about/ed/catalog/sixth/" rel="ugc">/web/about/ed/catalog/sixth/</a> for more.</p>
 ]]></content:encoded>
 		
 			</item>
 		<item>
 		<title>
 		By: Irene Huang		</title>
-		<link>/featured-courses-2014/#comment-879</link>
+		<link>/web/featured-courses-2014/#comment-879</link>
 
 		<dc:creator><![CDATA[Irene Huang]]></dc:creator>
 		<pubDate>Mon, 30 Dec 2013 19:44:36 +0000</pubDate>
-		<guid isPermaLink="false">/?p=9435#comment-879</guid>
+		<guid isPermaLink="false">/web/?p=9435#comment-879</guid>
 
 					<description><![CDATA[I am completing sixth grade in June 2014, so does that mean I can apply for elementary division and secondary division at the same time, or can I only apply for one?]]></description>
 			<content:encoded><![CDATA[<p>I am completing sixth grade in June 2014, so does that mean I can apply for elementary division and secondary division at the same time, or can I only apply for one?</p>
@@ -63,5 +63,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:44:58 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:59:03 by W3 Total Cache
 -->

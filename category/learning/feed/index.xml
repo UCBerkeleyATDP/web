@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Teaching and Learning &#8211; UC Berkeley ATDP</title>
-	<atom:link href="/category/learning/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="/web/category/learning/feed/" rel="self" type="application/rss+xml" />
+	<link>/web/</link>
 	<description></description>
 	<lastBuildDate>Wed, 23 Nov 2022 22:22:59 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,13 +21,13 @@
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 	<item>
 		<title>ATDP is hiring, seeking talented instructors</title>
-		<link>/atdp-is-hiring-2023/</link>
+		<link>/web/atdp-is-hiring-2023/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Wed, 23 Nov 2022 22:22:21 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=18543</guid>
+		<guid isPermaLink="false">/web/?p=18543</guid>
 
 					<description><![CDATA[ATDP unites teachers who love to teach with students who want to learn. We are in constant search of high-energy, passionate instructors, co-instructors, and instructional associates (IAs) for our summer courses. For summer 2023, several specific openings are still unfilled; please see below for the list of courses by program. Interested candidates may apply through [&#8230;]]]></description>
 		
@@ -36,13 +36,13 @@
 			</item>
 		<item>
 		<title>ATDP is hiring, seeking talented instructors</title>
-		<link>/atdp-is-hiring-seeking-talented-instructors/</link>
+		<link>/web/atdp-is-hiring-seeking-talented-instructors/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Mon, 24 Jan 2022 18:40:11 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=18058</guid>
+		<guid isPermaLink="false">/web/?p=18058</guid>
 
 					<description><![CDATA[ATDP unites teachers who love to teach with students who want to learn. We are in constant search of high-energy, passionate instructors, co-instructors, and instructional associates (IAs) for our summer courses. For summer 2022, several specific openings are still unfilled; please see below for the list of courses by program. Interested candidates may apply through [&#8230;]]]></description>
 		
@@ -51,12 +51,12 @@
 			</item>
 		<item>
 		<title>2022 COVID update</title>
-		<link>/covid-safety-procedures/</link>
+		<link>/web/covid-safety-procedures/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Mon, 17 Jan 2022 22:24:04 +0000</pubDate>
 				<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=17989</guid>
+		<guid isPermaLink="false">/web/?p=17989</guid>
 
 					<description><![CDATA[As ATDP aims to once again offer on-site courses in the summer of 2022, we want to ensure that students have a safe and enriching summer. As with most pandemic planning, public health guidelines, campus policies, and ATDP’s circumstances may change throughout the spring. Applicants should be aware that we are reserving the option to [&#8230;]]]></description>
 		
@@ -65,12 +65,12 @@
 			</item>
 		<item>
 		<title>Jack Kent Cooke Scholarships Opening for 7th Graders</title>
-		<link>/jack-kent-cooke-scholarships-open-for-7th-graders/</link>
+		<link>/web/jack-kent-cooke-scholarships-open-for-7th-graders/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Tue, 24 Jan 2017 17:23:15 +0000</pubDate>
 				<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=13372</guid>
+		<guid isPermaLink="false">/web/?p=13372</guid>
 
 					<description><![CDATA[We&#8217;d like to share an opportunity with ATDP&#8217;s low-income families that include current 7th graders. The Jack Kent Cooke Foundation&#8217;s Young Scholars Program opens its 2017 application process on February 7. This scholarship provides college-bound young scholars with financial and advising support through the end of high school. We encourage strong students whose families have [&#8230;]]]></description>
 		
@@ -79,13 +79,13 @@
 			</item>
 		<item>
 		<title>Flipping an ATDP Classroom</title>
-		<link>/flipping-an-atdp-classroom/</link>
+		<link>/web/flipping-an-atdp-classroom/</link>
 		
 		<dc:creator><![CDATA[Kass]]></dc:creator>
 		<pubDate>Mon, 19 Dec 2016 19:27:47 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=14777</guid>
+		<guid isPermaLink="false">/web/?p=14777</guid>
 
 					<description><![CDATA[What does a "flipped" classroom look like? What's the effect? See the results of our study that investigated the difference between a flipped class and a traditionally-structured class.]]></description>
 		
@@ -94,13 +94,13 @@
 			</item>
 		<item>
 		<title>For Teachers: Creativity in the Classroom</title>
-		<link>/creativity-in-the-classroom/</link>
+		<link>/web/creativity-in-the-classroom/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Thu, 24 Mar 2016 18:33:22 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=13419</guid>
+		<guid isPermaLink="false">/web/?p=13419</guid>
 
 					<description><![CDATA[From our connections in the American Psychological Association&#8217;s CPSE, we learned of a new web series focused on creativity! (Entirely topical for our active summer classrooms, we feel.) Through the use of interviews with renowned scholars in the field and practice based narrative, the module gives an overview of the use of creativity in a [&#8230;]]]></description>
 		
@@ -109,12 +109,12 @@
 			</item>
 		<item>
 		<title>Lead and Collaborate in the Classroom</title>
-		<link>/get-volunteer-experience-as-a-ta/</link>
+		<link>/web/get-volunteer-experience-as-a-ta/</link>
 		
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Wed, 16 Dec 2015 22:41:16 +0000</pubDate>
 				<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=12224</guid>
+		<guid isPermaLink="false">/web/?p=12224</guid>
 
 					<description><![CDATA[Teachers’ assistants in the Secondary Division are advanced returning students who demonstrate strong community involvement and academic leadership. Learn more and apply today!]]></description>
 		
@@ -123,14 +123,14 @@
 			</item>
 		<item>
 		<title>From the Counselor: Reflection on Failure</title>
-		<link>/from-the-counselor-reflection-on-failure/</link>
+		<link>/web/from-the-counselor-reflection-on-failure/</link>
 		
 		<dc:creator><![CDATA[hila]]></dc:creator>
 		<pubDate>Thu, 16 Jul 2015 23:15:21 +0000</pubDate>
 				<category><![CDATA[News & Announcements]]></category>
 		<category><![CDATA[SD Newsletter]]></category>
 		<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=12921</guid>
+		<guid isPermaLink="false">/web/?p=12921</guid>
 
 					<description><![CDATA[By: Christine Gerchow, PhD In his book, &#8220;Failing Forward,&#8221; John Maxwell argues that successful people take a specific approach to failure. They tend to take responsibility, learn from mistakes, understand that failure is part of the learning process, and continue to take risks and persevere. Maxwell calls this approach &#8220;failing forward.&#8221; At ATDP, students who [&#8230;]]]></description>
 		
@@ -139,12 +139,12 @@
 			</item>
 		<item>
 		<title>Math Placement Testing (Update: Make-up Dates Available)</title>
-		<link>/math-placement-2015/</link>
+		<link>/web/math-placement-2015/</link>
 		
 		<dc:creator><![CDATA[Sam Pierce]]></dc:creator>
 		<pubDate>Fri, 01 May 2015 19:11:45 +0000</pubDate>
 				<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=12326</guid>
+		<guid isPermaLink="false">/web/?p=12326</guid>
 
 					<description><![CDATA[Students in most math courses will need to take a placement test; those who missed the May 16 test date must arrange for a make-up. Read on for times, locations, and FAQs.]]></description>
 		
@@ -158,7 +158,7 @@
 		<dc:creator><![CDATA[ATDP Staff]]></dc:creator>
 		<pubDate>Thu, 11 Sep 2014 17:57:28 +0000</pubDate>
 				<category><![CDATA[Teaching and Learning]]></category>
-		<guid isPermaLink="false">/?p=11066</guid>
+		<guid isPermaLink="false">/web/?p=11066</guid>
 
 					<description><![CDATA[Psychology Today interviews ATDP's faculty director, Dr. Frank C. Worrell, about advanced learners in secondary education, common misconceptions, and ideas for best serving high-ability students.]]></description>
 		
@@ -174,5 +174,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Page Caching using disk: enhanced (SSL caching disabled) 
 Database Caching using disk
 
-Served from: atdp.berkeley.edu @ 2023-10-24 15:43:12 by W3 Total Cache
+Served from: atdp.berkeley.edu @ 2023-10-24 17:57:18 by W3 Total Cache
 -->
